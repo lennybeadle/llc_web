@@ -1,0 +1,36 @@
+.testimonialCard {
+  background-color: #fafafa;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 63px 50px;
+}
+
+.authorImage {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 70px;
+}
+
+.authorName {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 23px;
+}
+
+.testimonialText {
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .testimonialCard {
+    padding: 0 20px;
+  }
+}

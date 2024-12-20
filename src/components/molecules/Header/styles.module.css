@@ -1,0 +1,93 @@
+.header {
+  background-color: #fff;
+  display: flex;
+  padding: 19px 70px 33px;
+  font: 400 15px Roboto, sans-serif;
+}
+
+.headerContainer {
+  display: flex;
+  width: 1282px;
+  max-width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  aspect-ratio: 2.35;
+  object-fit: contain;
+  width: 160px;
+}
+
+.navigation {
+  align-self: end;
+  display: flex;
+  margin-top: 34px;
+  gap: 40px 50px;
+  color: #5a5a5a;
+  white-space: nowrap;
+  line-height: 1.3;
+}
+
+.navGroup {
+  display: flex;
+  gap: 40px;
+}
+
+.activeNavItem {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+
+.navText {
+  margin-right: 3px;
+}
+
+.activeIndicator {
+  background-color: #ffd800;
+  height: 2px;
+  margin-top: 15px;
+}
+
+.navItem {
+  color: #5a5a5a;
+}
+
+.actions {
+  display: flex;
+  gap: 40px 51px;
+  align-items: center;
+}
+
+.loginGroup {
+  display: flex;
+  gap: 11px;
+  color: #5a5a5a;
+  align-items: center;
+}
+
+.loginIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.ctaButton {
+  border-radius: 15px;
+  background-color: #ffd800;
+  color: #2f2207;
+  padding: 16px 23px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .navigation {
+    max-width: 100%;
+    white-space: initial;
+  }
+}

@@ -1,0 +1,154 @@
+.mainContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.heroSection {
+  border-radius: 25px;
+  /* background-color: #f1f1f1; */
+  background: url('../../assets/images/backgrounds/trust.svg') no-repeat;
+  display: flex;
+  width: 100%;
+  max-width: 1550px;
+  padding: 150px 80px 80px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.heroContent {
+  display: flex;
+  width: 627px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 80px;
+  line-height: 96px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.heroSubtitle {
+  display: block;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 55px;
+}
+
+.heroTagline {
+  color: #fff;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 400;
+  margin-top: 80px;
+}
+
+.heroButton {
+  border-radius: 15px;
+  background-color: #ffd800;
+  border: none;
+  padding: 20px 44px;
+  color: #2f2207;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 68px;
+  cursor: pointer;
+}
+
+.heroIcon {
+  width: 32px;
+  height: 32px;
+  margin-top: 45px;
+}
+
+.servicesSection {
+  padding: 100px 70px;
+  width: 100%;
+  max-width: 1290px;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.teamSection,
+.testimonialsSection,
+.blogSection {
+  width: 100%;
+  max-width: 1290px;
+  padding: 80px 70px;
+  text-align: center;
+}
+
+.sectionTitle {
+  color: #000;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.sectionDescription {
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 60px;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media (max-width: 991px) {
+  .heroSection {
+    padding: 100px 20px;
+  }
+
+  .heroTitle {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  .heroButton {
+    padding: 15px 30px;
+    margin-top: 40px;
+  }
+
+  .servicesSection,
+  .teamSection,
+  .testimonialsSection,
+  .blogSection {
+    padding: 40px 20px;
+  }
+
+  .servicesGrid,
+  .teamGrid,
+  .testimonialGrid,
+  .blogGrid {
+    grid-template-columns: 1fr;
+  }
+}
