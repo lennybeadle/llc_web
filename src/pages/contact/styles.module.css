@@ -1,0 +1,12 @@
+.mainContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.heroSection {
+  margin-bottom: 50px;
+}

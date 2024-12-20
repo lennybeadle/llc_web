@@ -1,24 +1,22 @@
 import * as S from './styles';
 import { ServiceCard } from '../../molecules/ServiceCard';
-
+import LeftImage from '../../../assets/images/icons/large-left.svg';
+import DesignIcon from '../../../assets/images/icons/design.svg';
 interface ServiceCardProps {
   icon: string;
   title: string;
   description: string;
 }
 
-interface ServicesSectionProps {
-  services: ServiceCardProps[];
-}
 const servicesData1: ServiceCardProps[] = [
   {
-    icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/24d744d5e496ce5c056cf5c1db03e560290bc394279b0a22367402e9e4254af1?placeholderIfAbsent=true&apiKey=6ec776122da54b10a52082d58cd3793b',
+    icon: DesignIcon,
     title: 'Artificial Intelligence & Machine Learning',
     description:
       'Empowering smarter decisions and optimized operations with tailored AI solutions',
   },
   {
-    icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0754b4c3b0d2237d1962edbbce86231a062e0b5fd013adac8c176136ccecd9d2?placeholderIfAbsent=true&apiKey=6ec776122da54b10a52082d58cd3793b',
+    icon: DesignIcon,
     title: 'Software Solutions',
     description:
       'Custom-built software designed to meet your unique business goals and streamline processes',
@@ -26,13 +24,13 @@ const servicesData1: ServiceCardProps[] = [
 ];
 const servicesData2: ServiceCardProps[] = [
   {
-    icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/08d87a460dadb69ee859d4a14efe6749740f0669b83ec86c72558504866775e4?placeholderIfAbsent=true&apiKey=6ec776122da54b10a52082d58cd3793b',
+    icon: DesignIcon,
     title: 'Cloud Computing & Cybersecurity',
     description:
       'Secure, scalable cloud solutions backed by robust cybersecurity for peace of mind.',
   },
   {
-    icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/cda5fa2b2cf247caf49b9b64766babd78d2c90feb1cba2dc35ded478f14fb3ed?placeholderIfAbsent=true&apiKey=6ec776122da54b10a52082d58cd3793b',
+    icon: DesignIcon,
     title: 'Design & Marketing',
     description:
       'Engage your audience with stunning visuals and strategic campaigns tailored to your brand.',
@@ -81,6 +79,7 @@ export const ServicesSection = () => {
           </S.ServicesGridLow>
         </S.RightColumn>
       </S.ContentContainer>
+      <S.LeftDirection image={LeftImage} />
     </S.SectionWrapper>
   );
 };

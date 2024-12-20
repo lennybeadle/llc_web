@@ -2,10 +2,12 @@ import styled from 'styled-components';
 export const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  position: relative;
   min-height: 1055px;
   width: 100%;
   padding: 2px 70px 11px;
+  position: relative;
+  z-index: 10;
+
   @media (max-width: 991px) {
     padding: 40px 20px;
   }
@@ -107,4 +109,15 @@ export const ServicesGridLow = styled.div`
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
   }
+`;
+
+export const LeftDirection = styled.div<{ image: string }>`
+  position: absolute;
+  top: 0;
+  right: 150px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(${(props) => props.image}) no-repeat;
+  background-position: right;
 `;

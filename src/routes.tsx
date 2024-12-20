@@ -3,6 +3,10 @@ import { Navigate, PathRouteProps, Route, Routes } from 'react-router-dom';
 import { LinearProgress } from '@mui/material';
 import GuestGuard from './utils/GuestGuard';
 import Dashboard from './pages/dashboard';
+import Services from './pages/services';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Contact from './pages/contact';
 
 export type RouteConfig = PathRouteProps & {
   guard?: any;
@@ -64,6 +68,22 @@ const routes = [
   {
     path: '/dashboard',
     element: <Dashboard />,
+  },
+  {
+    path: '/services',
+    element: <Services />,
+  },
+  {
+    path: '/about',
+    element: <About />,
+  },
+  {
+    path: '/blog',
+    element: <Blog />,
+  },
+  {
+    path: '/contact',
+    element: <Contact />,
   },
   {
     guard: GuestGuard,

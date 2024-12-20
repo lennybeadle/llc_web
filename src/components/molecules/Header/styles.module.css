@@ -81,6 +81,22 @@
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: inherit; /* Use the inherited color, so it matches your custom styles */
+}
+
+a:visited {
+  color: inherit; /* Prevent color change after the link is visited */
+}
+
+a:hover {
+  text-decoration: none; /* Prevent underline on hover if that's the desired style */
+}
+
+a:focus {
+  outline: none; /* Optional: Remove focus outline if you don't need it */
+}
 @media (max-width: 991px) {
   .header {
     padding: 0 20px;
