@@ -1,6 +1,12 @@
 import * as React from 'react';
 import { ProjectCard } from '../../molecules/ProjectCard';
 import { ProjectCardDouble } from '../../molecules/ProjectCardDouble';
+import CaseImage1 from '../../../assets/images/backgrounds/study1.svg';
+import CaseImage2 from '../../../assets/images/backgrounds/study2.svg';
+import CaseImage3 from '../../../assets/images/backgrounds/study3.svg';
+import CaseImage4 from '../../../assets/images/backgrounds/study4.svg';
+import CaseImage5 from '../../../assets/images/backgrounds/study5.svg';
+import CaseImage6 from '../../../assets/images/backgrounds/study6.svg';
 
 import * as S from './styles';
 interface CaseStudy {
@@ -30,34 +36,31 @@ export function CaseStudiesSection() {
       <S.TopProjectsRow>
         <ProjectCard
           title={caseStudies[0].title}
-          width="65%"
-          image="../../../assets/images/backgrounds/study1.svg"
+          width="66%"
+          image={CaseImage1}
         />
         <ProjectCard
           title={caseStudies[1].title}
-          width="35%"
-          image="../../../assets/images/backgrounds/study2.svg"
+          width="34%"
+          image={CaseImage2}
         />
       </S.TopProjectsRow>
       <S.BottomProjectsRow>
         <ProjectCard
           title={caseStudies[2].title}
           width="33%"
-          image="../../../assets/images/backgrounds/study3.svg"
+          image={CaseImage3}
         />
         <ProjectCard
           title={caseStudies[3].title}
           width="33%"
-          image="../../../assets/images/backgrounds/study4.svg"
+          image={CaseImage4}
         />
         <ProjectCardDouble
           titles={[caseStudies[4].title, caseStudies[5].title]}
-          width="33%"
+          width="34%"
           height={caseStudies[4].height}
-          images={[
-            '../../../assets/images/backgrounds/study5.svg',
-            '../../../assets/images/backgrounds/study6.svg',
-          ]}
+          images={[CaseImage5, CaseImage6]}
         />
       </S.BottomProjectsRow>
     </S.StyledSection>

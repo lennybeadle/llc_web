@@ -4,12 +4,14 @@ interface ProjectCardDoubleProps {
   titles: string[];
   width: string;
   height?: string;
+  images: string[];
 }
 
 export function ProjectCardDouble({
   titles,
   width,
   height,
+  images,
 }: ProjectCardDoubleProps) {
   return (
     <S.CardWrapper width={width}>
@@ -20,6 +22,7 @@ export function ProjectCardDouble({
             height={height}
             isSecond={index === 1}
             tabIndex={0}
+            image={images[index]}
           >
             {title}
           </S.CardContent>

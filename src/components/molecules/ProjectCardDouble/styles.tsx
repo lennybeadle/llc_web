@@ -5,7 +5,7 @@ export const CardWrapper = styled.div<{ width: string }>`
   flex-direction: column;
   line-height: normal;
   width: ${(props) => props.width};
-  margin-left: 20px;
+  margin-left: -25px;
   @media (max-width: 991px) {
     width: 100%;
     margin-left: 0;
@@ -24,8 +24,12 @@ export const DoubleCardContainer = styled.div`
   }
 `;
 
-export const CardContent = styled.div<{ height?: string; isSecond?: boolean }>`
-  background-color: #000;
+export const CardContent = styled.div<{
+  height?: string;
+  isSecond?: boolean;
+  image: string;
+}>`
+  background: url(${(props) => props.image}) no-repeat;
   padding: ${(props) =>
     props.height ? `${props.height} 40px 48px` : '169px 40px 48px'};
   margin-top: ${(props) => (props.isSecond ? '36px' : '0')};

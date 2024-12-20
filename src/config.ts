@@ -3,10 +3,7 @@ import { HighlightOptions } from 'highlight.run';
 const environmentTypes = ['development', 'staging', 'production'] as const;
 type EnvironmentType = (typeof environmentTypes)[number];
 
-export const environment = env
-  .get('REACT_APP_ENVIRONMENT')
-  .required()
-  .asEnum<EnvironmentType>([...environmentTypes]);
+export const environment = 'production';
 
 const disableHighlight =
   environment === 'production' || environment === 'staging' ? false : true;

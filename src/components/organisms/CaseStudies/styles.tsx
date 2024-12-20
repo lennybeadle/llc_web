@@ -28,6 +28,7 @@ export const Description = styled.p`
   color: #5a5a5a;
   text-align: center;
   margin: 33px 0 0 158px;
+  width: 50%;
   font: 400 16px/26px Roboto, sans-serif;
   @media (max-width: 991px) {
     max-width: 100%;

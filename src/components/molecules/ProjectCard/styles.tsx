@@ -4,7 +4,7 @@ export const CardWrapper = styled.div<{ width: string }>`
   flex-direction: column;
   line-height: normal;
   width: ${(props) => props.width};
-  margin-left: ${(props) => (props.width === '65%' ? '0' : '20px')};
+  margin-left: ${(props) => (props.width === '66%' ? '0' : '0px')};
   @media (max-width: 991px) {
     width: 100%;
     margin-left: 0;
@@ -12,7 +12,7 @@ export const CardWrapper = styled.div<{ width: string }>`
 `;
 
 export const CardContent = styled.div<{ image: string }>`
-  background-image: url(${(props) => props.image});
+  background: url(${(props) => props.image}) no-repeat;
   flex-grow: 1;
   color: #fff;
   width: 100%;
