@@ -4,6 +4,8 @@ export const CardWrapper = styled.div<{ width: string }>`
   flex-direction: column;
   line-height: normal;
   width: ${(props) => props.width};
+  height: 100%;
+  object-fit: cover;
   margin-left: ${(props) => (props.width === '66%' ? '0' : '0px')};
   margin-right: ${(props) => (props.width === '32%' ? '0' : '5px')};
   @media (max-width: 991px) {

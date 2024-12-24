@@ -88,7 +88,7 @@ const blogPosts = [
       'Learn the key principles of UX/UI design to create websites that deliver a seamless and visually appealing user experience.',
     meta: {
       author: 'SAKET Gautam',
-      date: 'July 5, 2024',
+      date: 'January 12, 2024',
       tags: ['design', 'ux/ui'],
     },
     content: `
@@ -141,7 +141,7 @@ const blogPosts2 = [
       'Tailored software solutions can make or break your operations. Find out how customized tools can streamline processes and boost productivity.',
     meta: {
       author: 'SAKET Gautam',
-      date: 'July 5, 2024',
+      date: 'March 25, 2024',
       tags: ['software', 'efficiency'],
     },
     content: `
@@ -163,7 +163,7 @@ const blogPosts2 = [
       'Uncover how strategic marketing campaigns can increase public awareness and engagement with sector initiatives.',
     meta: {
       author: 'SAKET Gautam',
-      date: 'July 5, 2024',
+      date: 'April 1, 2024',
       tags: ['marketing', 'strategy'],
     },
     content: `

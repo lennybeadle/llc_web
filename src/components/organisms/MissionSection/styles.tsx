@@ -69,6 +69,7 @@ export const SkillsGrid = styled.div`
 export const SkillItem = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 `;
 
 export const SkillLabel = styled.h3`

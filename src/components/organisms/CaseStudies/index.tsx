@@ -3,10 +3,11 @@ import { ProjectCard } from '../../molecules/ProjectCard';
 import { ProjectCardDouble } from '../../molecules/ProjectCardDouble';
 import CaseImage1 from '../../../assets/images/backgrounds/study1.svg';
 import CaseImage2 from '../../../assets/images/backgrounds/study2.svg';
-import CaseImage3 from '../../../assets/images/backgrounds/study3.svg';
-import CaseImage4 from '../../../assets/images/backgrounds/study4.svg';
-import CaseImage5 from '../../../assets/images/backgrounds/study5.svg';
-import CaseImage6 from '../../../assets/images/backgrounds/study6.svg';
+import CaseImage3 from '../../../assets/images/backgrounds/case6.svg';
+import CaseImage4 from '../../../assets/images/backgrounds/case4.svg';
+import CaseImage5 from '../../../assets/images/backgrounds/case5.svg';
+import CaseImage6 from '../../../assets/images/backgrounds/case3.svg';
+
 import RightImage from '../../../assets/images/icons/large-right.svg';
 import * as S from './styles';
 interface CaseStudy {

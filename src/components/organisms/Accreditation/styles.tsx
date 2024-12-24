@@ -58,7 +58,7 @@ export const LogoContainer = styled.div`
   box-sizing: border-box;
 `;
 export const Logo = styled.img`
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 `;

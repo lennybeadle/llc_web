@@ -23,17 +23,17 @@ export const Header = ({ type = 'icon' }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const toggleDrawer =
     (open: boolean) =>
-      (event: React.KeyboardEvent | React.MouseEvent): void => {
-        // Close drawer for certain key events
-        if (
-          event.type === 'keydown' &&
-          ((event as React.KeyboardEvent).key === 'Tab' ||
-            (event as React.KeyboardEvent).key === 'Shift')
-        ) {
-          return;
-        }
-        setMenuOpen(open);
-      };
+    (event: React.KeyboardEvent | React.MouseEvent): void => {
+      // Close drawer for certain key events
+      if (
+        event.type === 'keydown' &&
+        ((event as React.KeyboardEvent).key === 'Tab' ||
+          (event as React.KeyboardEvent).key === 'Shift')
+      ) {
+        return;
+      }
+      setMenuOpen(open);
+    };
 
   const isActive = (path: string) => location.pathname === path;
   return (
@@ -46,7 +46,6 @@ export const Header = ({ type = 'icon' }) => {
           alt="LLC Tech company logo"
           onClick={() => navigate('/')}
         />
-
 
         {isMobile && (
           <IconButton
@@ -135,7 +134,12 @@ export const Header = ({ type = 'icon' }) => {
             />
             <div className={styles.loginText}>Login</div>
           </div>
-          <button className={styles.ctaButton}>Get in Touch</button>
+          <button
+            className={styles.ctaButton}
+            onClick={() => navigate('/contact')}
+          >
+            Get in Touch
+          </button>
         </div>
 
         <Drawer anchor="right" open={menuOpen} onClose={toggleDrawer(false)}>

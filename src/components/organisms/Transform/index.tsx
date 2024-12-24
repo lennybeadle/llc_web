@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import * as React from 'react';
 import * as S from './styles';
 import LeftImage from '../../../assets/images/icons/large-left.svg';
@@ -47,6 +48,8 @@ const blogPosts = [
   },
 ];
 export const Transform: React.FC<TransformProps> = ({ image }) => {
+  const navigate = useNavigate();
+
   return (
     <S.MissionContainer>
       <S.MissionContent>
@@ -68,7 +71,13 @@ export const Transform: React.FC<TransformProps> = ({ image }) => {
               solutions that make a difference for people everywhere.
             </S.Description>
             <S.SkillsGrid>
-              <S.MoreDetails>More Details</S.MoreDetails>
+              <S.MoreDetails
+                onClick={() => {
+                  navigate(`/services`);
+                }}
+              >
+                More Details
+              </S.MoreDetails>
             </S.SkillsGrid>
           </S.MissionInfo>
         </S.ContentColumn>

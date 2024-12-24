@@ -18,7 +18,7 @@ const blogPosts = [
       'Boosting productivity with a real-time collaboration platform acquired by Klarna, featuring live updates and dynamic data tools.',
     meta: {
       author: 'SAKET Gautam',
-      date: 'July 5, 2024',
+      date: 'Octorber 23, 2024',
       tags: ['Collaboration', 'Real-time Solutions'],
     },
     content: `
@@ -74,7 +74,7 @@ const blogPosts = [
       "Crafting innovative solutions for Luna's e-commerce platform with dynamic features and seamless user experiences.",
     meta: {
       author: 'ELLIOT WHITE',
-      date: 'AUGUSTS 15, 2024',
+      date: 'December 8, 2024',
       tags: ['e-commerce', 'online-shopping', 'user engagement'],
     },
     content: `
@@ -133,7 +133,7 @@ const blogPosts = [
       'Redefining convenience with a cutting-edge platform that connects Londoners to reliable professional cleaners for homes, offices, and more.',
     meta: {
       author: 'SAKET Gautam',
-      date: 'July 5, 2024',
+      date: 'April 15, 2024',
       tags: ['on-demand service', 'user engagement'],
     },
     content: `
@@ -192,7 +192,7 @@ const blogPosts2 = [
       'Delivering innovative, scalable, and user-centric software solutions for businesses across industries.',
     meta: {
       author: 'SAKET Gautam',
-      date: 'July 5, 2024',
+      date: 'June 26, 2024',
       tags: ['software solutions', 'scalability'],
     },
     content: `
@@ -256,7 +256,7 @@ const blogPosts2 = [
       'Empowering users with innovative financial planning tools through scalable APIs and user-friendly platforms.',
     meta: {
       author: 'SAKET Gautam',
-      date: 'July 5, 2024',
+      date: 'November 18, 2024',
       tags: ['financial services', 'data management'],
     },
     content: `
@@ -330,7 +330,7 @@ const blogPosts2 = [
       'Advancing blockchain adoption with secure and user-friendly tools for managing digital assets and engaging with DeFi.',
     meta: {
       author: 'SAKET Gautam',
-      date: 'July 5, 2024',
+      date: 'March 3, 2024',
       tags: ['Blockchain', 'financial services'],
     },
     content: `
