@@ -11,6 +11,8 @@ import ShopifyIcon from '../../assets/images/icons/shopify.svg';
 import GoogleIcon from '../../assets/images/icons/google.svg';
 import StudyImage from '../../assets/images/backgrounds/service.svg';
 import { Accreditation } from '../../components/organisms/Accreditation';
+import { Breadcrumb } from '../../components/organisms/SubBlogHeader/styles';
+import { BreadcrumbNav } from '../../components/molecules/BreadcrumbNav';
 const missionData = [
   {
     label: 'Years of Industry Experience',
@@ -29,12 +31,27 @@ const Services = () => {
   return (
     <main className={styles.mainContainer}>
       <Header />
-      <section className={styles.heroSection}>
+      {/* <section className={styles.heroSection}>
         <img
           src={StudyImage}
           alt="services"
           className={styles.heroSectionImage}
         />
+      </section> */}
+      <section className={styles.heroSection}>
+        <div className={styles.heroContent}>
+          <div className={styles.heroTitleContent}>
+            <BreadcrumbNav subTitle="services" />
+            <span className={styles.heroSubtitle}>
+              <span>
+                <span style={{ fontWeight: 'bold' }}>Smart Solutions </span>for
+              </span>
+              <span>
+                Your <span style={{ fontWeight: 'bold' }}> Grouth</span>
+              </span>
+            </span>
+          </div>
+        </div>
       </section>
       <DigitalSolutions />
       <Accreditation />

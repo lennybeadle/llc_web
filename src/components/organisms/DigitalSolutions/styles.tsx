@@ -3,7 +3,7 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6px;
+  padding-top: 30px;
   position: relative;
   z-index: 10;
 `;
