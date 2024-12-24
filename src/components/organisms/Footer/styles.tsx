@@ -4,6 +4,7 @@ export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
   padding: 45px 80px 0;
   @media (max-width: 991px) {
     padding: 50px 20px;

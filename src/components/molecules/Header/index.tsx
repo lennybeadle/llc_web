@@ -23,33 +23,30 @@ export const Header = ({ type = 'icon' }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const toggleDrawer =
     (open: boolean) =>
-    (event: React.KeyboardEvent | React.MouseEvent): void => {
-      // Close drawer for certain key events
-      if (
-        event.type === 'keydown' &&
-        ((event as React.KeyboardEvent).key === 'Tab' ||
-          (event as React.KeyboardEvent).key === 'Shift')
-      ) {
-        return;
-      }
-      setMenuOpen(open);
-    };
+      (event: React.KeyboardEvent | React.MouseEvent): void => {
+        // Close drawer for certain key events
+        if (
+          event.type === 'keydown' &&
+          ((event as React.KeyboardEvent).key === 'Tab' ||
+            (event as React.KeyboardEvent).key === 'Shift')
+        ) {
+          return;
+        }
+        setMenuOpen(open);
+      };
 
   const isActive = (path: string) => location.pathname === path;
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
-        {type === 'icon' ? (
-          <img
-            loading="lazy"
-            src={LogoIcon}
-            className={styles.logo}
-            alt="LLC Tech company logo"
-            onClick={() => navigate('/')}
-          />
-        ) : (
-          <p className={styles.webAgency}>Web Agency</p>
-        )}
+        <img
+          loading="lazy"
+          src={LogoIcon}
+          className={styles.logo}
+          alt="LLC Tech company logo"
+          onClick={() => navigate('/')}
+        />
+
 
         {isMobile && (
           <IconButton
@@ -191,6 +188,8 @@ export const Header = ({ type = 'icon' }) => {
                 borderRadius: '15px',
                 padding: '10px 20px',
               }}
+              component={Link}
+              to="/contact"
             >
               Get in Touch
             </Button>

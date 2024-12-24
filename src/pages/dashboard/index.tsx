@@ -3,12 +3,14 @@ import { TeamMember } from '../../components/molecules/TeamMember';
 import { TestimonialCard } from '../../components/molecules/TestimonialCard';
 import { Header } from '../../components/molecules/Header';
 import styles from './styles.module.css';
+import { Link } from 'react-router-dom';
 
 import MouseImage from '../../assets/images/icons/mouse.svg';
 import { ServicesSection } from '../../components/organisms/ServiceSection';
 import { CaseStudiesSection } from '../../components/organisms/CaseStudies';
 import { Advertise } from '../../components/molecules/Advertise';
 
+import JoinPiggyIcon from '../../assets/images/icons/joinpiggy.svg';
 import KlarnaIcon from '../../assets/images/icons/klarna.svg';
 import LunaIcon from '../../assets/images/icons/luna.svg';
 import BananaIcon from '../../assets/images/icons/banana.svg';
@@ -116,7 +118,9 @@ const Dashboard = () => {
             </p>
           </div>
           <div className={styles.heroButtonContent}>
-            <button className={styles.heroButton}>More Details</button>
+            <Link to="/services">
+              <button className={styles.heroButton}>More Details</button>
+            </Link>
             <img
               loading="lazy"
               src={MouseImage}
@@ -156,7 +160,7 @@ const Dashboard = () => {
         </div>
       </section>
       <Advertise
-        images={[KlarnaIcon, LunaIcon, BananaIcon, ItrexIcon]}
+        images={[KlarnaIcon, LunaIcon, BananaIcon, ItrexIcon, JoinPiggyIcon]}
         digital={200}
         text={'Trusted Companies'}
       />

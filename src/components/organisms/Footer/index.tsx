@@ -30,11 +30,8 @@ export const Footer = ({ type = 'icon' }) => {
       <S.FooterContent>
         <S.MainSection>
           <S.CompanyInfo>
-            {type === 'icon' ? (
-              <S.Logo src={LogoIcon} alt="LLC Tech Logo" loading="lazy" />
-            ) : (
-              <S.WebAgency>Web Agency</S.WebAgency>
-            )}
+            <S.Logo src={LogoIcon} alt="LLC Tech Logo" loading="lazy" />
+
             <S.Description>
               At LLC Tech, we deliver tailored solutions to drive growth and
               build lasting partnerships, ensuring your business stays ahead.

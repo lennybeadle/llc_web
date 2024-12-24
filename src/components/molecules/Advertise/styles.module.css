@@ -38,6 +38,7 @@
   height: 40px; /* Adjust the size as needed */
   opacity: 0.6; /* Grey-out effect */
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .logo:hover {

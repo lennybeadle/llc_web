@@ -16,10 +16,10 @@ export const LearnMoreCard = ({
       <S.ServiceIcon loading="lazy" src={icon} alt="" />
       <S.ServiceTitle>{title}</S.ServiceTitle>
       <S.ServiceDescription>{description}</S.ServiceDescription>
-      <S.LearnMoreButton>
+      {/* <S.LearnMoreButton>
         <span>Learn More</span>
         <S.ArrowIcon loading="lazy" src={ArrowIcon} alt="" />
-      </S.LearnMoreButton>
+      </S.LearnMoreButton> */}
     </S.CardContainer>
   );
 };

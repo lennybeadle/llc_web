@@ -14,6 +14,7 @@ export const CardContainer = styled.article`
   @media (max-width: 991px) {
     margin: 20px 0;
     padding: 40px 20px;
+   align-items: center;
   }
 `;
 
@@ -36,6 +37,9 @@ export const ServiceDescription = styled.p`
   color: #5a5a5a;
   font: 400 16px/26px Roboto, sans-serif;
   margin: 0 0 29px;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 `;
 
 export const LearnMoreButton = styled.button`

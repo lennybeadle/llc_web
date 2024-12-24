@@ -88,9 +88,10 @@ export const SubmitButton = styled.button`
     width: 40%;
   }
   @media (max-width: 541px) {
-    margin-left: 10px;
+    margin: 45px auto 10px;
     padding: 0 20px;
-    width: 80%;
+    width: 100%;
+    height: 60px;
   }
 `;
 

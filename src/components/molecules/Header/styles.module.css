@@ -16,6 +16,7 @@
 .logo {
   aspect-ratio: 2.35;
   object-fit: contain;
+  cursor: pointer;
   width: 120px;
 }
 
@@ -79,6 +80,9 @@
   padding: 16px 23px;
   border: none;
   cursor: pointer;
+}
+button:hover {
+  filter: brightness(.9) contrast(1.2)
 }
 
 a {

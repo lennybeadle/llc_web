@@ -7,12 +7,25 @@
   font-family: Roboto, sans-serif;
   font-weight: 700;
   line-height: 26px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Prevents the image from spilling out of the container */
+}
+
+.blogCard:hover .blogImage {
+  transform: scale(1.1) translateY(-8px);
 }
 
 .blogImage {
   object-fit: contain;
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+  height: auto;
   width: 100%;
   border-radius: 25px 25px 0 0;
+}
+
+.blogCard:hover .blogTitle {
+  color: #ffd800; /* Change text color to yellow */
 }
 
 .content {
