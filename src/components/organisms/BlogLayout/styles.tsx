@@ -10,7 +10,7 @@ export const Layout = styled.main`
   justify-content: center;
   padding: 55px 80px;
   @media (max-width: 991px) {
-    padding: 0 20px;
+    padding: 20px 20px;
   }
   width: 100%;
 `;

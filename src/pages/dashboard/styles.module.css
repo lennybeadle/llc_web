@@ -159,7 +159,7 @@
 .description {
   color: #5a5a5a;
   text-align: center;
-  margin: 0px 0 20px 33px;
+  margin: 0px 0 20px 0;
   width: 50%;
   font: 400 16px/26px Roboto, sans-serif;
 }
@@ -188,6 +188,9 @@
   .heroButton {
     padding: 15px 30px;
     margin-top: 40px;
+  }
+  .description {
+    width: 80%;
   }
 
   .servicesSection,

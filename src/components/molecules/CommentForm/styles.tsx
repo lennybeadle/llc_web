@@ -14,6 +14,9 @@ export const FormWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  @media (max-width: 991px) {
+    width: 80%;
+  }
 `;
 
 export const FormTitle = styled.h2`

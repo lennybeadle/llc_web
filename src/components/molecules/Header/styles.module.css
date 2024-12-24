@@ -16,7 +16,7 @@
 .logo {
   aspect-ratio: 2.35;
   object-fit: contain;
-  width: 160px;
+  width: 120px;
 }
 
 .navigation {
@@ -107,7 +107,7 @@ a:focus {
 }
 @media (max-width: 991px) {
   .header {
-    padding: 10px 20px;
+    padding: 20px 20px;
   }
 
   .navigation {

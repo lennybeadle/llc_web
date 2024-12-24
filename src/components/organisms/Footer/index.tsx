@@ -61,8 +61,8 @@ export const Footer = ({ type = 'icon' }) => {
 
       <S.Copyright>
         <S.CopyrightText>
-          <span>Copyright © 2024 - WordPress Theme by </span>
-          <S.CompanyName>CreativeThemes</S.CompanyName>
+          <span>Copyright © 2025 • LLC-Tech </span>
+          <S.CompanyName>All Rights Reserved</S.CompanyName>
         </S.CopyrightText>
       </S.Copyright>
     </S.FooterContainer>

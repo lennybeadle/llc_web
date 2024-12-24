@@ -86,6 +86,7 @@ export const RightColumn = styled.div`
   flex-direction: row;
   @media (max-width: 991px) {
     width: 100%;
+    flex-direction: column;
   }
 `;
 
@@ -108,6 +109,7 @@ export const ServicesGridLow = styled.div`
 
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
+    margin: 10px;
   }
 `;
 

@@ -4,6 +4,9 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 991px) {
+    width: 90%;
+  }
 `;
 export const ContentWrapper = styled.article`
   width: 80%;
@@ -15,6 +18,9 @@ export const ContentWrapper = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 991px) {
+    padding: 0;
+  }
 `;
 
 export const FeaturedImage = styled.img`
@@ -30,8 +36,10 @@ export const ContentText = styled.div`
     color: #000;
     margin: 40px 0 20px;
   }
-
   p {
     margin-bottom: 20px;
+  }
+  @media (max-width: 991px) {
+    width: 100%;
   }
 `;

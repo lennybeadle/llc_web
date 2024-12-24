@@ -132,9 +132,12 @@ export const SectionTitle = styled.h2`
 export const BlogDescription = styled.p`
   color: #5a5a5a;
   text-align: center;
-  margin: 0 0 20px 33px;
+  margin: 0 0 20px 0;
   width: 50%;
   font: 400 16px/26px Roboto, sans-serif;
+  @media (max-width: 991px) {
+    width: 70%;
+  }
 `;
 
 export const BlogGrid = styled.div`
