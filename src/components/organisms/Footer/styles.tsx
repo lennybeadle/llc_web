@@ -6,13 +6,12 @@ export const FooterContainer = styled.footer`
   align-items: center;
   padding: 45px 80px 0;
   @media (max-width: 991px) {
-    padding: 0 20px;
+    padding: 50px 20px;
   }
 `;
 
 export const FooterContent = styled.div`
   display: flex;
-  width: 1290px;
   max-width: 100%;
   gap: 20px;
   @media (max-width: 991px) {
@@ -36,6 +35,8 @@ export const CompanyInfo = styled.div`
   width: 82%;
   @media (max-width: 991px) {
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -51,11 +52,16 @@ export const Description = styled.p`
   margin-top: 32px;
   color: rgba(90, 90, 90, 1);
   font: 400 16px/26px Roboto, sans-serif;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 `;
 
 export const SocialLinks = styled.div`
-  width: 444px;
   margin-top: 33px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
   @media (max-width: 991px) {
     max-width: 100%;
   }
@@ -69,6 +75,7 @@ export const SecondarySection = styled.div`
   @media (max-width: 991px) {
     width: 100%;
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -80,7 +87,7 @@ export const Copyright = styled.div`
   text-align: center;
   @media (max-width: 991px) {
     margin-top: 40px;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
 `;
 
@@ -94,4 +101,12 @@ export const CopyrightText = styled.p`
 
 export const CompanyName = styled.span`
   flex-grow: 0;
+`;
+
+export const WebAgency = styled.p`
+  color: #000;
+  font-size: 28px;
+  text-align: center;
+  display: flex;
+  align-items: center;
 `;

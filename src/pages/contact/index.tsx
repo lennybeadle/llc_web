@@ -9,7 +9,11 @@ const Contact = () => {
     <main className={styles.mainContainer}>
       <Header />
       <section className={styles.heroSection}>
-        <img src={ContactImage} alt="contact" />
+        <img
+          src={ContactImage}
+          alt="contact"
+          className={styles.heroSectionImage}
+        />
       </section>
       <ContactForm />
       <Footer />

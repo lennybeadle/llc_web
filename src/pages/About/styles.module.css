@@ -38,6 +38,17 @@
   gap: 40px;
 }
 
+.heroSection {
+  margin-bottom: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.heroSectionImage {
+  background-size: cover;
+  width: 100%;
+}
+
 @media (max-width: 991px) {
   .blogSection {
     padding: 40px 20px;

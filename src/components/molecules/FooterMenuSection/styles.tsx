@@ -5,6 +5,10 @@ export const MenuContainer = styled.nav`
   flex-direction: column;
   color: rgba(90, 90, 90, 1);
   font: 400 16px Roboto, sans-serif;
+  @media (max-width: 991px) {
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const MenuTitle = styled.h2`
@@ -21,6 +25,9 @@ export const LinkList = styled.ul`
 
 export const MenuItem = styled.li`
   margin-bottom: 0px;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 `;
 
 export const MenuLink = styled.a`

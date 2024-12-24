@@ -1,7 +1,11 @@
 import * as S from './styles';
 import { ServiceCard } from '../../molecules/ServiceCard';
 import LeftImage from '../../../assets/images/icons/large-left.svg';
-import DesignIcon from '../../../assets/images/icons/design.svg';
+import ServiceIcon1 from '../../../assets/images/icons/serviceIcon1.svg';
+import ServiceIcon2 from '../../../assets/images/icons/serviceIcon2.svg';
+import ServiceIcon3 from '../../../assets/images/icons/serviceIcon3.svg';
+import ServiceIcon4 from '../../../assets/images/icons/serviceIcon4.svg';
+
 interface ServiceCardProps {
   icon: string;
   title: string;
@@ -10,13 +14,13 @@ interface ServiceCardProps {
 
 const servicesData1: ServiceCardProps[] = [
   {
-    icon: DesignIcon,
+    icon: ServiceIcon1,
     title: 'Artificial Intelligence & Machine Learning',
     description:
       'Empowering smarter decisions and optimized operations with tailored AI solutions',
   },
   {
-    icon: DesignIcon,
+    icon: ServiceIcon2,
     title: 'Software Solutions',
     description:
       'Custom-built software designed to meet your unique business goals and streamline processes',
@@ -24,13 +28,13 @@ const servicesData1: ServiceCardProps[] = [
 ];
 const servicesData2: ServiceCardProps[] = [
   {
-    icon: DesignIcon,
+    icon: ServiceIcon3,
     title: 'Cloud Computing & Cybersecurity',
     description:
       'Secure, scalable cloud solutions backed by robust cybersecurity for peace of mind.',
   },
   {
-    icon: DesignIcon,
+    icon: ServiceIcon4,
     title: 'Design & Marketing',
     description:
       'Engage your audience with stunning visuals and strategic campaigns tailored to your brand.',

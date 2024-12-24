@@ -37,7 +37,7 @@ export const HomeLink = styled.a`
 `;
 
 export const CurrentPage = styled.span`
-  color: #5a5a5a;
+  color: #ffd800;
 `;
 
 export const Separator = styled.img`

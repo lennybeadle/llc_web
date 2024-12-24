@@ -7,6 +7,7 @@ export const MissionContainer = styled.section`
 
   @media (max-width: 991px) {
     margin-top: 40px;
+    padding: 20px;
   }
 `;
 

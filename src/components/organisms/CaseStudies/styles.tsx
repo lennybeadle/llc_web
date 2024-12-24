@@ -3,7 +3,7 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px 0 0 6px;
+  padding: 20px;
   position: relative;
   z-index: 10;
 `;
@@ -29,7 +29,10 @@ export const Description = styled.p`
   width: 50%;
   font: 400 16px/26px Roboto, sans-serif;
   @media (max-width: 991px) {
-    max-width: 100%;
+    max-width: 80%;
+  }
+  @media (max-width: 768px) {
+    width: 90%;
   }
 `;
 
@@ -37,8 +40,8 @@ export const TopProjectsRow = styled.div`
   display: flex;
   gap: 20px;
   width: 100%;
-  max-width: 1290px;
   margin-top: 37px;
+  justify-content: center;
   @media (max-width: 991px) {
     flex-direction: column;
   }
@@ -48,8 +51,8 @@ export const BottomProjectsRow = styled.div`
   display: flex;
   gap: 20px;
   width: 100%;
-  max-width: 1290px;
   margin-top: 35px;
+  justify-content: center;
   @media (max-width: 991px) {
     flex-direction: column;
   }
@@ -63,4 +66,7 @@ export const RightDirection = styled.div<{ image: string }>`
   height: 100%;
   z-index: -1;
   background: url(${(props) => props.image}) no-repeat;
+  @media (max-width: 991px) {
+    display: none;
+  }
 `;

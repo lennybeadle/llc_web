@@ -8,7 +8,7 @@ import InstagramIcon from '../../../assets/images/icons/footer_Instagram.svg';
 import YouTubeIcon from '../../../assets/images/icons/footer_YouTube.svg';
 
 import * as S from './styles';
-export const Footer: React.FC = () => {
+export const Footer = ({ type = 'icon' }) => {
   const siteMenuLinks = [
     { text: 'Services', href: '/services' },
     { text: 'Our Team', href: '/team' },
@@ -30,7 +30,11 @@ export const Footer: React.FC = () => {
       <S.FooterContent>
         <S.MainSection>
           <S.CompanyInfo>
-            <S.Logo src={LogoIcon} alt="LLC Tech Logo" loading="lazy" />
+            {type === 'icon' ? (
+              <S.Logo src={LogoIcon} alt="LLC Tech Logo" loading="lazy" />
+            ) : (
+              <S.WebAgency>Web Agency</S.WebAgency>
+            )}
             <S.Description>
               At LLC Tech, we deliver tailored solutions to drive growth and
               build lasting partnerships, ensuring your business stays ahead.

@@ -10,4 +10,11 @@
 
 .heroSection {
   margin-bottom: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.heroSectionImage {
+  background-size: cover;
+  width: 100%;
 }

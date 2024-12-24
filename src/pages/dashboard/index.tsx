@@ -8,17 +8,18 @@ import MouseImage from '../../assets/images/icons/mouse.svg';
 import { ServicesSection } from '../../components/organisms/ServiceSection';
 import { CaseStudiesSection } from '../../components/organisms/CaseStudies';
 import { Advertise } from '../../components/molecules/Advertise';
-import DropBoxIcon from '../../assets/images/icons/dropbox.svg';
-import SlackIcon from '../../assets/images/icons/slack.svg';
-import ShopifyIcon from '../../assets/images/icons/shopify.svg';
-import GoogleIcon from '../../assets/images/icons/google.svg';
+
+import KlarnaIcon from '../../assets/images/icons/klarna.svg';
+import LunaIcon from '../../assets/images/icons/luna.svg';
+import BananaIcon from '../../assets/images/icons/banana.svg';
+import ItrexIcon from '../../assets/images/icons/itrex.svg';
 import { Footer } from '../../components/organisms/Footer';
 import Member1 from '../../assets/images/backgrounds/member1.svg';
 import Member2 from '../../assets/images/backgrounds/member2.svg';
 import Member3 from '../../assets/images/backgrounds/member3.svg';
-import Blog1 from '../../assets/images/backgrounds/blog1.svg';
-import Blog2 from '../../assets/images/backgrounds/blog2.svg';
-import Blog3 from '../../assets/images/backgrounds/blog3.svg';
+import Blog1 from '../../assets/images/backgrounds/aboutBlog1.svg';
+import Blog2 from '../../assets/images/backgrounds/aboutBlog2.svg';
+import Blog3 from '../../assets/images/backgrounds/aboutBlog3.svg';
 import Avatar1 from '../../assets/images/icons/avatar-1.svg';
 import Avatar2 from '../../assets/images/icons/avatar-2.svg';
 
@@ -58,17 +59,27 @@ const testimonials = [
 const blogPosts = [
   {
     image: Blog1,
-    categories: ['agency', 'news'],
     title: 'Massa Vitae Toutor Condimentum Lacinia Quis',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.…',
+    meta: {
+      tags: ['agency', 'news'],
+      author: 'SAKET GAUTAM',
+      date: 'JULY 5, 2024',
+    },
+    content: '',
   },
   {
     image: Blog2,
-    categories: ['news'],
     title: 'Venenatis Urna Cursus Eget Nunc Scelerisque',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.…',
+    meta: {
+      tags: ['news'],
+      author: 'SAKET GAUTAM',
+      date: 'JULY 5, 2024',
+    },
+    content: '',
   },
   {
     image: Blog3,
@@ -76,6 +87,12 @@ const blogPosts = [
     title: 'Donec Adipiscing Tristique Risus Nec Feugiat',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.…',
+    meta: {
+      tags: ['news'],
+      author: 'SAKET GAUTAM',
+      date: 'JULY 5, 2024',
+    },
+    content: '',
   },
 ];
 
@@ -86,27 +103,32 @@ const Dashboard = () => {
 
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>
-            LLC Tech
-            <span className={styles.heroSubtitle}>
-              Trusted in Public Technology Innovation
-            </span>
-          </h1>
-          <p className={styles.heroTagline}>
-            Precision. Integration. Solutions Built to Last.
-          </p>
-          <button className={styles.heroButton}>More Details</button>
-          <img
-            loading="lazy"
-            src={MouseImage}
-            className={styles.heroIcon}
-            alt=""
-          />
+          <div className={styles.heroTitleContent}>
+            <h1 className={styles.heroTitle}>
+              LLC Tech
+              <span className={styles.heroSubtitle}>
+                <span style={{ fontWeight: 'bold' }}>Trusted </span>in Public
+                Technology Innovation
+              </span>
+            </h1>
+            <p className={styles.heroTagline}>
+              Precision. Integration. Solutions Built to Last...
+            </p>
+          </div>
+          <div className={styles.heroButtonContent}>
+            <button className={styles.heroButton}>More Details</button>
+            <img
+              loading="lazy"
+              src={MouseImage}
+              className={styles.heroIcon}
+              alt=""
+            />
+          </div>
         </div>
       </section>
       <ServicesSection />
       <CaseStudiesSection />
-      <section className={styles.teamSection}>
+      {/* <section className={styles.teamSection}>
         <div className={styles.leftDirection} />
         <h2 className={styles.sectionTitle}>Our Professional Team</h2>
         <p className={styles.sectionDescription}>
@@ -118,7 +140,7 @@ const Dashboard = () => {
             <TeamMember key={index} {...member} />
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.testimonialsSection}>
         <span className={styles.featuredProjectsLabel}>TESTIMONIALS</span>
@@ -134,12 +156,12 @@ const Dashboard = () => {
         </div>
       </section>
       <Advertise
-        images={[SlackIcon, DropBoxIcon, ShopifyIcon, GoogleIcon]}
+        images={[KlarnaIcon, LunaIcon, BananaIcon, ItrexIcon]}
         digital={200}
         text={'Trusted Companies'}
       />
       <section className={styles.blogSection}>
-        <h2 className={styles.sectionTitle}>Latest from Blog</h2>
+        <h2 className={styles.sectionTitle}>Latest Case Study Work</h2>
         <p className={styles.description}>
           Stay informed with the latest insights, trends, and updates from our
           team. Explore how technology and innovation are shaping the future of

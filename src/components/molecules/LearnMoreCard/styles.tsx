@@ -8,7 +8,8 @@ export const CardContainer = styled.article`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 20px;
+  justify-content: space-between;
+  margin: 20px 0;
   width: 100%;
   @media (max-width: 991px) {
     padding: 40px 20px;

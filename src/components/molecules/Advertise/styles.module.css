@@ -43,3 +43,13 @@
 .logo:hover {
   opacity: 1;
 }
+
+@media (max-width: 991px) {
+  .logo {
+    flex-direction: column;
+  }
+  .logos {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

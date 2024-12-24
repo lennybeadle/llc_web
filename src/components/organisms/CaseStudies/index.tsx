@@ -15,8 +15,8 @@ interface CaseStudy {
 }
 
 const caseStudies: CaseStudy[] = [
-  { title: 'Sit dapibus auctor' },
-  { title: 'Est mattis sit' },
+  { title: 'Luna - Healthcare Companion' },
+  { title: 'Klarna - Web extension' },
   { title: 'Sed efficitur faucibus' },
   { title: 'Dapibus curabitur' },
   { title: 'Lacus vel', height: '169px' },
@@ -48,12 +48,12 @@ export function CaseStudiesSection() {
       <S.BottomProjectsRow>
         <ProjectCard
           title={caseStudies[2].title}
-          width="33%"
+          width="32%"
           image={CaseImage3}
         />
         <ProjectCard
           title={caseStudies[3].title}
-          width="33%"
+          width="32%"
           image={CaseImage4}
         />
         <ProjectCardDouble

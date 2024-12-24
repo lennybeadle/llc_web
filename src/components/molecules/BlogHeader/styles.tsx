@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   display: flex;
-  width: 721px;
-  max-width: 100%;
+  width: 50%;
   flex-direction: column;
   align-items: center;
 `;

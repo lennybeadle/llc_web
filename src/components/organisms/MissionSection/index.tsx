@@ -23,12 +23,12 @@ export const MissionSection: React.FC<MissionProps> = ({ image, skills }) => {
         </S.ImageColumn>
         <S.ContentColumn>
           <S.MissionInfo>
-            <S.Subtitle>Our mission</S.Subtitle>
+            <S.Subtitle>OUR MISSION</S.Subtitle>
             <S.Title>Turn Ideas into Reality</S.Title>
             <S.Description>
-              Integer at faucibus urna. Nullam condimentum leo id elit sagittis
-              auctor. Curabitur elementum nunc a leo imperdiet, nec elementum
-              diam elementum.
+              We transform your vision into actionable solutions through
+              innovation and expertise, delivering tailored results that drive
+              success.
             </S.Description>
             <S.SkillsGrid>
               {skills.map((skill, index) => (

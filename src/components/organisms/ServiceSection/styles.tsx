@@ -69,7 +69,7 @@ export const ExploreButton = styled.button`
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.2s;
-
+  width: 40%;
   &:hover {
     transform: translateY(-2px);
   }

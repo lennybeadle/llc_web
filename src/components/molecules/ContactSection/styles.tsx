@@ -5,6 +5,10 @@ export const ContactContainer = styled.section`
   align-items: flex-start;
   color: rgba(90, 90, 90, 1);
   font: 400 16px Roboto, sans-serif;
+  @media (max-width: 991px) {
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const ContactTitle = styled.h2`
@@ -16,9 +20,15 @@ export const ContactTitle = styled.h2`
 export const ContactInfo = styled.p`
   line-height: 26px;
   margin: 0;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 `;
 
 export const ContactSupport = styled.p`
   line-height: 26px;
   margin: 35px 0 0;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 `;

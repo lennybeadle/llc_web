@@ -10,18 +10,19 @@ import SlackIcon from '../../assets/images/icons/slack.svg';
 import ShopifyIcon from '../../assets/images/icons/shopify.svg';
 import GoogleIcon from '../../assets/images/icons/google.svg';
 import StudyImage from '../../assets/images/backgrounds/service.svg';
+import { Accreditation } from '../../components/organisms/Accreditation';
 const missionData = [
   {
-    label: 'SEO',
-    percentage: 80,
+    label: 'Years of Industry Experience',
+    percentage: 40,
   },
   {
-    label: 'Design',
-    percentage: 90,
+    label: 'Projects Served',
+    percentage: 50,
   },
   {
-    label: 'Development',
-    percentage: 87,
+    label: 'Satisfaction',
+    percentage: 100,
   },
 ];
 const Services = () => {
@@ -29,9 +30,14 @@ const Services = () => {
     <main className={styles.mainContainer}>
       <Header />
       <section className={styles.heroSection}>
-        <img src={StudyImage} alt="services" />
+        <img
+          src={StudyImage}
+          alt="services"
+          className={styles.heroSectionImage}
+        />
       </section>
       <DigitalSolutions />
+      <Accreditation />
       <MissionSection image={MissionImage} skills={missionData} />
       <Advertise
         images={[SlackIcon, DropBoxIcon, ShopifyIcon, GoogleIcon]}

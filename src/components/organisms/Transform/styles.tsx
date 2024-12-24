@@ -2,8 +2,13 @@ import styled from 'styled-components';
 
 export const MissionContainer = styled.section`
   width: 100%;
-  max-width: 1256px;
-  margin: 100px auto 80px;
+  margin: 100px auto 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
 
   @media (max-width: 991px) {
     margin-top: 40px;
@@ -15,6 +20,7 @@ export const MissionContent = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 
+  width: 80%;
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
   }
@@ -89,4 +95,54 @@ export const SkillPercentage = styled.div`
   color: #ffc900;
   font: 700 40px/1 Roboto, sans-serif;
   margin-top: 26px;
+`;
+
+export const RightDirection = styled.div<{ image: string }>`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(${(props) => props.image}) no-repeat;
+  background-position: right top;
+`;
+
+export const BlogSection = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  @media (max-width: 991px) {
+    padding: 40px 20px;
+  }
+`;
+
+export const SectionTitle = styled.h2`
+  color: #000;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 40px;
+`;
+
+export const BlogDescription = styled.p`
+  color: #5a5a5a;
+  text-align: center;
+  margin: 0 0 20px 33px;
+  width: 50%;
+  font: 400 16px/26px Roboto, sans-serif;
+`;
+
+export const BlogGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
 `;

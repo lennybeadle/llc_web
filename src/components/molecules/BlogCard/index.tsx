@@ -1,26 +1,28 @@
 import React from 'react';
 import styles from './styles.module.css';
+import { BlogProps } from '../../../utils/types';
+import { useNavigate } from 'react-router-dom';
 
-interface BlogCardProp {
-  image: string;
-  categories: string[];
-  title: string;
-  excerpt: string;
-}
 export const BlogCard = ({
   image,
-  categories,
   title,
   excerpt,
-}: BlogCardProp) => {
+  meta,
+  content,
+}: BlogProps) => {
+  const navigate = useNavigate();
+
+  const goToDetail = () => {
+    navigate(`/subBlog/`, { state: { image, title, excerpt, meta, content } });
+  };
   return (
-    <article className={styles.blogCard}>
+    <article className={styles.blogCard} onClick={goToDetail}>
       <img loading="lazy" src={image} className={styles.blogImage} alt="" />
       <div className={styles.content}>
         <div className={styles.categories}>
-          {categories.map((category, index) => (
+          {meta?.tags?.map((tag, index) => (
             <span key={index} className={styles.category}>
-              {category}
+              {tag}
             </span>
           ))}
         </div>

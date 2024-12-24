@@ -1,19 +1,24 @@
 import * as S from './styles';
-import DesignIcon from '../../../assets/images/icons/design.svg';
+import ArrowIcon from '../../../assets/images/icons/rightUpper.svg';
 interface LearnMoreCardProps {
   title: string;
   description: string;
+  icon: string;
 }
 
-export const LearnMoreCard = ({ title, description }: LearnMoreCardProps) => {
+export const LearnMoreCard = ({
+  icon,
+  title,
+  description,
+}: LearnMoreCardProps) => {
   return (
     <S.CardContainer>
-      <S.ServiceIcon loading="lazy" src={DesignIcon} alt="" />
+      <S.ServiceIcon loading="lazy" src={icon} alt="" />
       <S.ServiceTitle>{title}</S.ServiceTitle>
       <S.ServiceDescription>{description}</S.ServiceDescription>
       <S.LearnMoreButton>
         <span>Learn More</span>
-        <S.ArrowIcon loading="lazy" src="/arrow-icon.svg" alt="" />
+        <S.ArrowIcon loading="lazy" src={ArrowIcon} alt="" />
       </S.LearnMoreButton>
     </S.CardContainer>
   );

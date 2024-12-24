@@ -7,6 +7,8 @@ import Services from './pages/services';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Contact from './pages/contact';
+import SubBlog from './pages/SubBlog';
+import CaseStudies from './pages/CaseStudy';
 
 export type RouteConfig = PathRouteProps & {
   guard?: any;
@@ -84,6 +86,14 @@ const routes = [
   {
     path: '/contact',
     element: <Contact />,
+  },
+  {
+    path: '/subBlog',
+    element: <SubBlog />,
+  },
+  {
+    path: '/caseStudies',
+    element: <CaseStudies />,
   },
   {
     guard: GuestGuard,

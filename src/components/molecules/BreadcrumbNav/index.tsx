@@ -1,7 +1,11 @@
 import * as React from 'react';
 import * as S from './styles';
 import DividerIcon from '../../../assets/images/icons/divider.svg';
-export const BreadcrumbNav: React.FC = () => {
+
+interface BreadcrumbNavProps {
+  subTitle: string;
+}
+export const BreadcrumbNav: React.FC<BreadcrumbNavProps> = ({ subTitle }) => {
   return (
     <S.Nav aria-label="Breadcrumb">
       <S.BreadcrumbList>
@@ -12,7 +16,7 @@ export const BreadcrumbNav: React.FC = () => {
         </S.BreadcrumbItem>
         <S.Separator aria-hidden="true" src={DividerIcon} alt="" />
         <S.BreadcrumbItem>
-          <S.CurrentPage>Blog</S.CurrentPage>
+          <S.CurrentPage>{subTitle}</S.CurrentPage>
         </S.BreadcrumbItem>
       </S.BreadcrumbList>
     </S.Nav>
