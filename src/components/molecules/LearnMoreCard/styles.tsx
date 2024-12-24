@@ -9,9 +9,10 @@ export const CardContainer = styled.article`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 20px;
   width: 100%;
   @media (max-width: 991px) {
+    margin: 20px 0;
     padding: 40px 20px;
   }
 `;
