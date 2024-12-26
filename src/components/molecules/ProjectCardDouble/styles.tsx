@@ -11,7 +11,7 @@ export const CardWrapper = styled.div<{ width?: string }>`
   transition: transform 0.2s;
 
   /* If you have any default heights or padding, define them: */
-  height: 250px; 
+  height: 250px;
   padding: 20px;
 
   &:hover {
@@ -23,11 +23,7 @@ export const CardWrapper = styled.div<{ width?: string }>`
   }
 
   @media (max-width: 991px) {
-    width: 100% !important; 
-    height: 250px; 
-    padding: 20px; 
-    border-radius: 20px; /* or unset, if you prefer no radius on mobile */
-    margin-bottom: 20px; /* some spacing between stacked cards */
+    height: 100%;
   }
 `;
 
@@ -50,7 +46,7 @@ export const DoubleCardContainer = styled.div`
 export const CardContent = styled.div<{ image: string; height?: string }>`
   background: url(${(props) => props.image}) no-repeat center center;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
   transition: transform 0.2s;
 
@@ -67,11 +63,8 @@ export const CardContent = styled.div<{ image: string; height?: string }>`
   }
 
   @media (max-width: 991px) {
-    width: 100% !important; 
-    height: 250px !important; /* override to keep uniform */
-    padding: 20px;           /* unify padding */
-    border-radius: 20px;     /* or unset if you want no radius */
-    margin-bottom: 20px;     /* space between stacked items */
-    background-size: cover;  /* or contain, but cover is typical for consistent fill */
+    background-size: cover;
+    height: 500px;
+    padding: 400px 40px 20px;
   }
 `;

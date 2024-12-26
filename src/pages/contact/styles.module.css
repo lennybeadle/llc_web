@@ -87,6 +87,11 @@
 .contentFormat {
   font-size: 16px;
 }
+.contactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 991px) {
   .heroSection {
     width: 90%;
@@ -118,5 +123,6 @@
   }
   .contactWrapper {
     flex-direction: column;
+    gap: 10px;
   }
 }

@@ -3,8 +3,8 @@ import { ProjectCard } from '../../molecules/ProjectCard';
 import { ProjectCardDouble } from '../../molecules/ProjectCardDouble';
 import CaseImage1 from '../../../assets/images/backgrounds/study1.svg';
 import CaseImage2 from '../../../assets/images/backgrounds/study2.svg';
-import CaseImage3 from '../../../assets/images/backgrounds/case6.svg';
-import CaseImage4 from '../../../assets/images/backgrounds/case4.svg';
+import CaseImage3 from '../../../assets/images/backgrounds/classicDoge.png';
+import CaseImage4 from '../../../assets/images/backgrounds/itrex.png';
 import CaseImage5 from '../../../assets/images/backgrounds/case5.svg';
 import CaseImage6 from '../../../assets/images/backgrounds/case3.svg';
 
@@ -18,10 +18,10 @@ interface CaseStudy {
 const caseStudies: CaseStudy[] = [
   { title: 'Luna - Healthcare Companion' },
   { title: 'Klarna - Web extension' },
-  { title: 'Sed efficitur faucibus' },
-  { title: 'Dapibus curabitur' },
-  { title: 'Lacus vel', height: '161px' },
-  { title: 'Sit dapibus auctor', height: '161px' },
+  { title: 'ClassicDoge' },
+  { title: 'ItRex' },
+  { title: 'FinResi', height: '161px' },
+  { title: 'Mr Banana', height: '161px' },
 ];
 
 export function CaseStudiesSection() {
