@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import * as S from './styles';
 import { ServiceCard } from '../../molecules/ServiceCard';
 import LeftImage from '../../../assets/images/icons/large-left.svg';
@@ -42,6 +44,8 @@ const servicesData2: ServiceCardProps[] = [
 ];
 
 export const ServicesSection = () => {
+  const navigate = useNavigate();
+
   return (
     <S.SectionWrapper>
       <S.ContentContainer>
@@ -56,7 +60,11 @@ export const ServicesSection = () => {
             user-focused design, we're here to help you thrive in today's
             digital world.
           </S.Description>
-          <S.ExploreButton role="button" tabIndex={0}>
+          <S.ExploreButton
+            role="button"
+            tabIndex={0}
+            onClick={() => navigate('/services')}
+          >
             Explore More
           </S.ExploreButton>
         </S.LeftColumn>

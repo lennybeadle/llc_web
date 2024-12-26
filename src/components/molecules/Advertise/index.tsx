@@ -14,8 +14,11 @@ export const Advertise = ({ images, digital, text }: AdvertiseProp) => {
           <span className={styles.highlight}>{digital}+</span>{' '}
           <span>{text}</span>
         </p>
+
         {images.map((image, index) => (
-          <img key={index} src={image} alt="Slack" className={styles.logo} />
+          <div className={styles.LogoContainer}>
+            <img key={index} src={image} alt="Slack" className={styles.logo} />
+          </div>
         ))}
       </div>
     </div>

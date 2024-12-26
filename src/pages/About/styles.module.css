@@ -75,7 +75,7 @@
   display: flex;
   font-weight: 300;
   font-size: 36px;
-  line-height: 55px;
+  line-height: 36px;
   margin-top: 5px;
   width: 50%;
   gap: 10px;
@@ -90,7 +90,10 @@
   }
   .heroSection {
     min-width: 500px;
-    padding: 20px 0;
+    align-items: center;
+  }
+  .heroContent {
+    margin-top: 60px;
   }
   .heroTitleContent {
     display: flex;
@@ -104,6 +107,34 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
+    flex-direction: row;
+    width: 80%;
+  }
+  .heroSubText {
+    display: flex;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 764px) {
+  .heroContent {
+    margin-top: 60px;
+  }
+  .heroSubText {
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
   }
 }

@@ -1,9 +1,9 @@
 import * as S from './styles';
-import ISOIcon from '../../../assets/images/icons/iso.svg';
-import AWSIcon from '../../../assets/images/icons/aws.svg';
-import GoogleIcon from '../../../assets/images/icons/google-ad.svg';
+import ISOIcon from '../../../assets/images/icons/iso.png';
+import AWSIcon from '../../../assets/images/icons/aws.png';
+import GoogleIcon from '../../../assets/images/icons/google_ad.png';
 import MicrosoftIcon from '../../../assets/images/icons/microsoft.svg';
-import CyberIcon from '../../../assets/images/icons/cyber.svg';
+import CyberIcon from '../../../assets/images/icons/cyber.png';
 
 export function Accreditation() {
   const images = [ISOIcon, AWSIcon, GoogleIcon, MicrosoftIcon, CyberIcon];

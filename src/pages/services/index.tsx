@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet-async';
+
 import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import MissionSection from '../../components/organisms/MissionSection';
@@ -9,9 +11,7 @@ import DropBoxIcon from '../../assets/images/icons/dropbox.svg';
 import SlackIcon from '../../assets/images/icons/slack.svg';
 import ShopifyIcon from '../../assets/images/icons/shopify.svg';
 import GoogleIcon from '../../assets/images/icons/google.svg';
-import StudyImage from '../../assets/images/backgrounds/service.svg';
 import { Accreditation } from '../../components/organisms/Accreditation';
-import { Breadcrumb } from '../../components/organisms/SubBlogHeader/styles';
 import { BreadcrumbNav } from '../../components/molecules/BreadcrumbNav';
 const missionData = [
   {
@@ -30,6 +30,9 @@ const missionData = [
 const Services = () => {
   return (
     <main className={styles.mainContainer}>
+      <Helmet>
+        <title>Services | LLC Tech</title>
+      </Helmet>
       <Header />
       {/* <section className={styles.heroSection}>
         <img
@@ -43,12 +46,12 @@ const Services = () => {
           <div className={styles.heroTitleContent}>
             <BreadcrumbNav subTitle="services" />
             <span className={styles.heroSubtitle}>
-              <span>
+              <div className={styles.heroSubtext}>
                 <span style={{ fontWeight: 'bold' }}>Smart Solutions </span>for
-              </span>
-              <span>
+              </div>
+              <div className={styles.heroSubtext}>
                 Your <span style={{ fontWeight: 'bold' }}> Grouth</span>
-              </span>
+              </div>
             </span>
           </div>
         </div>

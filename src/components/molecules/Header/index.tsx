@@ -19,6 +19,7 @@ export const Header = ({ type = 'icon' }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hoveredPath, setHoveredPath] = useState<string>('');
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const toggleDrawer =
@@ -36,6 +37,13 @@ export const Header = ({ type = 'icon' }) => {
     };
 
   const isActive = (path: string) => location.pathname === path;
+  const handleMouseEnter = (path: string) => {
+    setHoveredPath(path);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredPath('');
+  };
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
@@ -58,45 +66,47 @@ export const Header = ({ type = 'icon' }) => {
 
         <nav className={styles.navigation}>
           <div className={styles.navGroup}>
-            {/* <div
-              className={isActive('/') ? styles.activeNavItem : styles.navItem}
-            >
-              <div className={styles.navText}>
-                <Link to="/">Home</Link>
-              </div>
-              {isActive('/') && <div className={styles.activeIndicator} />}
-            </div> */}
             <div
               className={
                 isActive('/services') ? styles.activeNavItem : styles.navItem
               }
+              onMouseEnter={() => handleMouseEnter('/services')}
+              onMouseLeave={handleMouseLeave}
             >
               <div className={styles.navText}>
                 <Link to="/services">Services</Link>
               </div>
-              {isActive('/services') && (
+              {isActive('/services') || hoveredPath === '/services' ? (
                 <div className={styles.activeIndicator} />
+              ) : (
+                <div className={styles.activeIndicatorWhite} />
               )}
             </div>
             <div
               className={
                 isActive('/about') ? styles.activeNavItem : styles.navItem
               }
+              onMouseEnter={() => handleMouseEnter('/about')}
+              onMouseLeave={handleMouseLeave}
             >
               <div className={styles.navText}>
                 <Link to="/about">About</Link>
               </div>
-              {isActive('/about') && <div className={styles.activeIndicator} />}
+              {(isActive('/about') || hoveredPath === '/about') && (
+                <div className={styles.activeIndicator} />
+              )}
             </div>
             <div
               className={
                 isActive('/caseStudies') ? styles.activeNavItem : styles.navItem
               }
+              onMouseEnter={() => handleMouseEnter('/caseStudies')}
+              onMouseLeave={handleMouseLeave}
             >
               <div className={styles.navText}>
                 <Link to="/caseStudies">Case Studies</Link>
               </div>
-              {isActive('/caseStudies') && (
+              {(isActive('/caseStudies') || hoveredPath === '/caseStudies') && (
                 <div className={styles.activeIndicator} />
               )}
             </div>
@@ -104,21 +114,27 @@ export const Header = ({ type = 'icon' }) => {
               className={
                 isActive('/blog') ? styles.activeNavItem : styles.navItem
               }
+              onMouseEnter={() => handleMouseEnter('/blog')}
+              onMouseLeave={handleMouseLeave}
             >
               <div className={styles.navText}>
                 <Link to="/blog">Blog</Link>
               </div>
-              {isActive('/blog') && <div className={styles.activeIndicator} />}
+              {(isActive('/blog') || hoveredPath === '/blog') && (
+                <div className={styles.activeIndicator} />
+              )}
             </div>
             <div
               className={
                 isActive('/contact') ? styles.activeNavItem : styles.navItem
               }
+              onMouseEnter={() => handleMouseEnter('/contact')}
+              onMouseLeave={handleMouseLeave}
             >
               <div className={styles.navText}>
                 <Link to="/contact">Contact</Link>
               </div>
-              {isActive('/contact') && (
+              {(isActive('/contact') || hoveredPath === '/contact') && (
                 <div className={styles.activeIndicator} />
               )}
             </div>

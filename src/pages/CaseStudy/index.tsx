@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet-async';
+
 import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import { BlogCard } from '../../components/molecules/BlogCard';
@@ -415,6 +417,9 @@ const headerData = {
 const CaseStudies = () => {
   return (
     <main className={styles.mainContainer}>
+      <Helmet>
+        <title>Case Studies | LLC Tech</title>
+      </Helmet>
       <Header />
       <BlogLayout
         title={headerData.title}
