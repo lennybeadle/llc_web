@@ -13,32 +13,31 @@ export const FeaturedProjectsLabel = styled.span`
   text-align: center;
   text-transform: uppercase;
   font: 700 16px/2 Roboto, sans-serif;
-    @media (max-width: 991px) {
-      margin-bottom: 20px;
+  @media (max-width: 991px) {
+    margin-bottom: 20px;
   }
 `;
 
 export const SectionTitle = styled.h2`
   color: #000;
   text-align: center;
-  margin: 36px 0 0 36px;
+  margin: 36px 0 0 0;
   font: 700 35px Roboto, sans-serif;
-    @media (max-width: 991px) {
-      margin: 0 0 10px 0;
-font-size: 25px;
+  @media (max-width: 991px) {
+    margin: 0 0 10px 0;
+    font-size: 25px;
   }
 `;
 
 export const Description = styled.p`
   color: #5a5a5a;
   text-align: center;
-  margin: 33px 0 0 33px;
+  margin: 33px 0 0 0;
   width: 50%;
   font: 400 16px/26px Roboto, sans-serif;
   @media (max-width: 991px) {
     max-width: 80%;
-      margin: 0;
-
+    margin: 0;
   }
   @media (max-width: 768px) {
     width: 90%;
@@ -57,7 +56,7 @@ export const TopProjectsRow = styled.div`
 
     /* Force each child (ProjectCard, etc.) to the same width on mobile */
     > * {
-      width: 100% !important; 
+      width: 100% !important;
       margin-bottom: 20px; /* optional spacing between cards */
     }
   }
@@ -75,7 +74,7 @@ export const BottomProjectsRow = styled.div`
 
     /* Force each child (ProjectCard, etc.) to the same width on mobile */
     > * {
-      width: 100% !important; 
+      width: 100% !important;
       margin-bottom: 20px; /* optional spacing between cards */
     }
   }
