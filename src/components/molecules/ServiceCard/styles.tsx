@@ -12,6 +12,8 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 991px) {
     padding: 40px 20px;
+    align-items: center;
+    text-align: center;
   }
 `;
 

@@ -1,5 +1,7 @@
+// ProjectCardDouble.tsx
 import * as React from 'react';
 import * as S from './styles';
+
 interface ProjectCardDoubleProps {
   titles: string[];
   width: string;
@@ -19,9 +21,6 @@ export function ProjectCardDouble({
         {titles.map((title, index) => (
           <S.CardContent
             key={index}
-            height={height}
-            isSecond={index === 1}
-            tabIndex={0}
             image={images[index]}
           >
             {title}

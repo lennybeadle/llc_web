@@ -18,10 +18,10 @@ interface CaseStudy {
 const caseStudies: CaseStudy[] = [
   { title: 'Luna - Healthcare Companion' },
   { title: 'Klarna - Web extension' },
-  { title: 'ClassicDoge' },
-  { title: 'ItRex' },
-  { title: 'FiinResi', height: '169px' },
-  { title: 'Mr Banana', height: '169px' },
+  { title: 'Sed efficitur faucibus' },
+  { title: 'Dapibus curabitur' },
+  { title: 'Lacus vel', height: '161px' },
+  { title: 'Sit dapibus auctor', height: '161px' },
 ];
 
 export function CaseStudiesSection() {

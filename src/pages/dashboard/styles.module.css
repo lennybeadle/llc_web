@@ -33,12 +33,14 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
 .heroButtonContent {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .heroTitle {
   color: #fff;
   font-size: 80px;
@@ -61,6 +63,7 @@
   font-weight: 400;
   margin-top: 20px;
 }
+
 
 .heroButton {
   border-radius: 15px;
@@ -91,6 +94,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
+
 .testimonialsSection {
   display: flex;
   justify-content: center;
@@ -100,6 +104,7 @@
   text-align: center;
   margin: 50px 0;
 }
+
 .blogSection {
   display: flex;
   justify-content: center;
@@ -109,6 +114,7 @@
   text-align: center;
   margin-bottom: 50px;
 }
+
 .teamSection {
   width: 100%;
   max-width: 1290px;
@@ -150,6 +156,10 @@
   gap: 40px;
 }
 
+
+.lineBreakOnMobile {
+  display: none; /* hidden on larger screens */
+}
 .featuredProjectsLabel {
   color: #000;
   text-align: center;
@@ -178,7 +188,15 @@
 
 @media (max-width: 991px) {
   .heroSection {
+    width: 90%;
     padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroTitleContent {
+    align-items: center;
   }
 
   .heroTitle {
@@ -186,10 +204,19 @@
     line-height: 53px;
   }
 
+  .heroSubtitle {
+    line-height: 45px;
+  }
+
+  .lineBreakOnMobile {
+    display: inline; /* or block/inline-block—whatever suits your layout */
+  }
+
   .heroButton {
     padding: 15px 30px;
     margin-top: 40px;
   }
+
   .description {
     width: 80%;
   }

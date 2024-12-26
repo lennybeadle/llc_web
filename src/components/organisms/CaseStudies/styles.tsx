@@ -13,6 +13,9 @@ export const FeaturedProjectsLabel = styled.span`
   text-align: center;
   text-transform: uppercase;
   font: 700 16px/2 Roboto, sans-serif;
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+  }
 `;
 
 export const SectionTitle = styled.h2`
@@ -20,6 +23,10 @@ export const SectionTitle = styled.h2`
   text-align: center;
   margin: 36px 0 0 36px;
   font: 700 35px Roboto, sans-serif;
+    @media (max-width: 991px) {
+      margin: 0 0 10px 0;
+font-size: 25px;
+  }
 `;
 
 export const Description = styled.p`
@@ -30,6 +37,8 @@ export const Description = styled.p`
   font: 400 16px/26px Roboto, sans-serif;
   @media (max-width: 991px) {
     max-width: 80%;
+      margin: 0;
+
   }
   @media (max-width: 768px) {
     width: 90%;
@@ -42,8 +51,15 @@ export const TopProjectsRow = styled.div`
   width: 100%;
   margin-top: 37px;
   justify-content: center;
+
   @media (max-width: 991px) {
     flex-direction: column;
+
+    /* Force each child (ProjectCard, etc.) to the same width on mobile */
+    > * {
+      width: 100% !important; 
+      margin-bottom: 20px; /* optional spacing between cards */
+    }
   }
 `;
 
@@ -53,8 +69,15 @@ export const BottomProjectsRow = styled.div`
   width: 100%;
   margin-top: 35px;
   justify-content: center;
+
   @media (max-width: 991px) {
     flex-direction: column;
+
+    /* Force each child (ProjectCard, etc.) to the same width on mobile */
+    > * {
+      width: 100% !important; 
+      margin-bottom: 20px; /* optional spacing between cards */
+    }
   }
 `;
 

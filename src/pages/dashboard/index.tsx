@@ -5,7 +5,7 @@ import { TestimonialCard } from '../../components/molecules/TestimonialCard';
 import { Header } from '../../components/molecules/Header';
 import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
-
+import styled from 'styled-components';
 import MouseImage from '../../assets/images/icons/mouse.svg';
 import { ServicesSection } from '../../components/organisms/ServiceSection';
 import { CaseStudiesSection } from '../../components/organisms/CaseStudies';
@@ -41,6 +41,15 @@ import Avatar2 from '../../assets/images/icons/avatar-2.svg';
 //     role: 'Head of Business Partnerships & Solutions',
 //   },
 // ];
+
+const Spacer = styled.div`
+  height: 80px;
+
+  @media (max-width: 768px) {
+    height: 40px; /* Smaller height on mobile */
+  }
+`;
+
 
 const testimonials = [
   {
@@ -250,7 +259,11 @@ const Dashboard = () => {
               </span>
             </h1>
             <p className={styles.heroTagline}>
-              Precision. Integration. Solutions Built to Last...
+              Precision. Integration.{' '}
+              <span className={styles.lineBreakOnMobile}>
+                <br />&nbsp;
+              </span>
+              Solutions Built to Last...
             </p>
           </div>
           <div className={styles.heroButtonContent}>
@@ -266,21 +279,9 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
+      <Spacer />
       <ServicesSection />
       <CaseStudiesSection />
-      {/* <section className={styles.teamSection}>
-        <div className={styles.leftDirection} />
-        <h2 className={styles.sectionTitle}>Our Professional Team</h2>
-        <p className={styles.sectionDescription}>
-          Meet the experts driving innovation and delivering exceptional
-          results.
-        </p>
-        <div className={styles.teamGrid}>
-          {teamMembers.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-      </section> */}
 
       <section className={styles.testimonialsSection}>
         <span className={styles.featuredProjectsLabel}>TESTIMONIALS</span>

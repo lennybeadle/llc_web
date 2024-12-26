@@ -49,6 +49,18 @@
   background-color: #ffd800;
   height: 2px;
   margin-top: 15px;
+
+  /* Span the full width but collapse via scaleX */
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  
+  /* Smooth animation */
+  transition: transform 0.3s ease;
+}
+
+.expanded {
+  transform: scaleX(1);
 }
 .activeIndicatorWhite {
   background-color: white;
@@ -57,9 +69,16 @@
 }
 
 .navItem {
+  display: inline-block;  /* or flex, depending on design */
+  position: relative;     /* so that the underline can appear relative to this */
+  cursor: pointer;
   color: #5a5a5a;
 }
-
+.navLink {
+  display: block;         /* ensures the link fills the container's area */
+  text-decoration: none;  /* remove underline from text */
+  color: inherit;         /* match parent text color */
+}
 .actions {
   display: flex;
   gap: 40px 51px;

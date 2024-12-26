@@ -1,14 +1,33 @@
 import styled from 'styled-components';
 
-export const CardWrapper = styled.div<{ width: string }>`
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: ${(props) => props.width};
-  margin-left: 10px;
+export const CardWrapper = styled.div<{ width?: string }>`
+  /* Desktop/tablet styles */
+  width: ${(props) => props.width || '100%'};
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  /* If you have any default heights or padding, define them: */
+  height: 250px; 
+  padding: 20px;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:focus {
+    outline: 3px solid #fff;
+    outline-offset: -3px;
+  }
+
   @media (max-width: 991px) {
-    width: 100%;
-    margin-left: 0;
+    width: 100% !important; 
+    height: 250px; 
+    padding: 20px; 
+    border-radius: 20px; /* or unset, if you prefer no radius on mobile */
+    margin-bottom: 20px; /* some spacing between stacked cards */
   }
 `;
 
@@ -18,36 +37,41 @@ export const DoubleCardContainer = styled.div`
   flex-direction: column;
   color: #fff;
   font: 700 20px Roboto, sans-serif;
+
   @media (max-width: 991px) {
     max-width: 100%;
   }
 `;
 
-export const CardContent = styled.div<{
-  height?: string;
-  isSecond?: boolean;
-  image: string;
-}>`
+/**
+ * CardContent now correctly types `height?: string; isSecond?: boolean; image: string;`
+ * so TS recognizes those props when passed from the parent component.
+ */
+export const CardContent = styled.div<{ image: string; height?: string }>`
   background: url(${(props) => props.image}) no-repeat center center;
   background-size: cover;
-  padding: ${(props) =>
-    props.height ? `${props.height} 40px 48px` : '169px 40px 48px'};
-  margin-top: ${(props) => (props.isSecond ? '36px' : '0')};
+  border-radius: 20px;
   cursor: pointer;
   transition: transform 0.2s;
-  border-radius: 20px;
+
+  /* Desktop defaults */
+  height: ${(props) => props.height || '250px'};
+  padding: 20px;
+
   &:hover {
     transform: scale(1.02);
   }
-
   &:focus {
     outline: 3px solid #fff;
     outline-offset: -3px;
   }
 
   @media (max-width: 991px) {
-    max-width: 100%;
-    height: 500px;
-    padding: 450px 40px 20px;
+    width: 100% !important; 
+    height: 250px !important; /* override to keep uniform */
+    padding: 20px;           /* unify padding */
+    border-radius: 20px;     /* or unset if you want no radius */
+    margin-bottom: 20px;     /* space between stacked items */
+    background-size: cover;  /* or contain, but cover is typical for consistent fill */
   }
 `;

@@ -35,5 +35,9 @@ export const CardContent = styled.div<{ image: string }>`
   }
 
   @media (max-width: 991px) {
+  background-size: contain;
+  height: 250px;
+  padding: 110px;
+  border-radius: unset;
   }
 `;

@@ -24,17 +24,17 @@ export const Header = ({ type = 'icon' }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const toggleDrawer =
     (open: boolean) =>
-    (event: React.KeyboardEvent | React.MouseEvent): void => {
-      // Close drawer for certain key events
-      if (
-        event.type === 'keydown' &&
-        ((event as React.KeyboardEvent).key === 'Tab' ||
-          (event as React.KeyboardEvent).key === 'Shift')
-      ) {
-        return;
-      }
-      setMenuOpen(open);
-    };
+      (event: React.KeyboardEvent | React.MouseEvent): void => {
+        // Close drawer for certain key events
+        if (
+          event.type === 'keydown' &&
+          ((event as React.KeyboardEvent).key === 'Tab' ||
+            (event as React.KeyboardEvent).key === 'Shift')
+        ) {
+          return;
+        }
+        setMenuOpen(open);
+      };
 
   const isActive = (path: string) => location.pathname === path;
   const handleMouseEnter = (path: string) => {
@@ -66,78 +66,102 @@ export const Header = ({ type = 'icon' }) => {
 
         <nav className={styles.navigation}>
           <div className={styles.navGroup}>
-            <div
+
+            {/* Services Link */}
+            <Link
+              to="/services"
               className={
                 isActive('/services') ? styles.activeNavItem : styles.navItem
               }
               onMouseEnter={() => handleMouseEnter('/services')}
               onMouseLeave={handleMouseLeave}
             >
-              <div className={styles.navText}>
-                <Link to="/services">Services</Link>
-              </div>
-              {isActive('/services') || hoveredPath === '/services' ? (
-                <div className={styles.activeIndicator} />
-              ) : (
-                <div className={styles.activeIndicatorWhite} />
-              )}
-            </div>
-            <div
+              <div className={styles.navText}>Services</div>
+              <div
+                className={
+                  (isActive('/services') || hoveredPath === '/services')
+                    ? `${styles.activeIndicator} ${styles.expanded}`
+                    : styles.activeIndicator
+                }
+              />
+            </Link>
+
+            {/* About Link */}
+            <Link
+              to="/about"
               className={
                 isActive('/about') ? styles.activeNavItem : styles.navItem
               }
               onMouseEnter={() => handleMouseEnter('/about')}
               onMouseLeave={handleMouseLeave}
             >
-              <div className={styles.navText}>
-                <Link to="/about">About</Link>
-              </div>
-              {(isActive('/about') || hoveredPath === '/about') && (
-                <div className={styles.activeIndicator} />
-              )}
-            </div>
-            <div
+              <div className={styles.navText}>About</div>
+              <div
+                className={
+                  (isActive('/about') || hoveredPath === '/about')
+                    ? `${styles.activeIndicator} ${styles.expanded}`
+                    : styles.activeIndicator
+                }
+              />
+            </Link>
+
+            {/* Case Studies Link */}
+            <Link
+              to="/caseStudies"
               className={
                 isActive('/caseStudies') ? styles.activeNavItem : styles.navItem
               }
               onMouseEnter={() => handleMouseEnter('/caseStudies')}
               onMouseLeave={handleMouseLeave}
             >
-              <div className={styles.navText}>
-                <Link to="/caseStudies">Case Studies</Link>
-              </div>
-              {(isActive('/caseStudies') || hoveredPath === '/caseStudies') && (
-                <div className={styles.activeIndicator} />
-              )}
-            </div>
-            <div
+              <div className={styles.navText}>Case Studies</div>
+              <div
+                className={
+                  (isActive('/caseStudies') || hoveredPath === '/caseStudies')
+                    ? `${styles.activeIndicator} ${styles.expanded}`
+                    : styles.activeIndicator
+                }
+              />
+            </Link>
+
+            {/* Blog Link */}
+            <Link
+              to="/blog"
               className={
                 isActive('/blog') ? styles.activeNavItem : styles.navItem
               }
               onMouseEnter={() => handleMouseEnter('/blog')}
               onMouseLeave={handleMouseLeave}
             >
-              <div className={styles.navText}>
-                <Link to="/blog">Blog</Link>
-              </div>
-              {(isActive('/blog') || hoveredPath === '/blog') && (
-                <div className={styles.activeIndicator} />
-              )}
-            </div>
-            <div
+              <div className={styles.navText}>Blog</div>
+              <div
+                className={
+                  (isActive('/blog') || hoveredPath === '/blog')
+                    ? `${styles.activeIndicator} ${styles.expanded}`
+                    : styles.activeIndicator
+                }
+              />
+            </Link>
+
+            {/* Contact Link */}
+            <Link
+              to="/contact"
               className={
                 isActive('/contact') ? styles.activeNavItem : styles.navItem
               }
               onMouseEnter={() => handleMouseEnter('/contact')}
               onMouseLeave={handleMouseLeave}
             >
-              <div className={styles.navText}>
-                <Link to="/contact">Contact</Link>
-              </div>
-              {(isActive('/contact') || hoveredPath === '/contact') && (
-                <div className={styles.activeIndicator} />
-              )}
-            </div>
+              <div className={styles.navText}>Contact</div>
+              <div
+                className={
+                  (isActive('/contact') || hoveredPath === '/contact')
+                    ? `${styles.activeIndicator} ${styles.expanded}`
+                    : styles.activeIndicator
+                }
+              />
+            </Link>
+
           </div>
         </nav>
         <div className={styles.actions}>

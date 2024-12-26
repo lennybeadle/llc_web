@@ -7,12 +7,23 @@ import ServiceIcon1 from '../../../assets/images/icons/serviceIcon1.svg';
 import ServiceIcon2 from '../../../assets/images/icons/serviceIcon2.svg';
 import ServiceIcon3 from '../../../assets/images/icons/serviceIcon3.svg';
 import ServiceIcon4 from '../../../assets/images/icons/serviceIcon4.svg';
+import styled from 'styled-components';
+
 
 interface ServiceCardProps {
   icon: string;
   title: string;
   description: string;
 }
+
+const Spacer = styled.div`
+  height: 80px;
+
+  @media (max-width: 768px) {
+    height: 40px; /* Smaller height on mobile */
+  }
+`;
+
 
 const servicesData1: ServiceCardProps[] = [
   {
@@ -68,6 +79,7 @@ export const ServicesSection = () => {
             Explore More
           </S.ExploreButton>
         </S.LeftColumn>
+        <Spacer />
         <S.RightColumn>
           <S.ServicesGrid>
             {servicesData1.map((service, index) => (

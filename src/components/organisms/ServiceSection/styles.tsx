@@ -32,6 +32,8 @@ export const LeftColumn = styled.div`
 
   @media (max-width: 991px) {
     width: 100%;
+    align-items: center;
+    text-align: center;
   }
 `;
 
@@ -64,12 +66,13 @@ export const ExploreButton = styled.button`
   border-radius: 15px;
   background-color: #ffd800;
   color: #2f2207;
+  font-size: 16px;
+  white-space: nowrap;
   padding: 19px 40px;
   border: none;
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.2s;
-  width: 40%;
   &:hover {
     transform: translateY(-2px);
   }
@@ -122,4 +125,9 @@ export const LeftDirection = styled.div<{ image: string }>`
   z-index: -1;
   background: url(${(props) => props.image}) no-repeat;
   background-position: right;
+
+  @media (max-width: 991px) {
+    right: 0;
+    background-size: 78% !important;
+  }
 `;
