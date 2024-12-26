@@ -39,7 +39,7 @@ export const StyledButton = styled.button`
   border-radius: 50px;
   padding: 10px 36px;
   text-transform: none;
-  font-weight: 600;
+  font-weight: 500;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   border: none;
   cursor: pointer;
@@ -56,7 +56,7 @@ export const StyledLoginButton = styled.button`
   border-radius: 50px;
   padding: 10px 36px;
   text-transform: none;
-  font-weight: 600;
+  font-weight: 500;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   border: none;
   cursor: pointer;

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const MissionContainer = styled.section`
   width: 100%;
-  max-width: 1256px;
-  margin: 254px auto 0;
+  max-width: 90%;
+  margin: 90px auto 0;
 
   @media (max-width: 991px) {
     margin-top: 40px;

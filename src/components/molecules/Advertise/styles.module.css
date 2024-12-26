@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   margin: 20px;
-  width: 80%;
+  width: 90%;
   margin: 50px 0;
   padding: 30px 0;
   border-top: 1px solid #edeff2;
@@ -21,9 +21,12 @@
 }
 
 .highlight {
-  color: #f9d400; /* Yellow color for "200+" */
-  font-weight: bold;
+  color: #f9d400;
+  font-weight: 800;
+  font-size: 40px;
+  font-weight: 800;
 }
+
 
 .logos {
   display: flex;
@@ -52,6 +55,10 @@
   opacity: 1;
 }
 
+.noWrap {
+  white-space: nowrap;
+}
+
 @media (max-width: 991px) {
   .logo {
     flex-direction: column;
@@ -66,4 +73,9 @@
     gap: 40px;
     height: 60%;
   }
+
+  .highlight {
+    font-size: 30px; /* Smaller on mobile */
+  }
+
 }

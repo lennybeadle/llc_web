@@ -11,18 +11,18 @@ import * as S from './styles';
 export const Footer = ({ type = 'icon' }) => {
   const siteMenuLinks = [
     { text: 'Services', href: '/services' },
-    { text: 'Our Team', href: '/team' },
-    { text: 'Pricing Plans', href: '/pricing' },
-    { text: 'We are Hiring', href: '/careers' },
+    // { text: 'Our Team', href: '/team' },
+    // { text: 'Pricing Plans', href: '/pricing' },
+    // { text: 'We are Hiring', href: '/careers' },
+    { text: 'Cookie Policy', href: '/cookies' },
     { text: 'Privacy Policy', href: '/privacy' },
   ];
 
   const usefulLinks = [
-    { text: 'Introduction', href: '/intro' },
+    { text: 'Home', href: '/home' },
     { text: 'About Us', href: '/about' },
-    { text: 'App Features', href: '/features' },
-    { text: 'Pricing Plans', href: '/pricing' },
-    { text: 'Cookie Policy', href: '/cookies' },
+    { text: 'Our Services', href: '/services' },
+    { text: 'Case Studies', href: '/caseStudies' },
   ];
 
   return (
@@ -49,16 +49,15 @@ export const Footer = ({ type = 'icon' }) => {
           <FooterMenuSection title="Site Menu" links={siteMenuLinks} />
           <FooterMenuSection title="Useful Links" links={usefulLinks} />
           <ContactSection
-            phone="(+63) 555 1212"
-            fax="(+63) 555 0100"
-            email="info@mail.com"
+            phone="(+44) 7380 185860"
+            email="info@llctech.co.uk"
           />
         </S.SecondarySection>
       </S.FooterContent>
 
       <S.Copyright>
         <S.CopyrightText>
-          <span>Copyright © 2025 • LLC-Tech </span>
+          <span>Copyright © 2025 • LLC-Tech</span>
           <S.CompanyName>All Rights Reserved</S.CompanyName>
         </S.CopyrightText>
       </S.Copyright>

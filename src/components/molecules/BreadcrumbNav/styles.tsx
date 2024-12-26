@@ -5,6 +5,7 @@ export const Nav = styled.nav`
   gap: 10px;
   font-size: 12px;
   font-weight: 700;
+  margin-bottom: 30px;
   white-space: nowrap;
   text-transform: uppercase;
   line-height: 2;

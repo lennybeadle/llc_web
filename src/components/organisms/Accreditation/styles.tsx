@@ -3,8 +3,8 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   position: relative;
+  margin-top: 90px;
   z-index: 10;
 `;
 
@@ -29,7 +29,7 @@ export const Description = styled.p`
   width: 50%;
   font: 400 16px/26px Roboto, sans-serif;
   @media (max-width: 991px) {
-    max-width: 80%;
+    max-width: 90%;
   }
   @media (max-width: 768px) {
     width: 90%;

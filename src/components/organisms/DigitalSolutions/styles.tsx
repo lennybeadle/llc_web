@@ -42,6 +42,10 @@ export const RightDirection = styled.div<{ image: string }>`
   z-index: -1;
   background: url(${(props) => props.image}) no-repeat;
   background-position: right top;
+  @media (max-width: 991px) {
+    right: 0;
+    background-size: 78%;
+  }
 `;
 
 export const LearnMoreCards = styled.div`

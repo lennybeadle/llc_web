@@ -36,7 +36,7 @@ export const Description = styled.p`
   width: 50%;
   font: 400 16px/26px Roboto, sans-serif;
   @media (max-width: 991px) {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0;
   }
   @media (max-width: 768px) {

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
+import CountUp from 'react-countup';
 
 interface AdvertiseProp {
   images: string[];
@@ -11,8 +12,10 @@ export const Advertise = ({ images, digital, text }: AdvertiseProp) => {
     <div className={styles.container}>
       <div className={styles.logos}>
         <p className={styles.header}>
-          <span className={styles.highlight}>{digital}+</span>{' '}
-          <span>{text}</span>
+          <span className={styles.highlight}>
+            <CountUp start={0} end={digital} duration={2} />+
+          </span>{' '}
+          <p className={styles.noWrap}>{text}</p>
         </p>
 
         {images.map((image, index) => (

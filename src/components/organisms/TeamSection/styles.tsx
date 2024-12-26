@@ -5,7 +5,7 @@ export const SectionWrapper = styled.section`
   background-color: rgba(60, 34, 4, 1);
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 `;
 
 export const ContentWrapper = styled.div`

@@ -1,15 +1,17 @@
 .header {
   background-color: #fff;
   display: flex;
-  padding: 19px 10px 33px;
   font: 400 15px Roboto, sans-serif;
-  width: 80%;
+  width: 90%;
+  transition: box-shadow 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+              background-color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .headerContainer {
   display: flex;
   width: 100%;
   gap: 20px;
+  margin: 30px;
   justify-content: space-between;
 }
 
@@ -48,7 +50,7 @@
 .activeIndicator {
   background-color: #ffd800;
   height: 2px;
-  margin-top: 15px;
+  margin-top: 5px;
 
   /* Span the full width but collapse via scaleX */
   width: 100%;
@@ -73,7 +75,42 @@
   position: relative;     /* so that the underline can appear relative to this */
   cursor: pointer;
   color: #5a5a5a;
+  font-size: 15px;
+  font-weight: 500 !important;
 }
+
+.navItem:hover .navText,
+.activeNavItem .navText {
+  color: #000 !important;
+  font-weight: 500 !important;
+
+}
+
+.header {
+  position: relative; /* default (when scrolled=false) */
+  width: 100%;
+  transition: box-shadow 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+              background-color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  /* Could add additional styling like padding, z-index if needed */
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* your existing styles */
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  background-color: #fff; /* or your desired color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 .navLink {
   display: block;         /* ensures the link fills the container's area */
   text-decoration: none;  /* remove underline from text */
@@ -97,6 +134,10 @@
   height: 15px;
 }
 
+.loginText {
+  font-weight: 500;
+}
+
 .ctaButton {
   border-radius: 15px;
   background-color: #ffd800;
@@ -104,6 +145,7 @@
   padding: 16px 23px;
   border: none;
   cursor: pointer;
+  font-weight: 500;
 }
 button:hover {
   filter: brightness(0.9) contrast(1.2);
@@ -134,9 +176,6 @@ a:focus {
   align-items: center;
 }
 @media (max-width: 991px) {
-  .header {
-    padding: 20px 20px;
-  }
 
   .navigation {
     max-width: 100%;

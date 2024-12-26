@@ -34,13 +34,6 @@ const Services = () => {
         <title>Services | LLC Tech</title>
       </Helmet>
       <Header />
-      {/* <section className={styles.heroSection}>
-        <img
-          src={StudyImage}
-          alt="services"
-          className={styles.heroSectionImage}
-        />
-      </section> */}
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <div className={styles.heroTitleContent}>
@@ -50,7 +43,7 @@ const Services = () => {
                 <span style={{ fontWeight: 'bold' }}>Smart Solutions </span>for
               </div>
               <div className={styles.heroSubtext}>
-                Your <span style={{ fontWeight: 'bold' }}> Grouth</span>
+                Your <span style={{ fontWeight: 'bold' }}> Growth</span>
               </div>
             </span>
           </div>

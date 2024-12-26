@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 export const Content = styled.div`
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@ export const Content = styled.div`
   }
 `;
 export const ContentWrapper = styled.article`
-  width: 80%;
+  width: 90%;
   margin: 60px auto;
   padding: 0 20px;
   font: 400 16px/1.6 Roboto, sans-serif;
@@ -30,7 +30,7 @@ export const FeaturedImage = styled.img`
 `;
 
 export const ContentText = styled.div`
-  width: 80%;
+  width: 90%;
   h2 {
     font-size: 24px;
     color: #000;

@@ -15,7 +15,7 @@ export const FormWrapper = styled.div`
   justify-content: center;
   align-items: left;
   @media (max-width: 991px) {
-    width: 80%;
+    width: 90%;
   }
 `;
 

@@ -40,7 +40,14 @@ const Contact = () => {
                   </div>
                   <div className={styles.contactContent}>
                     <p className={styles.contentFormat}>
-                      10 Pipit Drive London - SW15 3AP
+                      {/* Link to Google Maps or Apple Maps */}
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=10+Pipit+Drive+London+-+SW15+3AP"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        10 Pipit Drive London - SW15 3AP
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -52,18 +59,25 @@ const Contact = () => {
                     <h5 className={styles.subTitleFormat}>Email Address</h5>
                   </div>
                   <div className={styles.contactContent}>
-                    <p className={styles.contentFormat}>saket@llctech.co.uk</p>
+                    {/* Wrap the email in an <a> tag with mailto: */}
+                    <p className={styles.contentFormat}>
+                      <a href="mailto:saket@llctech.co.uk">saket@llctech.co.uk</a>
+                    </p>
                   </div>
                 </div>
+
                 <div className={styles.contactBox}>
                   <div className={styles.contactIcon}>
                     <img src={PhoneIcon} alt="contact" />
                   </div>
                   <div className={styles.contactSubTitle}>
-                    <h5 className={styles.subTitleFormat}>Phone Numbers</h5>
+                    <h5 className={styles.subTitleFormat}>Phone Number</h5>
                   </div>
                   <div className={styles.contactContent}>
-                    <p className={styles.contentFormat}>+44 0000 000 000</p>
+                    {/* Wrap the phone number in an <a> tag with tel: */}
+                    <p className={styles.contentFormat}>
+                      <a href="tel:+447380185860">+44 7380 185860</a>
+                    </p>
                   </div>
                 </div>
               </div>

@@ -20,7 +20,7 @@ export const MissionContent = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 
-  width: 80%;
+  width: 90%;
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
   }
@@ -78,6 +78,7 @@ export const MoreDetails = styled.button`
   padding: 16px 23px;
   border: none;
   cursor: pointer;
+  font-weight: 500;
   width: 30%;
 `;
 export const SkillItem = styled.div`
@@ -113,7 +114,7 @@ export const BlogSection = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   text-align: center;
   margin-bottom: 50px;
   margin-top: 30px;

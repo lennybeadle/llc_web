@@ -7,26 +7,28 @@
   width: 100%;
   min-height: 100vh;
 }
+
 .heroSection {
   border-radius: 25px;
   /* background-color: #f1f1f1; */
-  background: url('../../assets/images/backgrounds/contact.svg') no-repeat
-    center center;
+  background: url('../../assets/images/backgrounds/contact.svg') no-repeat center center;
   background-size: cover;
   background-position: center;
   border-radius: 25px;
   overflow: hidden;
   display: flex;
-  width: 80%;
+  width: 90%;
   padding: 10vw 5vw 3vw;
   justify-content: center;
   color: white;
   box-sizing: border-box;
 }
+
 .heroSectionImage {
   background-size: cover;
   width: 100%;
 }
+
 .heroContent {
   display: flex;
   width: 100%;
@@ -41,15 +43,21 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
 .heroSubtitle {
   display: flex;
   font-weight: 300;
-  font-size: 36px;
-  line-height: 55px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 1.1em;
   width: 50%;
   flex-direction: column;
+}
+
+
+.contentFormat a:hover {
+  color: #f9d400;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .contactContainer {
@@ -63,6 +71,7 @@
   margin-bottom: 0px;
   width: 100%;
 }
+
 .contactWrapper {
   margin-left: auto;
   margin-right: auto;
@@ -72,6 +81,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .contactBox {
   width: 100%;
   display: flex;
@@ -81,26 +91,31 @@
   color: #ffffff;
   gap: 10px;
 }
+
 .subTitleFormat {
   font-size: 20px;
 }
+
 .contentFormat {
   font-size: 16px;
 }
+
 .contactIcon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @media (max-width: 991px) {
   .heroSection {
     width: 90%;
-    min-width: 500px;
     align-items: center;
   }
+
   .heroContent {
     margin-top: 60px;
   }
+
   .heroTitleContent {
     display: flex;
     flex-direction: column;
@@ -108,19 +123,22 @@
     align-items: center;
     font-size: 40px;
   }
+
   .heroSubtitle {
     text-align: center;
     font-size: 30px;
-    width: 80%;
+    width: 90%;
     flex-direction: column;
     gap: 5px;
     justify-content: center;
   }
+
   .heroSubtext {
     width: auto;
     height: auto;
     line-height: normal;
   }
+
   .contactWrapper {
     flex-direction: column;
     gap: 10px;

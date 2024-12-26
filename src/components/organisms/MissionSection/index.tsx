@@ -1,5 +1,8 @@
-import * as React from 'react';
+// MissionSection.tsx
+import React from 'react';
+import CountUp from 'react-countup'; // <-- import CountUp
 import * as S from './styles';
+
 interface SkillProps {
   label: string;
   percentage: number;
@@ -34,7 +37,10 @@ export const MissionSection: React.FC<MissionProps> = ({ image, skills }) => {
               {skills.map((skill, index) => (
                 <S.SkillItem key={index}>
                   <S.SkillLabel>{skill.label}</S.SkillLabel>
-                  <S.SkillPercentage>{skill.percentage}%</S.SkillPercentage>
+                  {/* CountUp from 0 to skill.percentage over ~2 seconds */}
+                  <S.SkillPercentage>
+                    <CountUp start={0} end={skill.percentage} duration={2} />%
+                  </S.SkillPercentage>
                 </S.SkillItem>
               ))}
             </S.SkillsGrid>
@@ -44,4 +50,5 @@ export const MissionSection: React.FC<MissionProps> = ({ image, skills }) => {
     </S.MissionContainer>
   );
 };
+
 export default MissionSection;
