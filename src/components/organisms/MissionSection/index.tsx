@@ -1,6 +1,7 @@
 // MissionSection.tsx
 import React from 'react';
-import CountUp from 'react-countup'; // <-- import CountUp
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 import * as S from './styles';
 
 interface SkillProps {
@@ -14,8 +15,15 @@ interface MissionProps {
 }
 
 export const MissionSection: React.FC<MissionProps> = ({ image, skills }) => {
+  // Use the IntersectionObserver hook
+  // 'triggerOnce: true' means the observer unhooks after first enter
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2, // 20% of section in view triggers the callback
+  });
+
   return (
-    <S.MissionContainer>
+    <S.MissionContainer ref={ref /* attach ref here */}>
       <S.MissionContent>
         <S.ImageColumn>
           <S.MissionImage
@@ -33,13 +41,20 @@ export const MissionSection: React.FC<MissionProps> = ({ image, skills }) => {
               innovation and expertise, delivering tailored results that drive
               success.
             </S.Description>
+
             <S.SkillsGrid>
               {skills.map((skill, index) => (
                 <S.SkillItem key={index}>
                   <S.SkillLabel>{skill.label}</S.SkillLabel>
-                  {/* CountUp from 0 to skill.percentage over ~2 seconds */}
+
+                  {/* CountUp runs from 0 -> skill.percentage ONLY when inView is true */}
                   <S.SkillPercentage>
-                    <CountUp start={0} end={skill.percentage} duration={2} />%
+                    {inView ? (
+                      <CountUp start={0} end={skill.percentage} duration={2} />
+                    ) : (
+                      0
+                    )}
+                    %
                   </S.SkillPercentage>
                 </S.SkillItem>
               ))}

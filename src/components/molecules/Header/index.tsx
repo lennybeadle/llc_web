@@ -148,19 +148,19 @@ export const Header = ({ type = 'icon' }) => {
 
               {/* Case Studies Link */}
               <Link
-                to="/caseStudies"
+                to="/case-studies"
                 className={
-                  isActive('/caseStudies')
+                  isActive('/case-studies')
                     ? styles.activeNavItem
                     : styles.navItem
                 }
-                onMouseEnter={() => handleMouseEnter('/caseStudies')}
+                onMouseEnter={() => handleMouseEnter('/case-studies')}
                 onMouseLeave={handleMouseLeave}
               >
                 <div className={styles.navText}>Case Studies</div>
                 <div
                   className={
-                    (isActive('/caseStudies') || hoveredPath === '/caseStudies')
+                    (isActive('/case-studies') || hoveredPath === '/case-studies')
                       ? `${styles.activeIndicator} ${styles.expanded}`
                       : styles.activeIndicator
                   }

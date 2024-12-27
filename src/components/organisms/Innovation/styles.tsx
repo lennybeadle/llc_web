@@ -48,7 +48,7 @@ export const LearnMoreCards = styled.div`
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
 `;
 
 export const LearnMoreCardRow = styled.div`

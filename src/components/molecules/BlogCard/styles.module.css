@@ -36,12 +36,15 @@
 .categories {
   display: flex;
   gap: 4px;
+  flex-wrap: wrap; 
 }
 
 .category {
   border-radius: 3px;
   background-color: #ffd800;
-  padding: 9px 8px;
+  padding: 0px 8px;
+  min-height: 25px;
+  white-space: nowrap;
   font-size: 12px;
   color: #2f2207;
   text-transform: uppercase;
@@ -63,5 +66,8 @@
 @media (max-width: 991px) {
   .content {
     padding: 10px 20px;
+  }
+  .categories {
+    margin-top: 20px;
   }
 }

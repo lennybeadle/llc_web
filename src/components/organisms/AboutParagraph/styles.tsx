@@ -13,7 +13,7 @@ export const Section = styled.div`
   align-items: center;
 `;
 export const Wrapper = styled.div`
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -16,7 +16,8 @@ export const Breadcrumb = styled.nav`
   align-items: center;
   gap: 9px;
   text-transform: uppercase;
-  font: 700 12px Roboto, sans-serif;
+  font: 500 12px Roboto, sans-serif;
+  color: #5a5a5a;
 `;
 
 export const Title = styled.h1`

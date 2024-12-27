@@ -19,6 +19,7 @@ export const SectionTitle = styled.h2`
   color: #000;
   text-align: center;
   margin-top: 36px;
+  padding: 0 20px;
   font: 700 35px Roboto, sans-serif;
 `;
 
@@ -52,7 +53,7 @@ export const LearnMoreCards = styled.div`
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
 `;
 
 export const LearnMoreCardRow = styled.div`

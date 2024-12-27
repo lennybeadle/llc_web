@@ -41,6 +41,9 @@ export const ContentColumn = styled.div`
 
 export const MissionInfo = styled.div`
   padding: 20px;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 `;
 
 export const Subtitle = styled.div`
@@ -80,6 +83,12 @@ export const MoreDetails = styled.button`
   cursor: pointer;
   font-weight: 500;
   width: 30%;
+  font-size: 15px;
+  white-space: nowrap;
+   @media (max-width: 991px) {
+    width: 50%;
+    margin: auto;
+  }
 `;
 export const SkillItem = styled.div`
   display: flex;
@@ -137,7 +146,7 @@ export const BlogDescription = styled.p`
   width: 50%;
   font: 400 16px/26px Roboto, sans-serif;
   @media (max-width: 991px) {
-    width: 70%;
+    width: 80%;
   }
 `;
 

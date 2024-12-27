@@ -11,9 +11,10 @@ export const MenuContainer = styled.nav`
   }
 `;
 
-export const MenuTitle = styled.h2`
+export const MenuTitle = styled.h3`
   color: rgba(0, 0, 0, 1);
-  font-weight: 400;
+  font-weight: 800;
+  font-size: 16px;
   margin-bottom: 10px;
 `;
 

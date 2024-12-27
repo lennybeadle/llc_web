@@ -157,7 +157,7 @@ a {
 }
 
 a:visited {
-  color: inherit; /* Prevent color change after the link is visited */
+  color: inherit;
 }
 
 a:hover {

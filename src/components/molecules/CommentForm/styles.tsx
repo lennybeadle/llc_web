@@ -33,6 +33,7 @@ export const FormDisclaimer = styled.p`
   font-size: 13px;
   line-height: 2;
   margin: 20px 0 0 0;
+  color: #5a5a5a;
   @media (max-width: 991px) {
     margin-left: 10px;
   }
@@ -63,6 +64,13 @@ export const RememberMeContainer = styled.div`
   line-height: 2;
   margin: 31px 0 0 0;
   align-items: center;
+  color: #5a5a5a;
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+  label {
+    cursor: pointer;
+  }
 `;
 
 export const RequiredMark = styled.span`

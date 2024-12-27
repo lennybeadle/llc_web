@@ -57,7 +57,7 @@ export function DigitalSolutions() {
         Innovative Digital Solutions Built for Success
       </S.SectionTitle>
       <S.Description>
-        Brining Innovative ideas to life through seamless and impactful digital
+        Bringing innovative ideas to life through seamless and impactful digital
         experiences
       </S.Description>
       <S.LearnMoreCards>

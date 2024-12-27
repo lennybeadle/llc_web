@@ -20,6 +20,9 @@ export const SectionTitle = styled.h2`
   text-align: center;
   margin: 36px 0 0 36px;
   font: 700 35px Roboto, sans-serif;
+  @media (max-width: 991px) {
+    margin: 0 0 30px 0;
+  }
 `;
 
 export const Description = styled.p`
@@ -30,6 +33,7 @@ export const Description = styled.p`
   font: 400 16px/26px Roboto, sans-serif;
   @media (max-width: 991px) {
     max-width: 90%;
+    margin: 0 0 30px 0;
   }
   @media (max-width: 768px) {
     width: 90%;
@@ -56,9 +60,14 @@ export const LogoContainer = styled.div`
   width: 220px;
   padding: 10px;
   box-sizing: border-box;
+   @media (max-width: 991px) {
+   height: 75px;
+  }
 `;
 export const Logo = styled.img`
   width: 100%;
+  max-width: 100px;
   height: 100%;
   object-fit: contain;
+  
 `;

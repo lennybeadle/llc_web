@@ -92,7 +92,7 @@ const routes = [
     element: <SubBlog />,
   },
   {
-    path: '/caseStudies',
+    path: '/case-studies',
     element: <CaseStudies />,
   },
   {

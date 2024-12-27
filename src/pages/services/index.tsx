@@ -7,10 +7,11 @@ import MissionImage from '../../assets/images/backgrounds/mission.svg';
 import styles from './styles.module.css';
 import DigitalSolutions from '../../components/organisms/DigitalSolutions';
 import { Advertise } from '../../components/molecules/Advertise';
-import DropBoxIcon from '../../assets/images/icons/dropbox.svg';
-import SlackIcon from '../../assets/images/icons/slack.svg';
-import ShopifyIcon from '../../assets/images/icons/shopify.svg';
-import GoogleIcon from '../../assets/images/icons/google.svg';
+import JoinPiggyIcon from '../../assets/images/icons/joinpiggy.svg';
+import KlarnaIcon from '../../assets/images/icons/klarna.svg';
+import LunaIcon from '../../assets/images/icons/luna.svg';
+import BananaIcon from '../../assets/images/icons/banana.svg';
+import ItrexIcon from '../../assets/images/icons/itrex.svg';
 import { Accreditation } from '../../components/organisms/Accreditation';
 import { BreadcrumbNav } from '../../components/molecules/BreadcrumbNav';
 const missionData = [
@@ -53,7 +54,7 @@ const Services = () => {
       <Accreditation />
       <MissionSection image={MissionImage} skills={missionData} />
       <Advertise
-        images={[SlackIcon, DropBoxIcon, ShopifyIcon, GoogleIcon]}
+        images={[KlarnaIcon, LunaIcon, BananaIcon, ItrexIcon, JoinPiggyIcon]}
         digital={200}
         text={'Trusted Companies'}
       />

@@ -22,7 +22,7 @@ export const Footer = ({ type = 'icon' }) => {
     { text: 'Home', href: '/home' },
     { text: 'About Us', href: '/about' },
     { text: 'Our Services', href: '/services' },
-    { text: 'Case Studies', href: '/caseStudies' },
+    { text: 'Case Studies', href: '/case-studies' },
   ];
 
   return (

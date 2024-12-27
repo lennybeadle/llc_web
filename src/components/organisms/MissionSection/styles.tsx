@@ -7,7 +7,6 @@ export const MissionContainer = styled.section`
 
   @media (max-width: 991px) {
     margin-top: 40px;
-    padding: 20px;
   }
 `;
 
@@ -36,6 +35,9 @@ export const ContentColumn = styled.div`
 
 export const MissionInfo = styled.div`
   padding: 20px;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 `;
 
 export const Subtitle = styled.div`

@@ -70,6 +70,7 @@ export const ExploreButton = styled.button`
   white-space: nowrap;
   padding: 19px 40px;
   border: none;
+  width: 40%;
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.2s;
@@ -80,6 +81,9 @@ export const ExploreButton = styled.button`
   &:focus {
     outline: 2px solid #2f2207;
     outline-offset: 2px;
+  }
+    @media (max-width: 991px) {
+    width: 50%;
   }
 `;
 
