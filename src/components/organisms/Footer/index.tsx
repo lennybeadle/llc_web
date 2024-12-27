@@ -14,8 +14,8 @@ export const Footer = ({ type = 'icon' }) => {
     // { text: 'Our Team', href: '/team' },
     // { text: 'Pricing Plans', href: '/pricing' },
     // { text: 'We are Hiring', href: '/careers' },
-    { text: 'Cookie Policy', href: '/cookies' },
-    { text: 'Privacy Policy', href: '/privacy' },
+    { text: 'Cookie Policy', href: '/consent-policy' },
+    { text: 'Privacy Policy', href: '/privacy-policy' },
   ];
 
   const usefulLinks = [

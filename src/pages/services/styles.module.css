@@ -12,7 +12,7 @@
   border-radius: 25px;
   /* background-color: #f1f1f1; */
   background: url('../../assets/images/backgrounds/service.svg') no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   display: flex;
   width: 90%;
@@ -41,11 +41,18 @@
   display: flex;
   font-weight: 300;
   font-size: 60px;
+
   line-height: 1.1em;
-  width: 50%;
+  width: 600px;
   flex-direction: column;
+  flex-wrap: wrap;
+  word-break: break-word;
 }
 
+.heroSubtext {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+}
 
 @media (max-width: 991px) {
   .heroSection {
@@ -64,7 +71,7 @@
   .heroSubtitle {
     text-align: center;
     font-size: 30px;
-    width: 90%;
+    width: 80%;
     flex-direction: row;
     gap: 5px;
     justify-content: center;

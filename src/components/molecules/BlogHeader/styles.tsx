@@ -5,6 +5,9 @@ export const HeaderContainer = styled.header`
   width: 50%;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 991px) {
+    width: 70%;
+  }
 `;
 
 export const HeaderTitle = styled.h1`
@@ -12,6 +15,10 @@ export const HeaderTitle = styled.h1`
   font-size: 30px;
   font-weight: 800;
   margin: 36px 0 0;
+  @media (max-width: 991px) {
+    margin-top: 12px;
+    font-size: 24px;
+  }
 `;
 
 export const HeaderDescription = styled.p`

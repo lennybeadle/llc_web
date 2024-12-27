@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 import * as S from './styles';
 
 interface ProjectCardProps {
@@ -8,9 +8,9 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ title, width, image }: ProjectCardProps) {
-  console.log(image);
+  const navigate = useNavigate();
   return (
-    <S.CardWrapper width={width}>
+    <S.CardWrapper width={width} onClick={() => navigate('/case-studies')}>
       <S.CardContent tabIndex={0} image={image}>
         {title}
       </S.CardContent>

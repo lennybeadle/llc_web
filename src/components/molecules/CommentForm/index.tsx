@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState } from 'react';
 import { FormInput } from '../../atoms/FormInput';
 import * as S from './styles';
 export interface CommentFormProps {
@@ -10,18 +10,40 @@ export interface CommentFormData {
   website?: string;
   comment: string;
   rememberMe: boolean;
+  currentDate: string;
 }
 
 export const CommentForm: React.FC<CommentFormProps> = ({ onSubmit }) => {
+  const [formValues, setFormValues] = useState({
+    name: '',
+    email: '',
+    website: '',
+    comment: '',
+    rememberMe: false,
+  });
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { id, value, type } = e.target;
+    setFormValues({
+      ...formValues,
+      [id]: value,
+    });
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const formData = new FormData(e.target as HTMLFormElement);
     onSubmit({
-      name: formData.get('name') as string,
-      email: formData.get('email') as string,
-      website: formData.get('website') as string,
-      comment: formData.get('comment') as string,
-      rememberMe: formData.get('rememberMe') === 'on',
+      ...formValues,
+      currentDate: new Date().toISOString(),
+    });
+
+    setFormValues({
+      name: '',
+      email: '',
+      website: '',
+      comment: '',
+      rememberMe: false,
     });
   };
 
@@ -35,9 +57,27 @@ export const CommentForm: React.FC<CommentFormProps> = ({ onSubmit }) => {
         </S.FormDisclaimer>
 
         <S.InputGroup>
-          <FormInput label="Name" required id="name" />
-          <FormInput label="Email" required type="email" id="email" />
-          <FormInput label="Website" id="website" />
+          <FormInput
+            label="Name"
+            required
+            id="name"
+            value={formValues.name}
+            onChange={handleInputChange}
+          />
+          <FormInput
+            label="Email"
+            required
+            type="email"
+            id="email"
+            value={formValues.email}
+            onChange={handleInputChange}
+          />
+          <FormInput
+            label="Website"
+            id="website"
+            value={formValues.website}
+            onChange={handleInputChange}
+          />
         </S.InputGroup>
 
         <S.CommentArea>
@@ -46,13 +86,21 @@ export const CommentForm: React.FC<CommentFormProps> = ({ onSubmit }) => {
               label="Add Comment"
               required
               type="textarea"
-              id="website"
+              id="comment"
+              value={formValues.comment}
+              onChange={handleInputChange}
             />
           </S.FormTextArea>
         </S.CommentArea>
 
         <S.RememberMeContainer>
-          <input type="checkbox" id="rememberMe" name="rememberMe" />
+          <input
+            type="checkbox"
+            id="rememberMe"
+            name="rememberMe"
+            checked={formValues.rememberMe}
+            onChange={handleInputChange}
+          />
           <label htmlFor="rememberMe">
             Save my name, email, and website in this browser for the next time I
             comment.

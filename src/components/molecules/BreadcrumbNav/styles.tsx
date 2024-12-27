@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export const Nav = styled.nav`
   display: flex;
-  width: 90px;
+  width: 70%;
   gap: 10px;
   font-size: 12px;
   font-weight: 700;
@@ -9,8 +9,12 @@ export const Nav = styled.nav`
   white-space: nowrap;
   text-transform: uppercase;
   line-height: 2;
+
   @media (max-width: 991px) {
     white-space: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

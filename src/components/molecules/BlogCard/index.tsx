@@ -13,7 +13,10 @@ export const BlogCard = ({
   const navigate = useNavigate();
 
   const goToDetail = () => {
-    navigate(`/subBlog/`, { state: { image, title, excerpt, meta, content } });
+    const id = title.replace(/ /g, '_');
+    navigate(`/blog/${id}_of_blog`, {
+      state: { image, title, excerpt, meta, content },
+    });
   };
   return (
     <article className={styles.blogCard} onClick={goToDetail}>

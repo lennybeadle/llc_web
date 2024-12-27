@@ -27,6 +27,7 @@ export const MainSection = styled.div`
   @media (max-width: 991px) {
     width: 100%;
     flex-direction: column;
+    margin-bottom: 40px;
   }
 `;
 
@@ -77,6 +78,7 @@ export const SecondarySection = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
 `;
 

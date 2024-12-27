@@ -9,6 +9,8 @@ import Blog from './pages/Blog';
 import Contact from './pages/contact';
 import SubBlog from './pages/SubBlog';
 import CaseStudies from './pages/CaseStudy';
+import ConsentPolicy from './pages/consentPolicy';
+import PrivacyPolicy from './pages/privacyPolicy';
 
 export type RouteConfig = PathRouteProps & {
   guard?: any;
@@ -88,12 +90,20 @@ const routes = [
     element: <Contact />,
   },
   {
-    path: '/subBlog',
+    path: '/blog/:blogId',
     element: <SubBlog />,
   },
   {
     path: '/case-studies',
     element: <CaseStudies />,
+  },
+  {
+    path: '/consent-policy',
+    element: <ConsentPolicy />,
+  },
+  {
+    path: '/privacy-policy',
+    element: <PrivacyPolicy />,
   },
   {
     guard: GuestGuard,

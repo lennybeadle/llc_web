@@ -42,8 +42,6 @@ const Services = () => {
             <span className={styles.heroSubtitle}>
               <div className={styles.heroSubtext}>
                 <span style={{ fontWeight: 'bold' }}>Smart Solutions </span>for
-              </div>
-              <div className={styles.heroSubtext}>
                 Your <span style={{ fontWeight: 'bold' }}> Growth</span>
               </div>
             </span>

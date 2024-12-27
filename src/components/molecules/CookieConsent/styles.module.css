@@ -1,0 +1,39 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  width: 330px;
+  background-color: #003366;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  z-index: 1000;
+  right: 0;
+}
+.text {
+  margin-bottom: 0.5em;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.acceptButton {
+  background-color: green;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+.refuseButton {
+  background-color: red;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+}

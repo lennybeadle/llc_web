@@ -5,12 +5,18 @@ export interface FormInputProps {
   required?: boolean;
   type?: string;
   id: string;
+  value: string;
+  onChange: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
 }
 export const FormInput: React.FC<FormInputProps> = ({
   label,
   required = false,
   type = 'text',
   id,
+  value,
+  onChange,
 }) => {
   return (
     <S.FormGroup type={type}>
@@ -25,6 +31,8 @@ export const FormInput: React.FC<FormInputProps> = ({
           type={type}
           required={required}
           aria-required={required}
+          value={value}
+          onChange={onChange}
         />
       ) : (
         <S.TextArea
@@ -33,6 +41,8 @@ export const FormInput: React.FC<FormInputProps> = ({
           required={required}
           aria-required={required}
           rows={8}
+          value={value}
+          onChange={onChange}
         />
       )}
     </S.FormGroup>

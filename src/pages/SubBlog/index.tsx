@@ -1,10 +1,15 @@
+import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Header } from '../../components/molecules/Header';
 import { SubBlogHeader } from '../../components/organisms/SubBlogHeader';
 import { Footer } from '../../components/organisms/Footer';
 import styles from './styles.module.css';
 import { SubBlogContent } from '../../components/organisms/SubBlogContent';
-import { CommentForm } from '../../components/molecules/CommentForm';
+import {
+  CommentForm,
+  CommentFormData,
+} from '../../components/molecules/CommentForm';
+import Comment from '../../components/molecules/Comment';
 
 // const blogData = {
 //   title: 'How AI is Transforming Public Sector Services',
@@ -51,14 +56,56 @@ import { CommentForm } from '../../components/molecules/CommentForm';
 
 const SubBlog = () => {
   const location = useLocation();
+  const [comments, setComments] = useState<CommentFormData[]>([]);
   const { image, title, content, meta } = location.state || {};
 
-  const onSubmit = () => {};
+  useEffect(() => {
+    const commentData = localStorage.getItem('comments');
+    setComments(
+      commentData ? (JSON.parse(commentData) as CommentFormData[]) : []
+    );
+  }, []);
+
+  const onSubmit = (data: CommentFormData) => {
+    const commentsData: CommentFormData[] = [...comments, data];
+    setComments(commentsData);
+    localStorage.setItem('comments', JSON.stringify(commentsData));
+  };
+
+  const formatDate = (isoString: string): string => {
+    const date = new Date(isoString);
+
+    // Extract the date components
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const year = date.getFullYear();
+
+    // Extract the time components
+    let hours = date.getHours();
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    const amPm = hours >= 12 ? 'pm' : 'am';
+
+    // Convert to 12-hour format
+    hours = hours % 12 || 12;
+
+    // Return formatted string
+    return `${month}/${day}/${year} ${hours}:${minutes}${amPm}`;
+  };
   return (
     <main className={styles.mainContainer}>
       <Header type="web agency" />
       <SubBlogHeader title={title} meta={meta} />
       <SubBlogContent title={title} content={content} image={image} />
+      {comments.length > 0 &&
+        comments.map((comment) => (
+          <Comment
+            avatarUrl="https://secure.gravatar.com/avatar/?d=identicon"
+            commenterName={comment.name}
+            commentDate={formatDate(comment.currentDate)}
+            commentText={comment.comment}
+          />
+        ))}
+
       <CommentForm onSubmit={onSubmit} />
       <Footer type="web agency" />
     </main>
