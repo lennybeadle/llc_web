@@ -164,6 +164,149 @@ a:focus {
   align-items: center;
 }
 
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+  padding-top: 80px; /* Add padding to adjust spacing from the top */
+
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Open state: menu is visible */
+.mobileMenu.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+/* Hamburger Icon */
+.hamburgerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  transition: all 0.3s ease;
+}
+
+.mobileLogo {
+  margin-bottom: 60px;
+}
+
+a.activeMobileNavItem {
+  color: #ffd800 !important;
+}
+
+.hamburgerBar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Open (Cross) State */
+.hamburgerIcon.open .hamburgerBar:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburgerIcon.open .hamburgerBar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerIcon.open .hamburgerBar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+.mobileMenuLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between items */
+  text-align: center;
+  width: 100%;
+}
+
+.mobileMenuLinks a {
+  text-decoration: none;
+  color: white; /* Default color */
+  font-size: 20px; /* Larger font size */
+  font-weight: 800; /* Regular weight */
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.mobileMenuLinks a:hover {
+  color: #ffd800; /* Highlight on hover */
+  font-weight: 700; /* Bold weight */
+}
+
+.mobileMenuLinks a.active,
+.mobileMenuLinks a:active {
+  color: #ffd800; /* Active color */
+  font-weight: 700; /* Bold for active item */
+}
+
+/* Open (Cross) State */
+.hamburgerIcon.open .hamburgerBar:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  transform-origin: center;
+}
+
+.hamburgerIcon.open .hamburgerBar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerIcon.open .hamburgerBar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  transform-origin: center;
+}
+
+
+/* Close button */
+.closeButton {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: white;
+  font-size: 24px;
+}
+
+/* Mobile CTA Button */
+.mobileCtaButton {
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #ffd800;
+  color: #2f2207;
+  padding: 16px 23px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.mobileCtaButton:hover {
+  filter: brightness(0.9) contrast(1.2);
+}
+
 @media (max-width: 991px) {
   .headerContainer {
     margin: 30px;
