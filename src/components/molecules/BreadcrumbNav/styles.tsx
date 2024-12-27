@@ -1,20 +1,16 @@
 import styled from 'styled-components';
-export const Nav = styled.nav`
+export const Nav = styled.nav<{ textColor?: string }>`
   display: flex;
-  width: 70%;
+  width: 90px;
   gap: 10px;
   font-size: 12px;
-  font-weight: 700;
-  margin-bottom: 30px;
+  font-weight: 500;
+  color: ${(props) => props.textColor || '#ffffff'};
   white-space: nowrap;
   text-transform: uppercase;
   line-height: 2;
-
   @media (max-width: 991px) {
     white-space: initial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 `;
 

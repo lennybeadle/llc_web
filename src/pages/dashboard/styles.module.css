@@ -9,7 +9,8 @@
 }
 
 .heroSection {
-  border-radius: 25px;
+  border-radius: 25px !important;
+  overflow: hidden;
   /* background-color: #f1f1f1; */
   background: url('../../assets/images/backgrounds/trust.svg') no-repeat;
   background-position: center;

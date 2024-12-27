@@ -14,7 +14,6 @@
   background: url('../../assets/images/backgrounds/contact.svg') no-repeat center center;
   background-size: cover;
   background-position: center;
-  border-radius: 25px;
   overflow: hidden;
   display: flex;
   width: 90%;
@@ -66,6 +65,7 @@
 }
 
 .heroSubtitle {
+  margin-top: 20px;
   display: flex;
   font-weight: 300;
   font-size: 60px;

@@ -43,6 +43,17 @@
   transition: opacity 0.3s ease;
   cursor: pointer;
 }
+
+.largeIcon img {
+ width: 90% !important;
+ margin-left: -40px;
+}
+
+
+.LogoContainer img {
+  width: 60%;
+}
+
 .LogoContainer {
   display: flex;
   flex-direction: row;
@@ -62,8 +73,17 @@
 @media (max-width: 991px) {
   .logo {
     flex-direction: column;
-    width: auto;
   }
+
+  .LogoContainer img {
+    width: 30% !important;
+  }
+
+  .largeIcon img {
+    width: 45% !important;
+    margin-left: -10px;
+   }
+
   .logos {
     flex-direction: column;
     gap: 40px;

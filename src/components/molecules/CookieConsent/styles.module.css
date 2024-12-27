@@ -1,39 +1,206 @@
 .container {
   position: fixed;
-  bottom: 0;
-  width: 330px;
-  background-color: #003366;
-  color: white;
-  padding: 1em;
-  text-align: center;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: auto; /* Allow the content to size itself */
+  max-width: 330px; /* Optional: limit the width */
+  background-color: #f9f9f9;
+  color: #2f2207;
+  padding: 20px;
+  text-align: left; /* Align text to the left by default */
   z-index: 1000;
-  right: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px; /* Fully rounded corners */
+  animation: zoomIn 0.5s ease forwards; /* Add zoom-in animation */
 }
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8); /* Start smaller */
+    opacity: 0; /* Start invisible */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly overshoot */
+    opacity: 1; /* Become visible */
+  }
+  100% {
+    transform: scale(1); /* Settle to normal size */
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cookieIcon {
+  height: 40px;
+  filter: contrast(1.1);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #2f2207;
+}
+
 .text {
-  margin-bottom: 0.5em;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
 }
+
+.text a {
+  color: #2f2207;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .buttons {
   display: flex;
-  justify-content: center;
-  gap: 1em;
+  gap: 10px;
+  justify-content: flex-start; /* Align buttons to the left */
 }
-.acceptButton {
-  background-color: green;
-  color: white;
-  padding: 0.5em 1em;
+
+.acceptButton,
+.manageButton {
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
   border: none;
   cursor: pointer;
 }
-.refuseButton {
-  background-color: red;
-  color: white;
-  padding: 0.5em 1em;
+
+.acceptButton {
+  background-color: #2f2207;
+  color: #f9f9f9;
+}
+
+.manageButton {
+  background-color: transparent;
+  color: #2f2207;
+  border: 2px solid #2f2207;
+}
+
+.acceptButton:hover,
+.manageButton:hover {
+  filter: brightness(0.9);
+}
+
+/* Styles for Manage Cookies Popup */
+.managePopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  width: 90%;
+  max-width: 400px;
+}
+
+.manageTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h3, label {
+  color: #2f3336;
+}
+
+label:hover, input:hover {
+  cursor: pointer;
+}
+.preferenceRow {
+  margin-bottom: 15px;
+}
+
+.preferenceLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.preferenceDescription {
+  font-size: 14px;
+  color: #666;
+  margin-left: 25px;
+}
+
+.manageButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.saveButton {
+  background-color: #2f2207;
+  color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
   border: none;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: transparent;
+  color: #2f2207;
+  border: 2px solid #2f2207;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
   cursor: pointer;
 }
 
 @media (max-width: 991px) {
   .container {
-    width: 100%;
+    right: 10px;
+    bottom: 10px;
+    max-width: 280px; /* Slightly smaller on mobile */
+    padding: 15px;
+    text-align: center; /* Center text on mobile */
+  }
+
+  .content {
+    align-items: center; /* Center align items */
+  }
+
+  .buttons {
+    justify-content: center; /* Center align buttons */
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .acceptButton,
+  .manageButton {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .managePopup {
+    padding: 15px;
+    max-width: 320px;
   }
 }

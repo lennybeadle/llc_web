@@ -66,7 +66,7 @@ export const Label = styled.label`
   color: #5a5a5a;
   font-weight: 700;
   font-size: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 `;
 
 export const Required = styled.span`

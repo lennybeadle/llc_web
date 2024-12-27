@@ -8,6 +8,12 @@ body {
   background: #ffffff;
 }
 
+::selection {
+  background-color: #ffd800; /* Highlight background color */
+  color: #fff;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

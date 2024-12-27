@@ -62,13 +62,36 @@ export const Description = styled.p`
 export const SocialLinks = styled.div`
   margin-top: 33px;
   display: flex;
-  width: 50%;
-  justify-content: space-between;
+  align-items: center; /* Vertically align the label and icon */
+  justify-content: flex-start; /* Align everything to the left */
+  gap: 10px; /* Add a small gap between the label and icon */
+
+  a {
+    color: #0a66c2; /* LinkedIn Blue */
+    transition: opacity 0.3s, transform 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
   @media (max-width: 991px) {
     max-width: 100%;
   }
 `;
 
+export const SocialLabel = styled.span`
+  font-size: 14px;
+  font-weight: 500;
+  color: #5a5a5a;
+  text-align: left; /* Ensure text aligns left */
+`;
 export const SecondarySection = styled.div`
   display: flex;
   justify-content: space-between;

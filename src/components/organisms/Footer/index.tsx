@@ -2,18 +2,14 @@ import * as React from 'react';
 import { FooterMenuSection } from '../../molecules/FooterMenuSection';
 import { ContactSection } from '../../molecules/ContactSection';
 import LogoIcon from '../../../assets/images/logos/logo.svg';
-import FacebookIcon from '../../../assets/images/icons/footer_Facebook.svg';
-import TwitterIcon from '../../../assets/images/icons/footer_Twitter.svg';
-import InstagramIcon from '../../../assets/images/icons/footer_Instagram.svg';
-import YouTubeIcon from '../../../assets/images/icons/footer_YouTube.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import Font Awesome
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Import the LinkedIn icon
 
 import * as S from './styles';
+
 export const Footer = ({ type = 'icon' }) => {
   const siteMenuLinks = [
     { text: 'Services', href: '/services' },
-    // { text: 'Our Team', href: '/team' },
-    // { text: 'Pricing Plans', href: '/pricing' },
-    // { text: 'We are Hiring', href: '/careers' },
     { text: 'Cookie Policy', href: '/consent-policy' },
     { text: 'Privacy Policy', href: '/privacy-policy' },
   ];
@@ -37,10 +33,15 @@ export const Footer = ({ type = 'icon' }) => {
               build lasting partnerships, ensuring your business stays ahead.
             </S.Description>
             <S.SocialLinks>
-              <img src={FacebookIcon} alt="facebook" />
-              <img src={TwitterIcon} alt="twitter" />
-              <img src={InstagramIcon} alt="instagram" />
-              <img src={YouTubeIcon} alt="youtube" />
+              <S.SocialLabel>Find us on LinkedIn</S.SocialLabel>
+              <a
+                href="https://www.linkedin.com/company/local-london-contractors/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Find us on LinkedIn"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
             </S.SocialLinks>
           </S.CompanyInfo>
         </S.MainSection>

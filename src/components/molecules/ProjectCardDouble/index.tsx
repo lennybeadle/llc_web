@@ -18,10 +18,15 @@ export function ProjectCardDouble({
   const navigate = useNavigate();
 
   return (
-    <S.CardWrapper width={width} onClick={() => navigate('/case-studies')}>
+    <S.CardWrapper width={width}>
       <S.DoubleCardContainer>
         {titles.map((title, index) => (
-          <S.CardContent key={index} image={images[index]}>
+          <S.CardContent
+            key={index}
+            image={images[index]}
+            height={height}
+            onClick={() => navigate('/case-studies')}
+          >
             {title}
           </S.CardContent>
         ))}

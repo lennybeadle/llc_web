@@ -3,13 +3,13 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
   position: relative;
   z-index: 10;
 `;
 
 export const FeaturedProjectsLabel = styled.span`
   color: #000;
+  margin-top: 60px;
   text-align: center;
   text-transform: uppercase;
   font: 700 16px/2 Roboto, sans-serif;

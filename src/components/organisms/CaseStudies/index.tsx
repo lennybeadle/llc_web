@@ -20,8 +20,8 @@ const caseStudies: CaseStudy[] = [
   { title: 'Klarna - Web extension' },
   { title: 'ClassicDoge' },
   { title: 'ItRex' },
-  { title: 'FinResi', height: '161px' },
-  { title: 'Mr Banana', height: '161px' },
+  { title: 'FinResi', height: '240px' },
+  { title: 'Mr Banana', height: '240px' },
 ];
 
 export function CaseStudiesSection() {

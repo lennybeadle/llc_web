@@ -38,7 +38,11 @@ export const Advertise = ({ images, digital, text }: AdvertiseProp) => {
         </p>
 
         {images.map((image, index) => (
-          <div key={index} className={styles.LogoContainer}>
+          <div
+            key={index}
+            className={`${styles.LogoContainer} ${[4, 2].includes(index) ? styles.largeIcon : ''
+              }`} // Apply `largeIcon` class to JoinPiggy and Banana icons
+          >
             <img src={image} alt="Logo" className={styles.logo} />
           </div>
         ))}

@@ -11,6 +11,7 @@ export const StyledSection = styled.section`
 export const FeaturedProjectsLabel = styled.span`
   color: #000;
   text-align: center;
+  margin-top: 60px;
   text-transform: uppercase;
   font: 700 16px/2 Roboto, sans-serif;
 `;

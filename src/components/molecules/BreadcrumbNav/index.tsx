@@ -1,13 +1,16 @@
 import * as React from 'react';
 import * as S from './styles';
 import DividerIcon from '../../../assets/images/icons/divider.svg';
+import { useLocation } from 'react-router-dom';
 
 interface BreadcrumbNavProps {
   subTitle: string;
 }
 export const BreadcrumbNav: React.FC<BreadcrumbNavProps> = ({ subTitle }) => {
+  const location = useLocation();
+  const isBlogPage = location.pathname === '/blog' || location.pathname === '/case-studies';
   return (
-    <S.Nav aria-label="Breadcrumb">
+    <S.Nav textColor={isBlogPage ? '#5a5a5a' : '#ffffff'} aria-label="Breadcrumb">
       <S.BreadcrumbList>
         <S.BreadcrumbItem>
           <S.HomeLink href="/" aria-current="page">

@@ -14,7 +14,7 @@ export const HeaderTitle = styled.h1`
   color: #000;
   font-size: 30px;
   font-weight: 800;
-  margin: 36px 0 0;
+  margin-top: 20px;
   @media (max-width: 991px) {
     margin-top: 12px;
     font-size: 24px;

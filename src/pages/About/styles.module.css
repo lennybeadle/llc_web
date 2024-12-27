@@ -73,6 +73,7 @@
 }
 
 .heroSubtitle {
+  margin-top: 20px;
   display: flex;
   font-weight: 300;
   font-size: 60px;

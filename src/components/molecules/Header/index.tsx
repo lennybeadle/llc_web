@@ -207,7 +207,7 @@ export const Header = ({ type = 'icon' }) => {
 
           {/* Actions (Login + CTA Button) */}
           <div className={styles.actions}>
-            <div className={styles.loginGroup}>
+            {/* <div className={styles.loginGroup}>
               <img
                 loading="lazy"
                 src={PersonIcon}
@@ -215,7 +215,7 @@ export const Header = ({ type = 'icon' }) => {
                 alt=""
               />
               <div className={styles.loginText}>Login</div>
-            </div>
+            </div> */}
             <button className={styles.ctaButton} onClick={() => navigate('/contact')}>
               Get in Touch
             </button>
@@ -251,7 +251,7 @@ export const Header = ({ type = 'icon' }) => {
                   <ListItemText primary="Contact" />
                 </ListItem>
               </List>
-              <Button
+              {/* <Button
                 variant="outlined"
                 style={{
                   backgroundColor: '#fff',
@@ -263,7 +263,7 @@ export const Header = ({ type = 'icon' }) => {
                 }}
               >
                 Login
-              </Button>
+              </Button> */}
               <Button
                 variant="contained"
                 style={{

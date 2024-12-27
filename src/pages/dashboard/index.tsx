@@ -283,7 +283,7 @@ const Dashboard = () => {
       <ServicesSection />
       <CaseStudiesSection />
 
-      <section className={styles.testimonialsSection}>
+      {/* <section className={styles.testimonialsSection}>
         <span className={styles.featuredProjectsLabel}>TESTIMONIALS</span>
         <h2 className={styles.sectionTitle}>What Our Client's Say</h2>
         <p className={styles.description}>
@@ -295,7 +295,7 @@ const Dashboard = () => {
             <TestimonialCard key={index} {...testimonial} />
           ))}
         </div>
-      </section>
+      </section> */}
       <Advertise
         images={[KlarnaIcon, LunaIcon, BananaIcon, ItrexIcon, JoinPiggyIcon]}
         digital={200}
