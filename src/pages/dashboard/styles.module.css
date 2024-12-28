@@ -15,9 +15,7 @@
   background-position: center;
   display: flex;
   width: 90%;
-  text-align: center;
-  padding:  calc(5% + 20px) calc(18% + 20px) 80px;
-  justify-content: center;
+  padding: calc(12% + 20px) calc(5% + 20px) 80px;
 }
 
 .heroContent {
@@ -63,7 +61,6 @@
   font-size: 16px;
   line-height: 2;
   font-weight: 400;
-  margin: auto;
   justify-content: center;
   align-items: center;
 }

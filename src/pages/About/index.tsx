@@ -23,10 +23,8 @@ const About = () => {
             <BreadcrumbNav subTitle="About" />
             <div className={styles.heroSubText}>
               <div className={styles.heroSubtitle}>
-                <span style={{ fontWeight: 'bold' }}> Passion</span>in
-                <span style={{ fontWeight: 'bold' }}>Rooted </span>
-                <span style={{ fontWeight: 'bold' }}> Built</span>for
-                <span style={{ fontWeight: 'bold' }}>Innovation </span>
+                <span style={{ fontWeight: 'bold', display: 'block' }}>Rooted in Passion</span>
+                <span style={{ fontWeight: 'bold', display: 'block' }}>Built for Innovation</span>
               </div>
             </div>
           </div>

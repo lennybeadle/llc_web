@@ -13,6 +13,7 @@ import * as S from './styles';
 interface CaseStudy {
   title: string;
   height?: string;
+
 }
 
 const caseStudies: CaseStudy[] = [
@@ -48,20 +49,23 @@ export function CaseStudiesSection() {
       </S.TopProjectsRow>
       <S.BottomProjectsRow>
         <ProjectCard
-          title={caseStudies[2].title}
+          title={caseStudies[2].title} // ClassicDoge
           width="32%"
           image={CaseImage3}
+          dim // Apply dimming
         />
         <ProjectCard
-          title={caseStudies[3].title}
+          title={caseStudies[3].title} // ItRex
           width="32%"
           image={CaseImage4}
+          dim // Apply dimming
         />
         <ProjectCardDouble
-          titles={[caseStudies[4].title, caseStudies[5].title]}
+          titles={[caseStudies[4].title, caseStudies[5].title]} // FinResi & Mr Banana
           width="34%"
           height={caseStudies[4].height}
           images={[CaseImage5, CaseImage6]}
+          dim // Apply dimming to both images
         />
       </S.BottomProjectsRow>
       <S.RightDirection image={RightImage} />

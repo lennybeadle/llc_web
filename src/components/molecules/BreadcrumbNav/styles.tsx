@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-export const Nav = styled.nav<{ textColor?: string }>`
+export const Nav = styled.nav<{ textColor?: string; marginLeft?: string }>`
   display: flex;
   width: 90px;
   gap: 10px;
   font-size: 12px;
   font-weight: 500;
   color: ${(props) => props.textColor || '#ffffff'};
+  margin-left: ${(props) => props.marginLeft || '0'};
   white-space: nowrap;
   text-transform: uppercase;
   line-height: 2;

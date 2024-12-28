@@ -54,7 +54,7 @@ export const MissionSection: React.FC<MissionProps> = ({ image, skills }) => {
                     ) : (
                       0
                     )}
-                    %
+                    +
                   </S.SkillPercentage>
                 </S.SkillItem>
               ))}

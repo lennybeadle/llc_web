@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 export const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
@@ -10,6 +10,18 @@ export const SectionWrapper = styled.section`
 
   @media (max-width: 991px) {
     padding: 40px 20px;
+  }
+`;
+
+
+const slideInFromRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(50px); /* Start off-screen to the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End at original position */
   }
 `;
 
@@ -97,29 +109,85 @@ export const RightColumn = styled.div`
   }
 `;
 
-export const ServicesGrid = styled.div`
+export const ServicesGrid = styled.div<{ isVisible: boolean }>`
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin: 10px;
 
+  > * {
+    opacity: 0;
+    transform: translateX(50px);
+
+    ${(props) =>
+      props.isVisible &&
+      css`
+        animation: ${slideInFromRight} 0.8s ease-out forwards;
+      `}
+
+    /* Stagger the animation */
+    &:nth-child(1) {
+      animation-delay: 0s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+  }
+
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
+
+    > * {
+      animation: none;
+    }
   }
 `;
 
-export const ServicesGridLow = styled.div`
+export const ServicesGridLow = styled.div<{ isVisible: boolean }>`
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin: 50px 10px 10px 10px;
 
+  > * {
+    opacity: 0;
+    transform: translateX(50px);
+
+    ${(props) =>
+      props.isVisible &&
+      css`
+        animation: ${slideInFromRight} 0.8s ease-out forwards;
+      `}
+
+    /* Stagger the animation */
+    &:nth-child(1) {
+      animation-delay: 0.8s;
+    }
+    &:nth-child(2) {
+      animation-delay: 1s;
+    }
+    &:nth-child(3) {
+      animation-delay: 1.2s;
+    }
+    &:nth-child(4) {
+      animation-delay: 1.4s;
+    }
+  }
+
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
-    margin: 10px;
+
+    > * {
+      animation: none;
+    }
   }
 `;
-
 export const LeftDirection = styled.div<{ image: string }>`
   position: absolute;
   top: 0;

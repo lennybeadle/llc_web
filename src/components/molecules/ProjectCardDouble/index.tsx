@@ -7,6 +7,7 @@ interface ProjectCardDoubleProps {
   width: string;
   height?: string;
   images: string[];
+  dim?: boolean;
 }
 
 export function ProjectCardDouble({
@@ -14,6 +15,7 @@ export function ProjectCardDouble({
   width,
   height,
   images,
+  dim
 }: ProjectCardDoubleProps) {
   const navigate = useNavigate();
 
@@ -25,9 +27,10 @@ export function ProjectCardDouble({
             key={index}
             image={images[index]}
             height={height}
+            dim={dim}
             onClick={() => navigate('/case-studies')}
           >
-            {title}
+           <span>{title}</span> 
           </S.CardContent>
         ))}
       </S.DoubleCardContainer>

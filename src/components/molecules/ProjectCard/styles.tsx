@@ -12,8 +12,8 @@ export const CardWrapper = styled.div<{ width: string }>`
     width: 100%;
   }
 `;
-
-export const CardContent = styled.div<{ image: string }>`
+export const CardContent = styled.div<{ image: string; dim?: boolean }>`
+  position: relative;
   background: url(${(props) => props.image}) no-repeat center center;
   background-size: cover;
   flex-grow: 1;
@@ -23,8 +23,30 @@ export const CardContent = styled.div<{ image: string }>`
   padding: 450px 40px 20px;
   font: 700 20px Roboto, sans-serif;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
   border-radius: 20px;
+  overflow: hidden;
+
+  /* Dim overlay effect */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: ${(props) => (props.dim ? 'rgba(0, 0, 0, 0.5)' : 'transparent')};
+    z-index: 1; /* Place the dim overlay behind the text */
+    transition: background 0.2s ease;
+    border-radius: 20px; /* Match the card's border radius */
+  }
+
+  /* Ensure content (text) is above the dimmed background */
+  > * {
+    position: relative;
+    z-index: 99;
+  }
+
   &:hover {
     transform: scale(1.02);
   }
@@ -36,5 +58,6 @@ export const CardContent = styled.div<{ image: string }>`
 
   @media (max-width: 991px) {
     background-size: cover;
+    height: auto; /* Adjust height for mobile if needed */
   }
 `;

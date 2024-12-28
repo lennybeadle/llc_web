@@ -50,22 +50,6 @@ const Spacer = styled.div`
   }
 `;
 
-
-const testimonials = [
-  {
-    image: Avatar1,
-    name: 'Rebecca Ortiz',
-    testimonial:
-      'Duis rhoncus dui venenatis consequat porttitor. Etiam aliquet congue consequat. In posuere, nunc sit amet laoreet blandit, urna sapien imperdiet lectus, et molestie sem tortor quis dui.',
-  },
-  {
-    image: Avatar2,
-    name: 'Michael Berillo',
-    testimonial:
-      'Duis rhoncus dui venenatis consequat porttitor. Etiam aliquet congue consequat. In posuere, nunc sit amet laoreet blandit, urna sapien imperdiet lectus, et molestie sem tortor quis dui.',
-  },
-];
-
 const blogPosts = [
   {
     image: Blog1,

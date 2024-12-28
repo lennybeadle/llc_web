@@ -1,5 +1,5 @@
+import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import * as S from './styles';
 import { ServiceCard } from '../../molecules/ServiceCard';
 import LeftImage from '../../../assets/images/icons/large-left.svg';
@@ -9,13 +9,6 @@ import ServiceIcon3 from '../../../assets/images/icons/serviceIcon3.svg';
 import ServiceIcon4 from '../../../assets/images/icons/serviceIcon4.svg';
 import styled from 'styled-components';
 
-
-interface ServiceCardProps {
-  icon: string;
-  title: string;
-  description: string;
-}
-
 const Spacer = styled.div`
   height: 80px;
 
@@ -24,8 +17,7 @@ const Spacer = styled.div`
   }
 `;
 
-
-const servicesData1: ServiceCardProps[] = [
+const servicesData1 = [
   {
     icon: ServiceIcon1,
     title: 'Artificial Intelligence & Machine Learning',
@@ -39,7 +31,7 @@ const servicesData1: ServiceCardProps[] = [
       'Custom-built software designed to meet your unique business goals and streamline processes',
   },
 ];
-const servicesData2: ServiceCardProps[] = [
+const servicesData2 = [
   {
     icon: ServiceIcon3,
     title: 'Cloud Computing & Cybersecurity',
@@ -56,9 +48,32 @@ const servicesData2: ServiceCardProps[] = [
 
 export const ServicesSection = () => {
   const navigate = useNavigate();
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 } // Trigger when 10% of the section is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <S.SectionWrapper>
+    <S.SectionWrapper ref={sectionRef}>
       <S.ContentContainer>
         <S.LeftColumn>
           <S.HeaderTag>Our Services</S.HeaderTag>
@@ -81,7 +96,7 @@ export const ServicesSection = () => {
         </S.LeftColumn>
         <Spacer />
         <S.RightColumn>
-          <S.ServicesGrid>
+          <S.ServicesGrid isVisible={isVisible}>
             {servicesData1.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -91,7 +106,7 @@ export const ServicesSection = () => {
               />
             ))}
           </S.ServicesGrid>
-          <S.ServicesGridLow>
+          <S.ServicesGridLow isVisible={isVisible}>
             {servicesData2.map((service, index) => (
               <ServiceCard
                 key={index}

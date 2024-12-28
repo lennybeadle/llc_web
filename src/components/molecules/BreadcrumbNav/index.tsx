@@ -9,8 +9,9 @@ interface BreadcrumbNavProps {
 export const BreadcrumbNav: React.FC<BreadcrumbNavProps> = ({ subTitle }) => {
   const location = useLocation();
   const isBlogPage = location.pathname === '/blog' || location.pathname === '/case-studies';
+  const isCaseStudies = location.pathname === '/case-studies';
   return (
-    <S.Nav textColor={isBlogPage ? '#5a5a5a' : '#ffffff'} aria-label="Breadcrumb">
+    <S.Nav textColor={isBlogPage ? '#5a5a5a' : '#ffffff'} marginLeft={isCaseStudies ? '-60px' : '0'} aria-label="Breadcrumb">
       <S.BreadcrumbList>
         <S.BreadcrumbItem>
           <S.HomeLink href="/" aria-current="page">
