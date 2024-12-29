@@ -16,24 +16,52 @@ export const MissionContainer = styled.section`
 `;
 
 export const MissionContent = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 20px;
-
+  justify-content: center;
+  align-items: center;
   width: 90%;
   @media (max-width: 991px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 `;
 
-export const ImageColumn = styled.div``;
-
-export const MissionImage = styled.img`
+export const ImageColumn = styled.div`
+  border-radius: 20px;
   width: 100%;
-  aspect-ratio: 1.3;
-  object-fit: cover;
+  position: relative;
 `;
 
+export const StyledVideo = styled.video`
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1.3;
+  border-radius: 20px;
+`;
+
+export const PlayButton = styled.button`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 1;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+`;
 export const ContentColumn = styled.div`
   display: flex;
   align-items: center;
@@ -85,7 +113,7 @@ export const MoreDetails = styled.button`
   width: 30%;
   font-size: 15px;
   white-space: nowrap;
-   @media (max-width: 991px) {
+  @media (max-width: 991px) {
     width: 50%;
     margin: auto;
   }

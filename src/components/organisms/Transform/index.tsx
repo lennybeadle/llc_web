@@ -1,14 +1,11 @@
 import { useNavigate } from 'react-router-dom';
-import * as React from 'react';
+import React, { useState, useRef } from 'react';
 import * as S from './styles';
 import LeftImage from '../../../assets/images/icons/large-left.svg';
 import { BlogCard } from '../../molecules/BlogCard';
 import Blog1 from '../../../assets/images/backgrounds/aboutBlog1.svg';
 import Blog2 from '../../../assets/images/backgrounds/aboutBlog2.svg';
 import Blog3 from '../../../assets/images/backgrounds/aboutBlog3.svg';
-interface TransformProps {
-  image: string;
-}
 const blogPosts = [
   {
     image: Blog1,
@@ -47,18 +44,21 @@ const blogPosts = [
     content: '',
   },
 ];
-export const Transform: React.FC<TransformProps> = ({ image }) => {
+export const Transform = () => {
   const navigate = useNavigate();
 
   return (
     <S.MissionContainer>
       <S.MissionContent>
         <S.ImageColumn>
-          <S.MissionImage
-            loading="lazy"
-            src={image}
-            alt="Mission illustration"
-          />
+          <iframe
+            src={`https://drive.google.com/file/d/1tqkyhW46fLNq06WHnjDGH6xNmc4CN8Ts/preview`}
+            width="100%"
+            height="450px"
+            allow="autoplay"
+            frameBorder="0"
+            title="Google Drive Video"
+          ></iframe>
         </S.ImageColumn>
         <S.ContentColumn>
           <S.MissionInfo>

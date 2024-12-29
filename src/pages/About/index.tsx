@@ -4,7 +4,6 @@ import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import styles from './styles.module.css';
 import Transform from '../../components/organisms/Transform';
-import PlayVideoImage from '../../assets/images/backgrounds/playVideo.svg';
 import AboutImage from '../../assets/images/backgrounds/About.svg';
 import Innovation from '../../components/organisms/Innovation';
 import { BreadcrumbNav } from '../../components/molecules/BreadcrumbNav';
@@ -23,15 +22,19 @@ const About = () => {
             <BreadcrumbNav subTitle="About" />
             <div className={styles.heroSubText}>
               <div className={styles.heroSubtitle}>
-                <span style={{ fontWeight: 'bold', display: 'block' }}>Rooted in Passion</span>
-                <span style={{ fontWeight: 'bold', display: 'block' }}>Built for Innovation</span>
+                <span style={{ fontWeight: 'bold', display: 'block' }}>
+                  Rooted in Passion
+                </span>
+                <span style={{ fontWeight: 'bold', display: 'block' }}>
+                  Built for Innovation
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
       <Innovation />
-      <Transform image={PlayVideoImage} />
+      <Transform />
 
       <Footer />
     </main>
