@@ -140,13 +140,13 @@ export const ServicesGrid = styled.div<{ isVisible: boolean }>`
     }
   }
 
-  @media (max-width: 991px) {
-    grid-template-columns: 1fr;
+  // @media (max-width: 991px) {
+  //   grid-template-columns: 1fr;
 
-    > * {
-      animation: none;
-    }
-  }
+  //   > * {
+  //     animation: none;
+  //   }
+  // }
 `;
 
 export const ServicesGridLow = styled.div<{ isVisible: boolean }>`
@@ -180,13 +180,13 @@ export const ServicesGridLow = styled.div<{ isVisible: boolean }>`
     }
   }
 
-  @media (max-width: 991px) {
-    grid-template-columns: 1fr;
+  // @media (max-width: 991px) {
+  //   grid-template-columns: 1fr;
 
-    > * {
-      animation: none;
-    }
-  }
+  //   > * {
+  //     animation: none;
+  //   }
+  // }
 `;
 export const LeftDirection = styled.div<{ image: string }>`
   position: absolute;
