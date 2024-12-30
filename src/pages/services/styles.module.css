@@ -57,6 +57,7 @@
 @media (max-width: 991px) {
   .heroSection {
     align-items: center;
+    height: 470px;
   }
   .heroContent {
     margin-top: 60px;
@@ -75,11 +76,13 @@
     flex-direction: row;
     gap: 5px;
     justify-content: center;
+    line-height: 45px;
   }
   .heroSubtext {
-    width: auto;
+    width: 80%;
     height: auto;
     line-height: normal;
+    margin-top: 10px;
   }
 }
 
@@ -93,5 +96,20 @@
     width: 90%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  .heroSubText {
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+  }
+  .heroSection {
+    align-items: center;
+    height: 277px;
   }
 }

@@ -60,14 +60,13 @@ export const LogoContainer = styled.div`
   width: 220px;
   padding: 10px;
   box-sizing: border-box;
-   @media (max-width: 991px) {
-   height: 75px;
+  @media (max-width: 991px) {
+    height: 150px;
   }
 `;
 export const Logo = styled.img`
   width: 100%;
-  max-width: 100px;
+  max-width: 150px;
   height: 100%;
   object-fit: contain;
-  
 `;

@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
 import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import * as S from './styles';
 import { Helmet } from 'react-helmet-async';
 
 const ConsentPolicy: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <S.mainContainer>
       <Helmet>
@@ -49,9 +53,8 @@ const ConsentPolicy: React.FC = () => {
 
         <S.SubHeader>Managing Your Cookie Preferences</S.SubHeader>
         <S.Paragraph>
-          You can manage your cookie preferences through our{' '}
-          cookie settings or by
-          adjusting your browser settings. Note that disabling cookies may
+          You can manage your cookie preferences through our cookie settings or
+          by adjusting your browser settings. Note that disabling cookies may
           impact the functionality of the website.
         </S.Paragraph>
 

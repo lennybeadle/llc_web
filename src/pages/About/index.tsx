@@ -1,14 +1,16 @@
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-
 import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import styles from './styles.module.css';
 import Transform from '../../components/organisms/Transform';
-import AboutImage from '../../assets/images/backgrounds/About.svg';
 import Innovation from '../../components/organisms/Innovation';
 import { BreadcrumbNav } from '../../components/molecules/BreadcrumbNav';
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className={styles.mainContainer}>
       <Helmet>
@@ -23,10 +25,7 @@ const About = () => {
             <div className={styles.heroSubText}>
               <div className={styles.heroSubtitle}>
                 <span style={{ fontWeight: 'bold', display: 'block' }}>
-                  Rooted in Passion
-                </span>
-                <span style={{ fontWeight: 'bold', display: 'block' }}>
-                  Built for Innovation
+                  Rooted in Passion Built for Innovation
                 </span>
               </div>
             </div>

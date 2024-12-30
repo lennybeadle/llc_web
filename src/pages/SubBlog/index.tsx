@@ -60,6 +60,7 @@ const SubBlog = () => {
   const { image, title, content, meta } = location.state || {};
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const commentData = localStorage.getItem('comments');
     setComments(
       commentData ? (JSON.parse(commentData) as CommentFormData[]) : []

@@ -1,5 +1,5 @@
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-
 import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import { BlogCard } from '../../components/molecules/BlogCard';
@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 
 import Blog1 from '../../assets/images/backgrounds/case1.svg';
 import Blog2 from '../../assets/images/backgrounds/case2.svg';
-import Blog3 from '../../assets/images/backgrounds/case3.svg';
+import Blog3 from '../../assets/images/backgrounds/cases3.png';
 import Blog4 from '../../assets/images/backgrounds/case4.svg';
 import Blog5 from '../../assets/images/backgrounds/case5.svg';
 import Blog6 from '../../assets/images/backgrounds/case6.svg';
@@ -415,6 +415,9 @@ const headerData = {
     'Explore how our team has driven impactful projects for leading organizations, showcasing their innovative solutions and industry expertise.',
 };
 const CaseStudies = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className={styles.mainContainer}>
       <Helmet>

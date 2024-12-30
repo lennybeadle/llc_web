@@ -1,5 +1,5 @@
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-
 import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import { BlogCard } from '../../components/molecules/BlogCard';
@@ -192,6 +192,9 @@ const headerData = {
     'Explore the latest insights, trends, and expert opinions in technology. Discover innovative solutions and strategies to drive progress and make an impact.',
 };
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className={styles.mainContainer}>
       <Helmet>

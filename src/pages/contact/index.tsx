@@ -1,15 +1,17 @@
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-
 import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import styles from './styles.module.css';
-
 import { ContactForm } from '../../components/organisms/ContactForm';
 import { BreadcrumbNav } from '../../components/molecules/BreadcrumbNav';
 import AddressIcon from '../../assets/images/icons/address.svg';
 import EmailIcon from '../../assets/images/icons/email.svg';
 import PhoneIcon from '../../assets/images/icons/phone.svg';
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className={styles.mainContainer}>
       <Helmet>
@@ -61,7 +63,9 @@ const Contact = () => {
                   <div className={styles.contactContent}>
                     {/* Wrap the email in an <a> tag with mailto: */}
                     <p className={styles.contentFormat}>
-                      <a href="mailto:saket@llctech.co.uk">saket@llctech.co.uk</a>
+                      <a href="mailto:saket@llctech.co.uk">
+                        saket@llctech.co.uk
+                      </a>
                     </p>
                   </div>
                 </div>

@@ -30,5 +30,6 @@ export const HeaderDescription = styled.p`
   margin: 32px 0 0;
   @media (max-width: 991px) {
     max-width: 100%;
+    display: none;
   }
 `;

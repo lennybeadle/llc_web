@@ -1,11 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useRef } from 'react';
+import Skeleton from '@mui/material/Skeleton';
 import * as S from './styles';
 import LeftImage from '../../../assets/images/icons/large-left.svg';
 import { BlogCard } from '../../molecules/BlogCard';
 import Blog1 from '../../../assets/images/backgrounds/blog1.svg';
 import Blog2 from '../../../assets/images/backgrounds/blog2.svg';
 import Blog3 from '../../../assets/images/backgrounds/blog3.svg';
+
 const blogPosts = [
   {
     image: Blog1,
@@ -106,11 +108,18 @@ const blogPosts = [
 ];
 export const Transform = () => {
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(true);
 
+  const handleIframeLoad = () => {
+    setIsLoading(false);
+  };
   return (
     <S.MissionContainer>
       <S.MissionContent>
         <S.ImageColumn>
+          {isLoading && (
+            <Skeleton variant="rectangular" width="100%" height="450px" />
+          )}
           <iframe
             src={`https://drive.google.com/file/d/1tqkyhW46fLNq06WHnjDGH6xNmc4CN8Ts/preview`}
             width="100%"
@@ -118,6 +127,10 @@ export const Transform = () => {
             allow="autoplay"
             frameBorder="0"
             title="Google Drive Video"
+            style={{
+              display: isLoading ? 'none' : 'block',
+            }}
+            onLoad={handleIframeLoad}
           ></iframe>
         </S.ImageColumn>
         <S.ContentColumn>

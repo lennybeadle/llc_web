@@ -2,25 +2,31 @@ import styled from 'styled-components';
 
 export const MissionContainer = styled.section`
   width: 100%;
-  max-width: 90%;
   margin: 90px auto 0;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 991px) {
     margin-top: 40px;
   }
 `;
 
 export const MissionContent = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 20px;
-
+  width: 70%;
   @media (max-width: 991px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 `;
 
-export const ImageColumn = styled.div``;
+export const ImageColumn = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
 
 export const MissionImage = styled.img`
   width: 100%;
@@ -34,9 +40,13 @@ export const ContentColumn = styled.div`
 `;
 
 export const MissionInfo = styled.div`
-  padding: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
   @media (max-width: 991px) {
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -63,9 +73,13 @@ export const Description = styled.p`
 `;
 
 export const SkillsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 20px;
+  @media (max-width: 991px) {
+    flex-direction: column;
+    gap: 40px;
+  }
 `;
 
 export const SkillItem = styled.div`
@@ -78,6 +92,9 @@ export const SkillLabel = styled.h3`
   color: #000;
   font: 700 20px Roboto, sans-serif;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const SkillPercentage = styled.div`

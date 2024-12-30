@@ -1,12 +1,11 @@
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-
 import { BlogCard } from '../../components/molecules/BlogCard';
-import { TestimonialCard } from '../../components/molecules/TestimonialCard';
 import { Header } from '../../components/molecules/Header';
 import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import MouseImage from '../../assets/images/icons/mouse.svg';
+import MouseImage from '../../assets/images/icons/mouse.gif';
 import { ServicesSection } from '../../components/organisms/ServiceSection';
 import { CaseStudiesSection } from '../../components/organisms/CaseStudies';
 import { Advertise } from '../../components/molecules/Advertise';
@@ -21,8 +20,6 @@ import { Footer } from '../../components/organisms/Footer';
 import Blog1 from '../../assets/images/backgrounds/case1.svg';
 import Blog2 from '../../assets/images/backgrounds/case2.svg';
 import Blog3 from '../../assets/images/backgrounds/case3.svg';
-import Avatar1 from '../../assets/images/icons/avatar-1.svg';
-import Avatar2 from '../../assets/images/icons/avatar-2.svg';
 
 // const teamMembers = [
 //   {
@@ -225,6 +222,9 @@ const blogPosts = [
 ];
 
 const Dashboard = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className={styles.mainContainer}>
       <Helmet>
@@ -245,7 +245,8 @@ const Dashboard = () => {
             <p className={styles.heroTagline}>
               Precision. Integration.{' '}
               <span className={styles.lineBreakOnMobile}>
-                <br />&nbsp;
+                <br />
+                &nbsp;
               </span>
               Solutions Built to Last...
             </p>

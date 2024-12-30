@@ -1,5 +1,5 @@
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-
 import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import MissionSection from '../../components/organisms/MissionSection';
@@ -29,6 +29,9 @@ const missionData = [
   },
 ];
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className={styles.mainContainer}>
       <Helmet>

@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import { Header } from '../../components/molecules/Header';
 import { Footer } from '../../components/organisms/Footer';
 import * as S from './styles';
 import { Helmet } from 'react-helmet-async';
 const PrivacyPolicy: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <S.mainContainer>
       <Helmet>

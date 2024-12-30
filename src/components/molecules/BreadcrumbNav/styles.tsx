@@ -1,8 +1,11 @@
 import styled from 'styled-components';
-export const Nav = styled.nav<{ textColor?: string; marginLeft?: string }>`
+export const Nav = styled.nav<{
+  textColor?: string;
+  marginLeft?: string;
+  textAlign?: string;
+}>`
   display: flex;
-  width: 90px;
-  gap: 10px;
+  width: 100%;
   font-size: 12px;
   font-weight: 500;
   color: ${(props) => props.textColor || '#ffffff'};
@@ -10,8 +13,12 @@ export const Nav = styled.nav<{ textColor?: string; marginLeft?: string }>`
   white-space: nowrap;
   text-transform: uppercase;
   line-height: 2;
+  display: flex;
+  justify-content: ${(props) => props.textAlign};
   @media (max-width: 991px) {
     white-space: initial;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -34,7 +41,8 @@ export const HomeLink = styled.a`
   color: #ffd800;
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
+    // text-decoration: underline;
+    color: #ffd800;
   }
 `;
 
