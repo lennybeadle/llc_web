@@ -30,6 +30,7 @@ export const ServiceTitle = styled.h3`
 
   @media (max-width: 991px) {
     margin: 40px 0 25px;
+    text-align: center;
   }
 `;
 

@@ -25,7 +25,7 @@ const About = () => {
             <div className={styles.heroSubText}>
               <div className={styles.heroSubtitle}>
                 <span style={{ fontWeight: 'bold', display: 'block' }}>
-                  Rooted in Passion Built for Innovation
+                  Rooted <span style={{ fontWeight: 'normal' }}>in</span> Passion Built <span style={{ fontWeight: 'normal' }}>for</span> Innovation
                 </span>
               </div>
             </div>

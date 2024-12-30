@@ -16,6 +16,8 @@
   background-position: center;
   display: flex;
   width: 90%;
+  height: 100%;
+
   padding: 10vw 5vw 12vw;
   justify-content: center;
   color: white;
@@ -59,9 +61,11 @@
     align-items: center;
     height: 470px;
   }
+
   .heroContent {
-    margin-top: 60px;
+    margin-top: 45px;
   }
+
   .heroTitleContent {
     display: flex;
     flex-direction: column;
@@ -69,6 +73,7 @@
     align-items: center;
     font-size: 40px;
   }
+
   .heroSubtitle {
     text-align: center;
     font-size: 30px;
@@ -78,6 +83,7 @@
     justify-content: center;
     line-height: 45px;
   }
+
   .heroSubtext {
     width: 80%;
     height: auto;
@@ -88,8 +94,9 @@
 
 @media (max-width: 780px) {
   .heroContent {
-    margin-top: 60px;
+    margin-top: 30px;
   }
+
   .heroSubtitle {
     text-align: center;
     font-size: 30px;
@@ -98,6 +105,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .heroSubText {
     display: flex;
     text-align: center;
@@ -108,6 +116,7 @@
     align-items: center;
     line-height: 30px;
   }
+
   .heroSection {
     align-items: center;
     height: 277px;
