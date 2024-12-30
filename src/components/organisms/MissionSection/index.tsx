@@ -33,7 +33,8 @@ export const MissionSection: React.FC<MissionProps> = ({ image, skills }) => {
           />
         </S.ImageColumn>
         <S.ContentColumn>
-          <S.MissionInfo>
+        <S.MissionInfo>
+
             <S.Subtitle>OUR MISSION</S.Subtitle>
             <S.Title>Turn Ideas into Reality</S.Title>
             <S.Description>
@@ -54,7 +55,7 @@ export const MissionSection: React.FC<MissionProps> = ({ image, skills }) => {
                     ) : (
                       0
                     )}
-                    +
+                    {index === skills.length - 1 ? '%' : '+'}
                   </S.SkillPercentage>
                 </S.SkillItem>
               ))}

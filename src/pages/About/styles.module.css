@@ -47,10 +47,9 @@
   background: url('../../assets/images/backgrounds/About.svg') no-repeat;
   background-size: cover;
   background-position: center;
-
+height: 100%;
   display: flex;
   width: 90%;
-
   padding: 10vw 5vw 12vw;
   justify-content: center;
   color: white;
@@ -96,7 +95,7 @@
     height: 470px;
   }
   .heroContent {
-    margin-top: 60px;
+    margin-top: 45px;
   }
   .heroTitleContent {
     display: flex;
@@ -112,7 +111,7 @@
     text-align: center;
     font-size: 30px;
     flex-direction: row;
-    line-height: 45px;
+    line-height: 35px;
     width: 80%;
   }
   .heroSubText {
@@ -129,7 +128,7 @@
 
 @media (max-width: 764px) {
   .heroContent {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .heroSubText {
     display: flex;

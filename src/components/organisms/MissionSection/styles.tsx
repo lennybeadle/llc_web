@@ -17,6 +17,8 @@ export const MissionContent = styled.div`
   gap: 20px;
   width: 70%;
   @media (max-width: 991px) {
+  width: 90%;
+
     flex-direction: column;
   }
 `;
@@ -44,6 +46,8 @@ export const MissionInfo = styled.div`
   display: flex;
   flex-direction: column;
   @media (max-width: 991px) {
+  padding: 0;
+
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -54,12 +58,18 @@ export const Subtitle = styled.div`
   color: #000;
   font: 700 16px/2 Roboto, sans-serif;
   text-transform: uppercase;
+  @media (max-width: 991px) {
+  margin-top: 60px;
+  }
 `;
 
 export const Title = styled.h2`
   color: #000;
   font: 700 35px Roboto, sans-serif;
   margin: 36px 0 20px;
+    @media (max-width: 991px) {
+    margin: 0;
+  }
 `;
 
 export const Description = styled.p`
