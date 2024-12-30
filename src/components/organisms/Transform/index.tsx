@@ -7,7 +7,8 @@ import { BlogCard } from '../../molecules/BlogCard';
 import Blog1 from '../../../assets/images/backgrounds/blog1.svg';
 import Blog2 from '../../../assets/images/backgrounds/blog2.svg';
 import Blog3 from '../../../assets/images/backgrounds/blog3.svg';
-
+import ThumbnailImage from '../../../assets/images/backgrounds/thumbnail.png';
+import PlayButtonImage from '../../../assets/images/icons/playButton.svg';
 const blogPosts = [
   {
     image: Blog1,
@@ -120,18 +121,20 @@ export const Transform = () => {
           {isLoading && (
             <Skeleton variant="rectangular" width="100%" height="450px" />
           )}
-          <iframe
-            src={`https://drive.google.com/file/d/1tqkyhW46fLNq06WHnjDGH6xNmc4CN8Ts/preview`}
-            width="100%"
-            height="450px"
-            allow="autoplay"
-            frameBorder="0"
-            title="Google Drive Video"
-            style={{
-              display: isLoading ? 'none' : 'block',
-            }}
-            onLoad={handleIframeLoad}
-          ></iframe>
+          <S.Iframe>
+            <iframe
+              src={`https://drive.google.com/file/d/1tqkyhW46fLNq06WHnjDGH6xNmc4CN8Ts/preview`}
+              width="100%"
+              height="450px"
+              allow="autoplay"
+              frameBorder="0"
+              title="Google Drive Video"
+              style={{
+                display: isLoading ? 'none' : 'block',
+              }}
+              onLoad={handleIframeLoad}
+            ></iframe>
+          </S.Iframe>
         </S.ImageColumn>
         <S.ContentColumn>
           <S.MissionInfo>

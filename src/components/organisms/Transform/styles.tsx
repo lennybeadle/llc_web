@@ -16,23 +16,75 @@ export const MissionContainer = styled.section`
 `;
 
 export const MissionContent = styled.div`
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
   @media (max-width: 991px) {
     flex-direction: column;
+    margin-top: 0px;
   }
 `;
 
 export const ImageColumn = styled.div`
-  border-radius: 20px;
   width: 100%;
+  margin: 30px;
+  overflow: hidden;
   position: relative;
+  @media (max-width: 991px) {
+    margin: 0px;
+  }
 `;
+export const Iframe = styled.div`
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+`;
+export const Thumbnail = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+`;
+export const ThumbnailWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
 
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+export const PlayButton = styled.img`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4; /* Ensure it appears above the overlay */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: rgba(255, 255, 255, 0.9); /* Color of the play icon */
+    transition: transform 0.3s ease, fill 0.3s ease;
+  }
+
+  &:hover svg {
+    fill: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+  }
+`;
 export const StyledVideo = styled.video`
   width: 100%;
   height: 100%;
@@ -40,31 +92,34 @@ export const StyledVideo = styled.video`
   border-radius: 20px;
 `;
 
-export const PlayButton = styled.button`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  line-height: 1;
+// export const PlayButton = styled.button`
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   background-color: rgba(0, 0, 0, 0.7);
+//   color: #fff;
+//   border: none;
+//   border-radius: 50%;
+//   width: 80px;
+//   height: 80px;
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 30px;
+//   line-height: 1;
 
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-`;
+//   &:hover {
+//     background-color: rgba(0, 0, 0, 0.9);
+//   }
+// `;
 export const ContentColumn = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 991px) {
+    margin-top: 30px;
+  }
 `;
 
 export const MissionInfo = styled.div`
@@ -154,9 +209,10 @@ export const BlogSection = styled.section`
   width: 90%;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 100px;
   @media (max-width: 991px) {
     padding: 40px 20px;
+    margin-top: 20px;
   }
 `;
 
