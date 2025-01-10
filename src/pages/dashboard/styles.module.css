@@ -11,14 +11,20 @@
 .heroSection {
   border-radius: 25px !important;
   overflow: hidden;
-  /* background: url('../../assets/images/backgrounds/trust.svg') no-repeat; */
+  object-fit: cover;
   background-position: center;
   display: flex;
   width: 90%;
-  height: 606px;
+  height: 70vh;
+  position: relative;
 }
-
+.homeGif {
+  width: 100%;
+  height: 100%;
+}
 .heroContent {
+  position: absolute;
+  padding: calc(12% + 20px) calc(5% + 20px) 80px;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -41,15 +47,6 @@
   align-items: center;
 }
 
-.iframe {
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  overflow: hidden;
-}
-.iframeNone {
-  display: none;
-}
 .heroTitle {
   color: #fff;
   font-size: 80px;
@@ -173,7 +170,7 @@
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  font: 700 16px/2;
+  font: 700 16px/2 Roboto, sans-serif;
 }
 
 .description {
@@ -181,7 +178,7 @@
   text-align: center;
   margin: 0px 0 20px 0;
   width: 50%;
-  font: 400 16px/26px;
+  font: 400 16px/26px Roboto, sans-serif;
 }
 
 .leftDirection {
@@ -198,7 +195,7 @@
 @media (max-width: 991px) {
   .heroSection {
     width: 90%;
-    height: 276px;
+    height: 50%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -249,5 +246,11 @@
   .testimonialGrid,
   .blogGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 991px) {
+  .heroSection {
+    height: 500px;
   }
 }

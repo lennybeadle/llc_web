@@ -1,7 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import Skeleton from '@mui/material/Skeleton';
-
 import { BlogCard } from '../../components/molecules/BlogCard';
 import { Header } from '../../components/molecules/Header';
 import styles from './styles.module.css';
@@ -23,6 +21,7 @@ import Blog1 from '../../assets/images/backgrounds/case1.svg';
 import Blog2 from '../../assets/images/backgrounds/case2.svg';
 import Blog3 from '../../assets/images/backgrounds/case3.svg';
 
+import HomeGif from '../../assets/images/gif/home.gif';
 // const teamMembers = [
 //   {
 //     image: Member1,
@@ -224,12 +223,6 @@ const blogPosts = [
 ];
 
 const Dashboard = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleIframeLoad = () => {
-    setIsLoading(false);
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -241,7 +234,8 @@ const Dashboard = () => {
       <Header />
 
       <section className={styles.heroSection}>
-        {/* <div className={styles.heroContent}>
+        <img src={HomeGif} className={styles.homeGif} />
+        <div className={styles.heroContent}>
           <div className={styles.heroTitleContent}>
             <h1 className={styles.heroTitle}>
               LLC Tech
@@ -270,27 +264,6 @@ const Dashboard = () => {
               alt=""
             />
           </div>
-        </div> */}
-        {isLoading && (
-          <Skeleton
-            variant="rectangular"
-            sx={{ marginTop: '0', width: '100%', height: '100%' }}
-          />
-        )}
-
-        <div className={isLoading ? styles.iframeNone : styles.iframe}>
-          <iframe
-            src={`https://drive.google.com/file/d/1nXoUiBTyWatPoptTqaG0je9d_PmdunYk/preview`}
-            width="100%"
-            height="100%"
-            allow="autoplay"
-            frameBorder="0"
-            title="Google Drive Video"
-            style={{
-              display: isLoading ? 'none' : 'block',
-            }}
-            onLoad={handleIframeLoad}
-          />
         </div>
       </section>
       <Spacer />
