@@ -17,7 +17,7 @@ export const MissionContent = styled.div`
   gap: 20px;
   width: 70%;
   @media (max-width: 991px) {
-  width: 90%;
+    width: 90%;
 
     flex-direction: column;
   }
@@ -46,7 +46,7 @@ export const MissionInfo = styled.div`
   display: flex;
   flex-direction: column;
   @media (max-width: 991px) {
-  padding: 0;
+    padding: 0;
 
     text-align: center;
     justify-content: center;
@@ -56,25 +56,25 @@ export const MissionInfo = styled.div`
 
 export const Subtitle = styled.div`
   color: #000;
-  font: 700 16px/2 Roboto, sans-serif;
+  font: 700 16px/2;
   text-transform: uppercase;
   @media (max-width: 991px) {
-  margin-top: 60px;
+    margin-top: 60px;
   }
 `;
 
 export const Title = styled.h2`
   color: #000;
-  font: 700 35px Roboto, sans-serif;
+  font: 700 35px;
   margin: 36px 0 20px;
-    @media (max-width: 991px) {
+  @media (max-width: 991px) {
     margin: 0;
   }
 `;
 
 export const Description = styled.p`
   color: #5a5a5a;
-  font: 400 16px/26px Roboto, sans-serif;
+  font: 400 16px/26px;
   margin-bottom: 71px;
 
   @media (max-width: 991px) {
@@ -100,7 +100,7 @@ export const SkillItem = styled.div`
 
 export const SkillLabel = styled.h3`
   color: #000;
-  font: 700 20px Roboto, sans-serif;
+  font: 700 20px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -109,6 +109,6 @@ export const SkillLabel = styled.h3`
 
 export const SkillPercentage = styled.div`
   color: #ffc900;
-  font: 700 40px/1 Roboto, sans-serif;
+  font: 700 40px/1;
   margin-top: 26px;
 `;

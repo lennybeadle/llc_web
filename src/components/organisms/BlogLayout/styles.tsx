@@ -5,7 +5,8 @@ export const Layout = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Roboto, sans-serif;
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   text-align: center;
   justify-content: center;
   padding: 55px 80px;

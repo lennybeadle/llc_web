@@ -13,7 +13,6 @@ export const SectionWrapper = styled.section`
   }
 `;
 
-
 const slideInFromRight = keyframes`
   from {
     opacity: 0;
@@ -51,7 +50,7 @@ export const LeftColumn = styled.div`
 
 export const HeaderTag = styled.span`
   text-transform: uppercase;
-  font: 700 16px/2 Roboto, sans-serif;
+  font: 700 16px/2;
   color: #000000;
 `;
 
@@ -94,7 +93,7 @@ export const ExploreButton = styled.button`
     outline: 2px solid #2f2207;
     outline-offset: 2px;
   }
-    @media (max-width: 991px) {
+  @media (max-width: 991px) {
     width: 50%;
   }
 `;

@@ -131,19 +131,19 @@ export const MissionInfo = styled.div`
 
 export const Subtitle = styled.div`
   color: #000;
-  font: 700 16px/2 Roboto, sans-serif;
+  font: 700 16px/2;
   text-transform: uppercase;
 `;
 
 export const Title = styled.h2`
   color: #000;
-  font: 700 35px Roboto, sans-serif;
+  font: 700 35px;
   margin: 36px 0 20px;
 `;
 
 export const Description = styled.p`
   color: #5a5a5a;
-  font: 400 16px/26px Roboto, sans-serif;
+  font: 400 16px/26px;
   margin-bottom: 71px;
 
   @media (max-width: 991px) {
@@ -180,13 +180,13 @@ export const SkillItem = styled.div`
 
 export const SkillLabel = styled.h3`
   color: #000;
-  font: 700 20px Roboto, sans-serif;
+  font: 700 20px;
   margin: 0;
 `;
 
 export const SkillPercentage = styled.div`
   color: #ffc900;
-  font: 700 40px/1 Roboto, sans-serif;
+  font: 700 40px/1;
   margin-top: 26px;
 `;
 
@@ -228,7 +228,7 @@ export const BlogDescription = styled.p`
   text-align: center;
   margin: 0 0 20px 0;
   width: 50%;
-  font: 400 16px/26px Roboto, sans-serif;
+  font: 400 16px/26px;
   @media (max-width: 991px) {
     width: 80%;
   }

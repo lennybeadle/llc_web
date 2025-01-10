@@ -1,12 +1,12 @@
 .header {
   background-color: #fff;
   display: flex;
-  font: 400 15px Roboto, sans-serif;
+  font: 400 15px;
   width: 100%;
   position: relative; /* default (when scrolled=false) */
 
   transition: box-shadow 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
-              background-color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    background-color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .headerContainer {
@@ -59,7 +59,7 @@
   width: 100%;
   transform: scaleX(0);
   transform-origin: center;
-  
+
   /* Smooth animation */
   transition: transform 0.3s ease;
 }
@@ -74,8 +74,8 @@
 }
 
 .navItem {
-  display: inline-block;  /* or flex, depending on design */
-  position: relative;     /* so that the underline can appear relative to this */
+  display: inline-block; /* or flex, depending on design */
+  position: relative; /* so that the underline can appear relative to this */
   cursor: pointer;
   color: #5a5a5a;
   font-size: 15px;
@@ -86,7 +86,6 @@
 .activeNavItem .navText {
   color: #000 !important;
   font-weight: 500 !important;
-
 }
 
 .scrolled {
@@ -100,9 +99,9 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 .navLink {
-  display: block;         /* ensures the link fills the container's area */
-  text-decoration: none;  /* remove underline from text */
-  color: inherit;         /* match parent text color */
+  display: block; /* ensures the link fills the container's area */
+  text-decoration: none; /* remove underline from text */
+  color: inherit; /* match parent text color */
 }
 .actions {
   display: flex;
@@ -280,7 +279,6 @@ a.activeMobileNavItem {
   transform-origin: center;
 }
 
-
 /* Close button */
 .closeButton {
   position: absolute;
@@ -316,7 +314,7 @@ a.activeMobileNavItem {
     max-width: 100%;
     white-space: initial;
   }
-  
+
   .navigation,
   .actions {
     display: none;

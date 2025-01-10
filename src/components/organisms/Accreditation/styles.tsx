@@ -12,14 +12,14 @@ export const FeaturedProjectsLabel = styled.span`
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  font: 700 16px/2 Roboto, sans-serif;
+  font: 700 16px/2;
 `;
 
 export const SectionTitle = styled.h2`
   color: #000;
   text-align: center;
   margin: 36px 0 0 36px;
-  font: 700 35px Roboto, sans-serif;
+  font: 700 35px;
   @media (max-width: 991px) {
     margin: 0 0 30px 0;
   }
@@ -30,7 +30,7 @@ export const Description = styled.p`
   text-align: center;
   margin: 33px 0 0 33px;
   width: 50%;
-  font: 400 16px/26px Roboto, sans-serif;
+  font: 400 16px/26px;
   @media (max-width: 991px) {
     max-width: 90%;
     margin: 0 0 30px 0;

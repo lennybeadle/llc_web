@@ -10,7 +10,8 @@ export const mainContainer = styled.main`
 `;
 export const PageContainer = styled.div`
   padding: 2rem;
-  font-family: 'Arial', sans-serif;
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;

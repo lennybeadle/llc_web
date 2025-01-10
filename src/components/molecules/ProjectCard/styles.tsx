@@ -21,7 +21,7 @@ export const CardContent = styled.div<{ image: string; dim?: boolean }>`
   width: 100%;
   height: 500px;
   padding: 450px 40px 20px;
-  font: 700 20px Roboto, sans-serif;
+  font: 700 20px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
   border-radius: 20px;
@@ -35,7 +35,8 @@ export const CardContent = styled.div<{ image: string; dim?: boolean }>`
     left: 0;
     right: 0;
     bottom: 0;
-    background: ${(props) => (props.dim ? 'rgba(0, 0, 0, 0.5)' : 'transparent')};
+    background: ${(props) =>
+      props.dim ? 'rgba(0, 0, 0, 0.5)' : 'transparent'};
     z-index: 1; /* Place the dim overlay behind the text */
     transition: background 0.2s ease;
     border-radius: 20px; /* Match the card's border radius */

@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material';
 const theme = {
   font: {
     family:
-      "Roboto, --apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+      "system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     body: {
       size: '14px',
       weight: '400',

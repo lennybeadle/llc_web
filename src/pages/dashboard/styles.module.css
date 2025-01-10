@@ -11,11 +11,11 @@
 .heroSection {
   border-radius: 25px !important;
   overflow: hidden;
-  background: url('../../assets/images/backgrounds/trust.svg') no-repeat;
+  /* background: url('../../assets/images/backgrounds/trust.svg') no-repeat; */
   background-position: center;
   display: flex;
   width: 90%;
-  padding: calc(12% + 20px) calc(5% + 20px) 80px;
+  height: 606px;
 }
 
 .heroContent {
@@ -41,6 +41,15 @@
   align-items: center;
 }
 
+.iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.iframeNone {
+  display: none;
+}
 .heroTitle {
   color: #fff;
   font-size: 80px;
@@ -164,7 +173,7 @@
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  font: 700 16px/2 Roboto, sans-serif;
+  font: 700 16px/2;
 }
 
 .description {
@@ -172,7 +181,7 @@
   text-align: center;
   margin: 0px 0 20px 0;
   width: 50%;
-  font: 400 16px/26px Roboto, sans-serif;
+  font: 400 16px/26px;
 }
 
 .leftDirection {
@@ -189,7 +198,7 @@
 @media (max-width: 991px) {
   .heroSection {
     width: 90%;
-    padding: 100px 20px;
+    height: 276px;
     display: flex;
     align-items: center;
     text-align: center;

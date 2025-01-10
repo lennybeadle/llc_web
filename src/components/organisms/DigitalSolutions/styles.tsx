@@ -12,7 +12,7 @@ export const FeaturedProjectsLabel = styled.span`
   margin-top: 60px;
   text-align: center;
   text-transform: uppercase;
-  font: 700 16px/2 Roboto, sans-serif;
+  font: 700 16px/2;
 `;
 
 export const SectionTitle = styled.h2`
@@ -20,7 +20,7 @@ export const SectionTitle = styled.h2`
   text-align: center;
   margin-top: 36px;
   padding: 0 20px;
-  font: 700 35px Roboto, sans-serif;
+  font: 700 35px;
 `;
 
 export const Description = styled.p`
@@ -28,7 +28,7 @@ export const Description = styled.p`
   text-align: center;
   margin-top: 33px;
   width: 50%;
-  font: 400 16px/26px Roboto, sans-serif;
+  font: 400 16px/26px;
   @media (max-width: 991px) {
     width: 90%;
   }

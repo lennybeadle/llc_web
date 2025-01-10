@@ -15,7 +15,7 @@ export const DoubleCardContainer = styled.div`
   flex-direction: column;
   gap: 20px;
   color: #fff;
-  font: 700 20px Roboto, sans-serif;
+  font: 700 20px;
 
   @media (max-width: 991px) {
     max-width: 100%;
@@ -23,7 +23,11 @@ export const DoubleCardContainer = styled.div`
   }
 `;
 
-export const CardContent = styled.div<{ image: string; height?: string; dim?: boolean }>`
+export const CardContent = styled.div<{
+  image: string;
+  height?: string;
+  dim?: boolean;
+}>`
   position: relative;
   border-radius: 20px;
   cursor: pointer;
@@ -44,7 +48,8 @@ export const CardContent = styled.div<{ image: string; height?: string; dim?: bo
     left: 0;
     right: 0;
     bottom: 0;
-    background: ${(props) => (props.dim ? 'rgba(0, 0, 0, 0.5)' : 'transparent')};
+    background: ${(props) =>
+      props.dim ? 'rgba(0, 0, 0, 0.5)' : 'transparent'};
     z-index: 1; /* Ensure it covers the background */
     border-radius: 20px;
   }
@@ -54,15 +59,16 @@ export const CardContent = styled.div<{ image: string; height?: string; dim?: bo
     position: relative;
     z-index: 999; /* Ensure content is above the dimmed background */
     color: #fff; /* Ensure text color remains readable */
-    font: 700 20px Roboto, sans-serif;
+    font: 700 20px;
   }
 
   /* No hover dimming */
   &:hover::before {
-    background: ${(props) => (props.dim ? 'rgba(0, 0, 0, 0.5)' : 'transparent')};
+    background: ${(props) =>
+      props.dim ? 'rgba(0, 0, 0, 0.5)' : 'transparent'};
   }
 
-   &:hover {
+  &:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow on hover */
   }

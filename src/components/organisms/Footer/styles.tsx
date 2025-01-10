@@ -53,7 +53,7 @@ export const Logo = styled.img`
 export const Description = styled.p`
   margin-top: 32px;
   color: rgba(90, 90, 90, 1);
-  font: 400 16px/26px Roboto, sans-serif;
+  font: 400 16px/26px;
   @media (max-width: 991px) {
     text-align: center;
   }
@@ -119,7 +119,7 @@ export const Copyright = styled.div`
 
 export const CopyrightText = styled.p`
   color: rgba(90, 90, 90, 1);
-  font: 400 15px/1.3 Roboto, sans-serif;
+  font: 400 15px/1.3;
   display: flex;
   justify-content: center;
   gap: 12px;

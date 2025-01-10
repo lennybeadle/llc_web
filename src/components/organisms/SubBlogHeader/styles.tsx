@@ -16,7 +16,7 @@ export const Breadcrumb = styled.nav`
   align-items: center;
   gap: 9px;
   text-transform: uppercase;
-  font: 500 12px Roboto, sans-serif;
+  font: 500 12px;
   color: #5a5a5a;
 `;
 
@@ -35,6 +35,6 @@ export const MetaInfo = styled.div`
   align-items: center;
   gap: 5px;
   color: #5a5a5a;
-  font: 700 12px Roboto, sans-serif;
+  font: 700 12px;
   text-transform: uppercase;
 `;

@@ -4,7 +4,7 @@ export const ContactContainer = styled.section`
   flex-direction: column;
   align-items: flex-start;
   color: rgba(90, 90, 90, 1);
-  font: 400 16px Roboto, sans-serif;
+  font: 400 16px;
   @media (max-width: 991px) {
     align-items: center;
     justify-content: center;

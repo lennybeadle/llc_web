@@ -23,7 +23,7 @@ export const SectionTitle = styled.h2`
   color: #000;
   text-align: center;
   margin: 36px 0 0 36px;
-  font: 700 35px Roboto, sans-serif;
+  font: 700 35px;
 `;
 
 export const Description = styled.p`
@@ -31,7 +31,7 @@ export const Description = styled.p`
   text-align: center;
   margin: 33px 0 0 33px;
   width: 50%;
-  font: 400 16px/26px Roboto, sans-serif;
+  font: 400 16px/26px;
   @media (max-width: 991px) {
     max-width: 100%;
   }

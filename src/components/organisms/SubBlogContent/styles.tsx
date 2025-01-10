@@ -12,7 +12,7 @@ export const ContentWrapper = styled.article`
   width: 90%;
   margin: 60px auto;
   padding: 0 20px;
-  font: 400 16px/1.6 Roboto, sans-serif;
+  font: 400 16px/1.6;
   color: #5a5a5a;
   display: flex;
   flex-direction: column;

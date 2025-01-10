@@ -28,7 +28,7 @@ export const Navigation = styled.nav`
   gap: 8px;
   white-space: nowrap;
   text-transform: uppercase;
-  font: 700 16px/2 Roboto, sans-serif;
+  font: 700 16px/2;
   @media (max-width: 991px) {
     white-space: initial;
   }
@@ -55,7 +55,8 @@ export const HeaderSection = styled.header`
   margin-top: 44px;
   width: 100%;
   gap: 20px;
-  font-family: Roboto, sans-serif;
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-weight: 700;
   flex-wrap: wrap;
   justify-content: space-between;
