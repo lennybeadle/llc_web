@@ -12,7 +12,8 @@ export const FeaturedProjectsLabel = styled.span`
   margin-top: 60px;
   text-align: center;
   text-transform: uppercase;
-  font: 700 16px/2;
+  font-size: 16px/2;
+  font-weight: 700;
 `;
 
 export const SectionTitle = styled.h2`
@@ -20,7 +21,8 @@ export const SectionTitle = styled.h2`
   text-align: center;
   margin-top: 36px;
   padding: 0 20px;
-  font: 700 35px;
+  font-size: 35px;
+  font-weight: 700;
 `;
 
 export const Description = styled.p`
@@ -28,7 +30,8 @@ export const Description = styled.p`
   text-align: center;
   margin-top: 33px;
   width: 50%;
-  font: 400 16px/26px;
+  font-size: 16px/26px;
+  font-weight: 400;
   @media (max-width: 991px) {
     width: 90%;
   }

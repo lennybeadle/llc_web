@@ -4,7 +4,8 @@ export const MenuContainer = styled.nav`
   display: flex;
   flex-direction: column;
   color: rgba(90, 90, 90, 1);
-  font: 400 16px;
+  font-size: 16px;
+  font-weight: 400;
   @media (max-width: 991px) {
     align-items: center;
     justify-content: center;
@@ -14,7 +15,7 @@ export const MenuContainer = styled.nav`
 export const MenuTitle = styled.h3`
   color: rgba(0, 0, 0, 1);
   font-weight: 800;
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 10px;
 `;
 

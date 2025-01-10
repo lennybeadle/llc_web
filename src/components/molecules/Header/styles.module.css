@@ -1,7 +1,8 @@
 .header {
   background-color: #fff;
   display: flex;
-  font: 400 15px;
+  font-size: 15px;
+  font-weight: 400;
   width: 100%;
   position: relative; /* default (when scrolled=false) */
 
@@ -78,7 +79,7 @@
   position: relative; /* so that the underline can appear relative to this */
   cursor: pointer;
   color: #5a5a5a;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500 !important;
 }
 
@@ -157,7 +158,7 @@ a:focus {
 
 .webAgency {
   color: #000;
-  font-size: 28px;
+  font-size: 31px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -244,7 +245,7 @@ a.activeMobileNavItem {
 .mobileMenuLinks a {
   text-decoration: none;
   color: white; /* Default color */
-  font-size: 20px; /* Larger font size */
+  font-size: 21px; /* Larger font size */
   font-weight: 800; /* Regular weight */
   transition: color 0.3s, font-weight 0.3s;
 }
@@ -285,7 +286,7 @@ a.activeMobileNavItem {
   top: 40px;
   right: 40px;
   color: white;
-  font-size: 24px;
+  font-size: 25px;
 }
 
 /* Mobile CTA Button */
@@ -296,7 +297,7 @@ a.activeMobileNavItem {
   color: #2f2207;
   padding: 16px 23px;
   border: none;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 500;
   cursor: pointer;
 }

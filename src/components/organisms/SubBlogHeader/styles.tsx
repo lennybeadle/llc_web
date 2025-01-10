@@ -16,13 +16,14 @@ export const Breadcrumb = styled.nav`
   align-items: center;
   gap: 9px;
   text-transform: uppercase;
-  font: 500 12px;
+  font-size: 12px;
+  font-weight: 500;
   color: #5a5a5a;
 `;
 
 export const Title = styled.h1`
   color: #000;
-  font-size: 30px;
+  font-size: 31px;
   font-weight: 800;
   line-height: 1;
   text-align: center;
@@ -35,6 +36,7 @@ export const MetaInfo = styled.div`
   align-items: center;
   gap: 5px;
   color: #5a5a5a;
-  font: 700 12px;
+  font-size: 12px;
+  font-weight: 700;
   text-transform: uppercase;
 `;

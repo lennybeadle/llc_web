@@ -28,7 +28,8 @@ export const Navigation = styled.nav`
   gap: 8px;
   white-space: nowrap;
   text-transform: uppercase;
-  font: 700 16px/2;
+  font-size: 16px/2;
+  font-weight: 700;
   @media (max-width: 991px) {
     white-space: initial;
   }
@@ -68,7 +69,7 @@ export const HeaderSection = styled.header`
 
 export const Title = styled.h1`
   color: rgba(255, 255, 255, 1);
-  font-size: 60px;
+  font-size: 61px;
   line-height: 66px;
   span {
     font-weight: 300;
@@ -87,7 +88,7 @@ export const HiringButton = styled.button`
   display: flex;
   align-items: center;
   gap: 21px;
-  font-size: 16px;
+  font-size: 17px;
   color: rgba(47, 34, 7, 1);
   padding: 18px 30px;
   cursor: pointer;

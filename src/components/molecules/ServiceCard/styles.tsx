@@ -26,7 +26,7 @@ export const ServiceIcon = styled.img`
 
 export const ServiceTitle = styled.h3`
   color: #000000;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 30px;
   margin: 24px 0;
@@ -34,7 +34,7 @@ export const ServiceTitle = styled.h3`
 
 export const ServiceDescription = styled.p`
   color: #5a5a5a;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 26px;
 `;

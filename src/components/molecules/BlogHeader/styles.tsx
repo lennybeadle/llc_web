@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
 
 export const HeaderTitle = styled.h1`
   color: #000;
-  font-size: 30px;
+  font-size: 31px;
   font-weight: 800;
   margin-top: 20px;
   @media (max-width: 991px) {
@@ -23,7 +23,7 @@ export const HeaderTitle = styled.h1`
 
 export const HeaderDescription = styled.p`
   color: #5a5a5a;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 26px;
   align-self: stretch;

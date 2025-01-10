@@ -6,7 +6,7 @@ export const Nav = styled.nav<{
 }>`
   display: flex;
   width: 100%;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   color: ${(props) => props.textColor || '#ffffff'};
   margin-left: ${(props) => props.marginLeft || '0'};

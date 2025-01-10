@@ -56,7 +56,8 @@ export const MissionInfo = styled.div`
 
 export const Subtitle = styled.div`
   color: #000;
-  font: 700 16px/2;
+  font-size: 16px/2;
+  font-weight: 700;
   text-transform: uppercase;
   @media (max-width: 991px) {
     margin-top: 60px;
@@ -65,7 +66,8 @@ export const Subtitle = styled.div`
 
 export const Title = styled.h2`
   color: #000;
-  font: 700 35px;
+  font-size: 35px;
+  font-weight: 700;
   margin: 36px 0 20px;
   @media (max-width: 991px) {
     margin: 0;
@@ -74,7 +76,8 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   color: #5a5a5a;
-  font: 400 16px/26px;
+  font-size: 16px/26px;
+  font-weight: 400;
   margin-bottom: 71px;
 
   @media (max-width: 991px) {
@@ -100,7 +103,8 @@ export const SkillItem = styled.div`
 
 export const SkillLabel = styled.h3`
   color: #000;
-  font: 700 20px;
+  font-size: 20px;
+  font-weight: 700;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -109,6 +113,7 @@ export const SkillLabel = styled.h3`
 
 export const SkillPercentage = styled.div`
   color: #ffc900;
-  font: 700 40px/1;
+  font-size: 40px;
+  font-weight: 700;
   margin-top: 26px;
 `;

@@ -46,7 +46,7 @@
   padding: 0px 8px;
   min-height: 25px;
   white-space: nowrap;
-  font-size: 12px;
+  font-size: 13px;
   color: #2f2207;
   text-transform: uppercase;
   line-height: 2;
@@ -54,13 +54,13 @@
 
 .blogTitle {
   color: #000;
-  font-size: 20px;
+  font-size: 21px;
   margin: 21px 0;
 }
 
 .blogExcerpt {
   color: #5a5a5a;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
 }
 

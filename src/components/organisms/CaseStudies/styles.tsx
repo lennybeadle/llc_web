@@ -12,7 +12,8 @@ export const FeaturedProjectsLabel = styled.span`
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  font: 700 16px/2;
+  font-size: 16px/2;
+  font-weight: 700;
   @media (max-width: 991px) {
     margin-bottom: 20px;
   }
@@ -22,7 +23,8 @@ export const SectionTitle = styled.h2`
   color: #000;
   text-align: center;
   margin: 36px 0 0 0;
-  font: 700 35px;
+  font-size: 35px;
+  font-weight: 700;
   @media (max-width: 991px) {
     margin: 0 0 10px 0;
     font-size: 25px;
@@ -34,7 +36,8 @@ export const Description = styled.p`
   text-align: center;
   margin: 33px 0 0 0;
   width: 50%;
-  font: 400 16px/26px;
+  font-size: 16px/26px;
+  font-weight: 400;
   @media (max-width: 991px) {
     max-width: 90%;
     margin: 0;

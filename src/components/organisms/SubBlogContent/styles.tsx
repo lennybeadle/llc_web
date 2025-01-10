@@ -12,7 +12,8 @@ export const ContentWrapper = styled.article`
   width: 90%;
   margin: 60px auto;
   padding: 0 20px;
-  font: 400 16px/1.6;
+  font-size: 16px/1.6;
+  font-weight: 400;
   color: #5a5a5a;
   display: flex;
   flex-direction: column;
@@ -32,7 +33,7 @@ export const FeaturedImage = styled.img`
 export const ContentText = styled.div`
   width: 90%;
   h2 {
-    font-size: 24px;
+    font-size: 25px;
     color: #000;
     margin: 40px 0 20px;
   }

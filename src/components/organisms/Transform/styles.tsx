@@ -131,19 +131,22 @@ export const MissionInfo = styled.div`
 
 export const Subtitle = styled.div`
   color: #000;
-  font: 700 16px/2;
+  font-size: 16px/2;
+  font-weight: 700;
   text-transform: uppercase;
 `;
 
 export const Title = styled.h2`
   color: #000;
-  font: 700 35px;
+  font-size: 35px;
+  font-weight: 700;
   margin: 36px 0 20px;
 `;
 
 export const Description = styled.p`
   color: #5a5a5a;
-  font: 400 16px/26px;
+  font-size: 16px/26px;
+  font-weight: 400;
   margin-bottom: 71px;
 
   @media (max-width: 991px) {
@@ -166,7 +169,7 @@ export const MoreDetails = styled.button`
   cursor: pointer;
   font-weight: 500;
   width: 30%;
-  font-size: 15px;
+  font-size: 16px;
   white-space: nowrap;
   @media (max-width: 991px) {
     width: 50%;
@@ -180,13 +183,15 @@ export const SkillItem = styled.div`
 
 export const SkillLabel = styled.h3`
   color: #000;
-  font: 700 20px;
+  font-size: 20px;
+  font-weight: 700;
   margin: 0;
 `;
 
 export const SkillPercentage = styled.div`
   color: #ffc900;
-  font: 700 40px/1;
+  font-size: 40px/1;
+  font-weight: 700;
   margin-top: 26px;
 `;
 
@@ -218,7 +223,7 @@ export const BlogSection = styled.section`
 
 export const SectionTitle = styled.h2`
   color: #000;
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
 `;
@@ -228,7 +233,8 @@ export const BlogDescription = styled.p`
   text-align: center;
   margin: 0 0 20px 0;
   width: 50%;
-  font: 400 16px/26px;
+  font-size: 16px/26px;
+  font-weight: 400;
   @media (max-width: 991px) {
     width: 80%;
   }

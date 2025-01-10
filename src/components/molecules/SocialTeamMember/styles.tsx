@@ -29,7 +29,7 @@ export const MemberImage = styled.img`
 
 export const MemberName = styled.h2`
   color: rgba(255, 255, 255, 1);
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
   margin-top: 48px;
   @media (max-width: 991px) {
@@ -39,7 +39,7 @@ export const MemberName = styled.h2`
 
 export const MemberRole = styled.p`
   color: rgba(255, 216, 0, 1);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 2;
   margin-top: 18px;

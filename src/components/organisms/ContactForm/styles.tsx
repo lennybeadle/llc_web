@@ -15,20 +15,20 @@ export const Subtitle = styled.p`
   color: #000;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0 0 24px;
 `;
 
 export const Title = styled.h2`
   color: #000;
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 700;
   margin: 0 0 13px;
 `;
 
 export const Description = styled.p`
   color: #5a5a5a;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 26px;
   max-width: 600px;
   margin: 0 auto;
@@ -65,7 +65,7 @@ export const Label = styled.label`
   display: block;
   color: #5a5a5a;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 5px;
 `;
 
@@ -79,7 +79,7 @@ export const Input = styled.input`
   border-radius: 15px;
   border: 2px solid #edeff2;
   padding: 0 20px;
-  font-size: 15px;
+  font-size: 16px;
   transition: border-color 0.2s ease;
 
   &:focus {
@@ -93,7 +93,7 @@ export const Textarea = styled.textarea`
   border-radius: 15px;
   border: 2px solid #edeff2;
   padding: 15px 20px;
-  font-size: 15px;
+  font-size: 16px;
   resize: vertical;
   min-height: 220px;
   transition: border-color 0.2s ease;
@@ -110,7 +110,7 @@ export const SubmitButton = styled.button`
   border: none;
   border-radius: 15px;
   padding: 18px 37px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease;

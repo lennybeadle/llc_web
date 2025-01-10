@@ -13,7 +13,7 @@ export const Label = styled.label`
   align-items: center;
   color: #5a5a5a;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
 `;
 
 export const Required = styled.span`
@@ -26,7 +26,7 @@ export const Input = styled.input`
   border-radius: 15px;
   border: 2px solid #edeff2;
   padding: 0 20px;
-  font-size: 15px;
+  font-size: 16px;
   transition: border-color 0.2s ease;
 
   &:focus {
@@ -40,7 +40,7 @@ export const TextArea = styled.textarea`
   border-radius: 15px;
   border: 2px solid #edeff2;
   padding: 15px 20px;
-  font-size: 15px;
+  font-size: 16px;
   resize: vertical;
   min-height: 220px;
   transition: border-color 0.2s ease;

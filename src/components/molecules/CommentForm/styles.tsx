@@ -21,7 +21,7 @@ export const FormWrapper = styled.div`
 
 export const FormTitle = styled.h2`
   color: rgba(0, 0, 0, 1);
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 800;
   margin: 97px 0 0 0;
   @media (max-width: 991px) {
@@ -30,7 +30,7 @@ export const FormTitle = styled.h2`
 `;
 
 export const FormDisclaimer = styled.p`
-  font-size: 13px;
+  font-size: 14px;
   line-height: 2;
   margin: 20px 0 0 0;
   color: #5a5a5a;
@@ -42,7 +42,7 @@ export const FormDisclaimer = styled.p`
 export const Input = styled.input`
   width: 100%;
   padding: 15px; /* Increased padding for a more spacious feel */
-  font-size: 16px; /* Slightly larger text */
+  font-size: 17px; /* Slightly larger text */
   border: 2px solid #bbb; /* Thicker border */
   border-radius: 10px; /* Rounder corners */
   outline: none;
@@ -55,7 +55,7 @@ export const Input = styled.input`
 
   &::placeholder {
     color: #999;
-    font-size: 15px; /* Slightly larger placeholder text */
+    font-size: 16px; /* Slightly larger placeholder text */
   }
 `;
 
@@ -89,12 +89,12 @@ export const CommentArea = styled.div`
 export const RememberMeContainer = styled.div`
   display: flex;
   gap: 9px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 2;
   margin: 31px 0 0 0;
   align-items: center;
   color: #5a5a5a;
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     cursor: pointer;
   }
   label {
@@ -120,7 +120,7 @@ export const SubmitButton = styled.button`
   border: none;
   cursor: pointer;
   width: 30%;
-  font-size: 16px; /* Slightly larger text */
+  font-size: 17px; /* Slightly larger text */
   @media (max-width: 991px) {
     margin-left: 10px;
     padding: 10px 20px;
@@ -137,7 +137,7 @@ export const SubmitButton = styled.button`
 export const TextArea = styled.textarea`
   width: 100%;
   padding: 15px; /* Increased padding for a more spacious feel */
-  font-size: 16px; /* Larger text for readability */
+  font-size: 17px; /* Larger text for readability */
   border: 2px solid #bbb; /* Thicker border */
   border-radius: 10px; /* Rounder corners */
   outline: none;
@@ -152,7 +152,7 @@ export const TextArea = styled.textarea`
 
   &::placeholder {
     color: #999;
-    font-size: 15px; /* Slightly larger placeholder text */
+    font-size: 16px; /* Slightly larger placeholder text */
   }
 `;
 

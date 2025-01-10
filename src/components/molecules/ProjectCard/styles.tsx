@@ -21,7 +21,8 @@ export const CardContent = styled.div<{ image: string; dim?: boolean }>`
   width: 100%;
   height: 500px;
   padding: 450px 40px 20px;
-  font: 700 20px;
+  font-size: 20px;
+  font-weight: 700;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
   border-radius: 20px;

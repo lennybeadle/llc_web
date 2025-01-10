@@ -15,7 +15,8 @@ export const DoubleCardContainer = styled.div`
   flex-direction: column;
   gap: 20px;
   color: #fff;
-  font: 700 20px;
+  font-size: 20px;
+  font-weight: 700;
 
   @media (max-width: 991px) {
     max-width: 100%;
@@ -59,7 +60,8 @@ export const CardContent = styled.div<{
     position: relative;
     z-index: 999; /* Ensure content is above the dimmed background */
     color: #fff; /* Ensure text color remains readable */
-    font: 700 20px;
+    font-size: 20px;
+    font-weight: 700;
   }
 
   /* No hover dimming */

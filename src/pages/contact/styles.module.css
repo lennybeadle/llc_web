@@ -69,7 +69,7 @@
   margin-top: 20px;
   display: flex;
   font-weight: 300;
-  font-size: 60px;
+  font-size: 61px;
   line-height: 1.1em;
   width: 50%;
   margin-bottom: 50px;
@@ -115,11 +115,11 @@
 }
 
 .subTitleFormat {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .contentFormat {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .contactIcon {

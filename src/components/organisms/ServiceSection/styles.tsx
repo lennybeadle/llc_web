@@ -50,12 +50,14 @@ export const LeftColumn = styled.div`
 
 export const HeaderTag = styled.span`
   text-transform: uppercase;
-  font: 700 16px/2;
+  font-size: 16px/2;
+  font-weight: 700;
+
   color: #000000;
 `;
 
 export const MainHeading = styled.h1`
-  font-size: 60px;
+  font-size: 61px;
   line-height: 72px;
   margin: 34px 0;
   font-weight: 700;
@@ -68,7 +70,7 @@ export const MainHeading = styled.h1`
 
 export const Description = styled.p`
   color: #5a5a5a;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 26px;
   margin-bottom: 55px;
 `;
@@ -77,7 +79,7 @@ export const ExploreButton = styled.button`
   border-radius: 15px;
   background-color: #ffd800;
   color: #2f2207;
-  font-size: 16px;
+  font-size: 17px;
   white-space: nowrap;
   padding: 19px 40px;
   border: none;

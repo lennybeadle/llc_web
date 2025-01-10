@@ -53,7 +53,8 @@ export const Logo = styled.img`
 export const Description = styled.p`
   margin-top: 32px;
   color: rgba(90, 90, 90, 1);
-  font: 400 16px/26px;
+  font-size: 16px/26px;
+  font-weight: 400;
   @media (max-width: 991px) {
     text-align: center;
   }
@@ -87,7 +88,7 @@ export const SocialLinks = styled.div`
 `;
 
 export const SocialLabel = styled.span`
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: #5a5a5a;
   text-align: left; /* Ensure text aligns left */
@@ -119,7 +120,8 @@ export const Copyright = styled.div`
 
 export const CopyrightText = styled.p`
   color: rgba(90, 90, 90, 1);
-  font: 400 15px/1.3;
+  font-size: 15px/1.3;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   gap: 12px;
@@ -131,7 +133,7 @@ export const CompanyName = styled.span`
 
 export const WebAgency = styled.p`
   color: #000;
-  font-size: 28px;
+  font-size: 29px;
   text-align: center;
   display: flex;
   align-items: center;

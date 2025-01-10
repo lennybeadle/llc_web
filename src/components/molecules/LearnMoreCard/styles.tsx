@@ -25,7 +25,8 @@ export const ServiceIcon = styled.img`
 
 export const ServiceTitle = styled.h3`
   color: #000;
-  font: 700 20px;
+  font-size: 20px;
+  font-weight: 700;
   margin: 53px 0 35px;
 
   @media (max-width: 991px) {
@@ -36,7 +37,8 @@ export const ServiceTitle = styled.h3`
 
 export const ServiceDescription = styled.p`
   color: #5a5a5a;
-  font: 400 16px/26px;
+  font-size: 16px/26px;
+  font-weight: 400;
   margin: 0 0 29px;
   @media (max-width: 991px) {
     text-align: center;

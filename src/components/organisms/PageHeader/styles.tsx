@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.div`
   padding: 0.5rem 0;
   width: 100%;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 21px;
   line-height: 32px;
 `;
 
