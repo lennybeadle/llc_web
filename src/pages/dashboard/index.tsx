@@ -21,7 +21,7 @@ import Blog1 from '../../assets/images/backgrounds/case1.svg';
 import Blog2 from '../../assets/images/backgrounds/case2.svg';
 import Blog3 from '../../assets/images/backgrounds/case3.svg';
 
-import HomeGif from '../../assets/images/gif/home.gif';
+import HomeGif from '../../assets/images/gif/home.mp4';
 // const teamMembers = [
 //   {
 //     image: Member1,
@@ -234,7 +234,9 @@ const Dashboard = () => {
       <Header />
 
       <section className={styles.heroSection}>
-        <img src={HomeGif} className={styles.homeGif} />
+        <video autoPlay muted loop playsInline className={styles.homeGif}>
+          <source src={HomeGif} type="video/mp4" />
+        </video>
         <div className={styles.heroContent}>
           <div className={styles.heroTitleContent}>
             <h1 className={styles.heroTitle}>
